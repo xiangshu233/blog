@@ -1,0 +1,36 @@
+Stellar:
+  title: Stellar
+  subtitle: 每个人的独立博客
+  tags: [博客主题, 开源项目]
+  cover: true
+  logo:
+    src: https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/stellar/icon.svg
+    small: 112px
+    large: 240px
+  description: Stellar 是一个内置 wiki 系统的 hexo 主题，适合综合型站点使用。同时也拥有简约而精美的视觉设计和丰富的标签插件，帮助您简单从容地应对各种场合。
+  sections:
+    '快速开始': [0, 99]
+    '基本使用': [100, 199]
+    '文档系统': [200, 299]
+    '进阶设定': [900, 999]
+  repo: xaoxuu/hexo-theme-stellar
+  comment_title: '评论区仅供交流，有问题请提 [issue](https://github.com/xaoxuu/hexo-theme-stellar/issues) 反馈。'
+
+Git:
+  title: Git 实用教程
+  tags: 笔记
+  logo:
+    src: https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/git/icon.svg
+    small: 96px
+    large: 128px
+  description: Git 是目前世界上最先进的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。
+  start: 开始阅读
+  cover: true
+
+hexo.sh:
+  title: hexo.sh
+  tags: 实用脚本
+  cover: true
+  logo:
+    src: https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/hexo.sh/screenshot.png
+  description: 此脚本可以很方便执行各种 hexo 命令，开启后会一直保持会话，随时输入简短的命令去执行一系列操作，提高效率。

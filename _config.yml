@@ -3,21 +3,25 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
+title: 离鸣
+avatar: 'https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets/assets/images/avatar.png'
+subtitle: '回首前尘，尽是可耻的过往 | xiangshu233.cn'
 description: ''
 keywords:
-author: John Doe
-language: en
+author: xiangshu
+language:
+  - zh-CN
+  - en
+  - zh-TW
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
-permalink: :year/:month/:day/:title/
+url: http://xiangshu233.cn
+permalink: :title/
 permalink_defaults:
 pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+  trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
 
 # Directory
@@ -29,6 +33,9 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+
+# wiki
+wiki_dir: wiki
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -81,7 +88,7 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## updated_option supports 'mtime', 'date', 'empty'
-updated_option: 'mtime'
+updated_option: 'date'
 
 # Pagination
 ## Set per_page to 0 to disable pagination

@@ -1,0 +1,33 @@
+group1:
+  - title: 尹寒磊
+    avatar: https://7.dusays.com/2021/01/30/9c783e50f597a.jpg
+    url: https://www.yinhanlei.com/
+    screenshot: https://7.dusays.com/2021/01/30/df2dc76fce132.png
+    description: 技术和生活的记录空间
+  - title: Justin Yang
+    avatar: https://7.dusays.com/2021/01/30/b8df98577d013.jpg
+    url: https://lifestyle1.cn/
+    screenshot: https://7.dusays.com/2021/01/30/a31fc2901f301.png
+    description: https://lifestyle1.cn/
+
+
+
+group2:
+  - title: 枋柚梓
+    avatar: https://cdn.jsdelivr.net/gh/inkss/common@master/static/web/avatar.jpg
+    url: https://inkss.cn/
+    screenshot: https://i.loli.net/2020/08/21/Vzbu3i8fXs6Nh5Y.jpg
+    keywords:
+    description: 喵喵喵？
+
+  - title: 枋柚梓
+    avatar: https://cdn.jsdelivr.net/gh/inkss/common@master/static/web/avatar.jpg
+    url: https://inkss.cn/
+    screenshot: https://i.loli.net/2020/08/21/Vzbu3i8fXs6Nh5Y.jpg
+    keywords:
+    description: 喵喵喵？
+
+group3:
+  api: https://issues-api.vercel.app
+  description: '以下友链通过 [GitHub Issue](https://github.com/xiangshu233/friends/issues/) 提交，按 issue 最后更新时间排序：'
+  repo: xiangshu233/friends
