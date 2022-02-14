@@ -60,6 +60,7 @@ UIScreen & UIWindow 获得布局尺寸进行排版不适用于 iPhone X 以及�
 ```
 
 
+{% image https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@0.2/assets/images/avatar-1.jpg %}
 
 **布局边框**
 

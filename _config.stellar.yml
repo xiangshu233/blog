@@ -11,6 +11,10 @@ comments:
   beaudar:
     repo: xiangshu233/blog-comments
 
+tag_plugins:
+  image:
+    fancybox: true
+
 open_graph:
   enable: false
   twitter_id: '' # for open_graph meta
