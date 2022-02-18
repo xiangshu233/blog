@@ -24,7 +24,7 @@ import svgLogo from '@/assets/svg/handsome.svg'
 
 
 本文尽量简洁干练，为了方便大部分着急解决问题、准备{% kbd Ctrl %} + {% kbd C %} + {% kbd V %} 连击直接带走的朋友，接下来我们开始吧
-```bash
+```Bash
 Vue Create vue-demo
 ```
 ![](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@74b3db48b0cd7df9fc783bd2d4b0942e3c488252/2020/10/13/cd804bc58e0bf99106fbdde9ce319ddf.png)
@@ -34,7 +34,7 @@ Vue Create vue-demo
 ## 安装插件
 
 安装 `svg-sprite-loader`
-```bash
+```Bash
 yarn add svg-sprite-loader --save-dev
 ```
 ## 配置插件

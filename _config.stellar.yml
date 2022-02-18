@@ -1,8 +1,8 @@
 sidebar:
   menu:
-    post: '[btn.blog](/)'
-    wiki: '[btn.wiki](/wiki/)'
-    shuoshuo: '[说说](/shuoshuo/)'
+    post: '[博客](/)'
+    wiki: '[项目](/wiki/)'
+    talk: '[动态](/talk/)'
     more: '[更多](/about/)'
 
 # 一款基于 GitHub issues 的开源评论插件
@@ -24,10 +24,9 @@ article:
   auto_cover: false
   # 分类颜色
   category_color:
-    '新闻稿': '#DA0F47'
-    '设计开发': '#03a9f4'
+    '实用脚本': '#DA0F47'
+    '笔记': '#03a9f4'
     '解决方案': '#4caf50'
-    '博客主题': '#ffa000'
   # 分享
   share: [wechat, weibo, email, link]
 

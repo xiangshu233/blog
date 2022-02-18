@@ -14,7 +14,7 @@ cover: https://tva4.sinaimg.cn/mw690/006wuklaly1gjqeliyqzxj31hc0u0kfa.jpg
 
 在本地机器任意目录右键 `git bash` 打开命令窗口使用 `ssh` 生成公钥
 
-```bash
+```Bash
 # 生成密钥命令
 ssh-keygen -t rsa
 ```
@@ -34,9 +34,9 @@ ssh-keygen -t rsa
 阿里云学生机有两个配置，我买的是 `轻量应用服务器` 具体啥区别我也不知道
 
 ![img](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@92a964a7462fd2e4e1b04bfc9335ae122d98415d/2020/10/14/45979cbef4af7c60508007da012ce6a4.png)
-:::warning
-轻量应用服务器是不要添加安全组规则的，默认开启状态，ECS则需要手动添加安全组规则授权`80`端口，否则无法访问服务器
-:::
+
+{%note color:yellow 轻量应用服务器是不要添加安全组规则的，默认开启状态，ECS则需要手动添加安全组规则授权`80`端口，否则无法访问服务器 %}
+
 域名这块就略过了，网上一堆，有时间单独写域名
 
 ## 服务器重置及宝塔面板配置、Nginx配置
@@ -44,12 +44,12 @@ ssh-keygen -t rsa
 ### 宝塔面板配置
 
 服务器重置为 `CentOS7.3`，`SSH` 连接到服务器输入以下命令切换 `root` 用户并修改 `root` 密码
-```shell
+```Shell
 sudo su root
 passwd
 ```
 输入以下命令安装宝塔（大约两分钟）
-```shell
+```Shell
 yum install -y wget && wget -O install.sh http://download.bt.cn/install/install_6.0.sh && sh install.sh
 ```
 安装完毕会提示你 `临时访问地址以及账户密码`，在浏览器地址栏输入 `http://你的ip:8888` 登录后找到 `面板设置` 里面进行自定义设置，由于涉及服务器安全这里就不放图了
@@ -64,7 +64,7 @@ yum install -y wget && wget -O install.sh http://download.bt.cn/install/install_
 
 ### Nginx配置
 找到宝塔 `软件商店`  --> 安装 `Nginx`，安装完毕后修改 `配置文件`
-```config
+```Nginx
 server
     {
         listen 80;						# 监听端口号（服务器请开启此端口）
@@ -114,28 +114,28 @@ server
 ## 服务器Git配置
 
 安装 Git
-```bash
+```Bash
 yum install -y git
 ```
 
 创建 `Git` 用户，修改 `sudoers` 文件为 `740`（修改文件内部权限）
-```bash
+```Bash
 adduser git
 chmod 740 /etc/sudoers
 vim /etc/sudoers
 ```
 
 找到  `root ALL=(ALL) ALL` 在下面添加一行  `wq!` 保存
-```bash
+```Bash
 git  ALL=(ALL)  ALL
 ```
  修改后保存再改回 `400`
-```bash
+```Bash
 chmod 400 /etc/sudoers
 ```
 设置 `git` 用户密码
 
-```bash
+```Bash
 sudo passwd git
 ```
 
@@ -145,7 +145,7 @@ sudo passwd git
 
 切换 `git` 用户，创建  `~/.ssh` 文件夹和  `~/.ssh/authorized_keys`  文件，将公钥内容复制到 `authorized_keys` ，然后 `wq!`  保存
 
-```bash
+```Bash
 su git
 mkdir ~/.ssh
 vim ~/.ssh/authorized_keys
@@ -153,14 +153,14 @@ vim ~/.ssh/authorized_keys
 
 之后修改 `authorized_keys`  文件权限和 `.ssh`  文件夹的权限
 
-```bash
+```Bash
 chmod 600 .ssh/authorized_keys
 chmod 700 .ssh
 ```
 
 ## 测试 Git 连接
 在本地机器打开  `git bash`  ,测试能不能连接到你的服务器上，`@后面是你的服务器ip地址`
-```bash
+```Bash
 ssh -v git@xx.xx.xxx.xx
 ```
 
@@ -173,7 +173,7 @@ ssh -v git@xx.xx.xxx.xx
 >@ WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED! @
 >@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 >如果测试连接遇到以上问题在客户机输入以下命令即可解决
->```bash
+>```Bash
 >ssh-keygen -R 输入服务器的IP
 >```
 >重新连接，出现 `Are you sure you want to continue connecting (yes/no)?`  选择 `yes`即可
@@ -184,14 +184,14 @@ ssh -v git@xx.xx.xxx.xx
 初始化 git 裸库
 切换 `git` 用户，进入 `git` 用户目录下创建，在 `git` 用户目录下初始化一个`git` 仓库 `(hexo.git)`
 
-```bash
+```Bash
 su git
 cd /home/git
 git init --bare hexo.git
 ```
 此时 `git` 用户目录下就会存在一个 `hexo.git` 仓库 ，并将 `hexo.git` 目录下所有文件拥有者设置为 `git` 用户
 
-```bash
+```Bash
 chown git:git -R hexo.git
 ```
 
@@ -200,31 +200,31 @@ chown git:git -R hexo.git
 使用 git-hooks
 使用 `post-receive` 钩子，当 `git` 有收发的时候就会调用这个钩子
 
-```bash
+```Bash
 vim ~/hexo.git/hooks/post-receive
 ```
 
 以下内容复制到 `post-receive` 中，`wq!` 保存
 
-```bash
+```Bash
 #!/bin/sh
 git --work-tree=/www/wwwroot/hexo_blog --git-dir=/home/git/hexo.git checkout -f
 ```
 
 保存退出后再赋予该文件 `执行` 权限
 
-```bash
+```Bash
 cd /home/git/hexo.git/hooks
 chmod +x post-receiv
 ```
-:::warning
-`注意：` 确保 `hexo.git .ssh hexo_blog` 目录的用户组权限为 `git:git`，若不是，执行下列命令：
-```bash
+{%note color:yellow 注意：  确保 `hexo.git .ssh hexo_blog` 目录的用户组权限为 `git:git`，若不是，执行下列命令：
+```Bash
 chown -R git.git /home/git/hexo.git/
 chown -R git.git /home/git/.ssh/
 chown -R git.git /www/wwwroot/hexo_blog/
 ```
-:::
+%}
+
 
 这样 `git`自动部署就完成 了
 
@@ -240,7 +240,7 @@ deploy:
 ```
 修改完毕后，每次 `hexo  d` 他就会自动发布到你的远程仓库上
 之后就是正常的部署流程：
-```bash
+```Bash
 hexo clean			# 清除以前的缓存文件
 hexo g				# 生成静态文件
 hexo d				# 发布到远程仓库

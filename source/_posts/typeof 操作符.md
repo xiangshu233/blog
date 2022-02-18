@@ -171,7 +171,7 @@ type Z = typeof z; // let z: { readonly text: "hello"; }
 
 如果变量声明了 `类型` ，推断不受 `const` 的影响，唯一不同的是：`typeof` 返回 `s6` 的声明类型 `string`，而不是字面量类型 `'hello'`，但是变量依然不能重新分配
 
-```tsx
+```ts
 const s6: string = 'hello';
 type TS6 = typeof s6; // type TS6 = string
 // s6 = 'world'  // 无法分配到 "s6" ，因为它是常数

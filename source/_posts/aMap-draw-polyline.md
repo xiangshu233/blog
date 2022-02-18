@@ -8,7 +8,7 @@ cover: https://tva4.sinaimg.cn/mw690/006wuklaly1gjqead7pd4j31hc0u07e9.jpg
 > 本 DEMO 使用高德最新`JS API 2.0`版本，使用 NPM 方式使用 Loader
 
 ## 安装
-```bash
+```Bash
 yarn add @amap/amap-jsapi-loader --save
 ```
 

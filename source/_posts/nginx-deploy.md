@@ -79,7 +79,7 @@ server {
 
 ### Nginx基本命令
 
-```bash
+```Bash
 nginx -s reload     # 优雅重启，并重新载入配置文件nginx.conf
 nginx -s quit       # 优雅停止nginx，有连接时会等连接请求完成再杀死worker进程
 nginx -t            # 检查nginx的配置文件

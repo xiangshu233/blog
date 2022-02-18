@@ -1,5 +1,5 @@
 ---
-robots: 'index,nofollow'
+robots: noindex,nofollow
 menu_id: more
 seo_title: 关于
 sidebar: [welcome, toc]
@@ -13,13 +13,13 @@ header: false
 
 {% about avatar:https://cdn.jsdelivr.net/gh/xiangshu233/cdn@2.8/img/custom/touxiang.jpg height:80px %}
 
-<img height="80px" alt="离鸣" src="./../logo.png">
+<h2>Maybe we Have a Cup of Coffee or Something</h2>
 
 **你患得患失太在意从前又太担心将来，有句话说的好，昨天是段历史，明天是个谜团，而今天是天赐的礼物，像珍惜礼物那样珍惜今天**
 
 
 
-{% navbar [文章](/) [项目](/wiki/) [GitHub](https://github.com/xiangshu233) [朋友](/friends/) [留言](#comments) %}
+{% navbar [文章](/) [便签](/notes/) [朋友](/friends/) [留言](#comments) %}
 
 {% endabout %}
 
@@ -30,7 +30,7 @@ header: false
 
 <!-- node 2022年1月  -->
 
-博客鸽了几个月，最近终于捡起来了，打算换个简约的主题，{% del 自己写主题是不可能的（我不会啊） %}，直到前段时间发现了[Stellar](https://xaoxuu.com/wiki/stellar/)，完美符合我的需求。特别认同作者的设计理念 “真正的简约远不止删繁就简，而是在纷繁中建立秩序” {% emoji aru 0510 height:2em %} ，用久了花哨的主题，越来越喜欢这种主题了{% emoji aru 3011 height:2em %}，真的是应了机圈那句话 “愿你玩机半生，归来仍是默认”
+博客鸽了几个月，最近终于捡起来了，打算换个简约的主题，{% del 自己写主题是不可能的（我不会啊） %}，直到前段时间发现了[Stellar](https://xaoxuu.com/wiki/stellar/)，完美符合我的需求。特别认同作者的设计理念 “真正的简约远不止删繁就简，而是在纷繁中建立秩序” {% emoji aru 0510 height:2em %} ，用久了花哨的主题，越来越喜欢这种主题了{% emoji aru 3011 height:2em %}，应了机圈那句话 “愿你玩机半生，归来仍是默认”
 
 
 <!-- node 2021年2月 -->

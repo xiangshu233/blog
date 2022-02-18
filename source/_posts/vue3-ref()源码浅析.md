@@ -144,9 +144,9 @@ console.log('obj2', obj2);	// obj2 {name: 'alice', age: 18}
 
 此时原始值存放在 `this._rawValue` 属性中
 
-:::warning
-  注意：如果给 `toRaw()` 传入普通对象，那它就原样返回这个普通对象，不做任何加工处理
-:::
+{%note color:yellow 注意：
+  如果给 `toRaw()` 传入普通对象，那它就原样返回这个普通对象，不做任何加工处理
+%}
 
 ```ts
 this._value = _shallow ? value : toReactive(value)

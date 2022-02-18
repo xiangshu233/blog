@@ -84,7 +84,7 @@ Git 提供了一个叫做 `git config` 的工具，专门用来配置或读取�
 
 ### 用户信息
 
-```bash
+```Bash
 $ git config --global user.name xaoxuu
 $ git config --global user.email git@xaoxuu.com
 ```
@@ -94,7 +94,7 @@ $ git config --global user.email git@xaoxuu.com
 
 ### 查看配置信息
 
-```bash
+```Bash
 $ git config --list
 http.postbuffer=2M
 user.name=xaoxuu

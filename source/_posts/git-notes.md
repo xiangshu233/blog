@@ -13,7 +13,7 @@ references:
 
 查看本地状态
 
-```bash
+```Bash
 git status
 ```
 
@@ -21,20 +21,20 @@ git status
 
 `git add`把文件添加进去，实际上就是把文件修改添加到暂存区
 
-```bash
+```Bash
 git add .		# 提交所有
 git add src/	# 提交src下的文件
 ```
 
 `git commit` 提交更改，实际上就是把暂存区的所有内容提交到当前分支
 
-```bash
+```Bash
 git commit -m "测试提交"
 ```
 
 `git push`把文件推送到远程库
 
-```bash
+```Bash
 git push
 ```
 
@@ -44,7 +44,7 @@ git push
 
 Git 中HEAD表示当前版本，上一个版本就是 `HEAD^`，上上一个版本就是 `HEAD^^`，当然往上100个版本写100个 `^` 比较容易数不过来，所以写成 `HEAD~100`。
 
-```bash
+```Bash
 git reset --hard HEAD^
 ```
 
@@ -63,13 +63,13 @@ git log命令显示从最近到最远的提交日志
 
 退出 ：q
 
-```bash
+```Bash
 git log
 ```
 
 如果嫌输出信息太多，看得眼花缭乱的，可以试试加上 `--pretty=oneline` 参数
 
-```bash
+```Bash
 git log --pretty=oneline
 ```
 
@@ -143,7 +143,7 @@ git log --pretty=oneline
 
 {% note color:yellow 这里有个区别，工作区修改了但是未加入暂存区的使用 `git status` 查看文件状态是红色的，加入暂存区未提交的状态是绿色的 %}
 
-```bash
+```Bash
 git restore config/dev.env.js
 ```
 
@@ -167,7 +167,7 @@ git restore config/dev.env.js
 
 一般情况下在工作区你直接把没用的文件删除了或者使用`rm`命令删了：
 
-```bash
+```Bash
 rm test.txt
 ```
 
@@ -179,7 +179,7 @@ rm test.txt
 
 或者使用 `git restore <file>` 撤销更改
 
-```bash
+```Bash
 git rm test.txt
 
 git commit -m "删除测试文件"
@@ -193,7 +193,7 @@ git commit -m "删除测试文件"
 
 ### 查看分支
 
-```bash
+```Bash
 git branch
 ```
 
@@ -201,7 +201,7 @@ git branch
 
 创建 `dev` 分支，并切换到 `dev` 分支上
 
-```bash
+```Bash
 git checkout -b dev
 # 新版本使用 switch 切换
 
@@ -211,7 +211,7 @@ git switch -b dev
 
 `git checkout` 命令加上 `-b` 参数表示创建并切换，相当于以下两条命令：
 
-```bash
+```Bash
 $ git branch dev		# 创建分支
 
 $ git checkout dev		# 切换分支
@@ -225,7 +225,7 @@ Switched to branch 'dev'
 
 首先切换到 `master` 分支
 
-```bash
+```Bash
 git checkout master
 ```
 
@@ -233,7 +233,7 @@ git checkout master
 
 如果多人开发的话需要 `git pull` 一下
 
-```bash
+```Bash
 git merge dev
 ```
 
@@ -241,7 +241,7 @@ git merge dev
 
 删除本地分支
 
-```bash
+```Bash
 git branch -d dev
 ```
 
@@ -257,7 +257,7 @@ git branch -r -d origin/branch-name
 
 可以利用 `git checkout --track origin/branch_name` ，这时本地会新建一个分支名叫 `branch_name` ，会自动跟踪远程的同名分支 `branch_name`。
 
-```bash
+```Bash
 git checkout --track origin/branch_name
 ```
 
@@ -267,25 +267,25 @@ git checkout --track origin/branch_name
 
 这时候 `push` 和 `pull` 指令就无法确定该跟踪谁，一般来说我们都会使其跟踪远程同名分支，所以可以利用 `git push --set-upstream origin branch_name`，这样就可以自动在远程创建一个 `branch_name` 分支，然后本地分支会（跟踪）`track` 该分支。后面再对该分支使用 `push` 和 `pull` 就自动同步。
 
-```bash
+```Bash
 git push --set-upstream origin branch_name
 ```
 
 ## 场景1：新建本地仓库，需要关联远程仓库
 
-```bash
+```Bash
 git init
 ```
 
 关联远程远程仓库 `git remote add origin XXXX`
 
-```bash
+```Bash
 git remote add origin http://192.168.1.66:8088/robot_admin_system/browser_server/uo_vue_frontend.git
 ```
 
 关联后使用 `git remote -v` 来查看是否关联成功
 
-```bash
+```Bash
  git remote -v
 ```
 
@@ -293,19 +293,19 @@ git remote add origin http://192.168.1.66:8088/robot_admin_system/browser_server
 
 此时 `pull` 下来的是远程库的所有分支
 
-```bash
+```Bash
 git pull
 ```
 
 使用 `git branch` 并不会显示分支，其实已经下载下来了，需要手动 `checkout` 到分支
 
-```bash
+```Bash
 git checkout master
 ```
 
 再 `git branch` 就显示本地分支了
 
-```bash
+```Bash
 git branch
 ```
 
@@ -313,7 +313,7 @@ git branch
 
 显示远程分支
 
-```bash
+```Bash
 git branch -a
 ```
 
@@ -323,7 +323,7 @@ git branch -a
 
 删除远程关联
 
-```bash
+```Bash
 git remote rm origin
 ```
 
@@ -336,7 +336,7 @@ git remote rm origin
 
 继续场景一第一步即可
 
-```bash
+```Bash
 git remote add origin xxxxx
 ```
 

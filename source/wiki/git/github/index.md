@@ -16,7 +16,7 @@ order: 4
 
 打开 terminal 输入下面的命令生成 `id_rsa` 和 `id_rsa.pub` 文件：
 
-```bash
+```Bash
 ssh-keygen -t rsa -C me@xxx.com
 ```
 

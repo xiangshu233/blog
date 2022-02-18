@@ -264,7 +264,7 @@ data() {
 
 安装高德
 
-```bash
+```Bash
 yarn add @amap/amap-jsapi-loader --save
 ```
 

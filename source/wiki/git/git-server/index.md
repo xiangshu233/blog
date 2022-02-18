@@ -29,7 +29,7 @@ server.httpPort = 7070
 ### 启动服务
 
 在终端中执行 `gitblit.sh` 脚本即可启动服务：
-```bash
+```Bash
 ./gitblit.sh
 ```
 

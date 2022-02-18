@@ -225,10 +225,10 @@ git checkout 1.0
 
 把标签 push 到远程
 
-```bash push指定的tag
+```Bash push指定的tag
 git push origin 1.0
 ```
-```bash push所有未push的tag
+```Bash push所有未push的tag
 git push --tags
 ```
 

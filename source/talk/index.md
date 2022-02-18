@@ -1,10 +1,10 @@
 ---
-robots: 'index,nofollow'
+robots: noindex,nofollow
 sitemap: false
-menu_id: shuoshuo
+menu_id: talk
 seo_title	: 碎碎念
 sidebar: [welcome]
-comment_title: 你也是来看我emo的吗
+title: I want to say!
 comment_id: '碎碎念'
 comments: true
 breadcrumb: false

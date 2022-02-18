@@ -117,7 +117,7 @@ Lint 工具对工程师来说到底是代码质量的保证还是一种束缚？
 
 使用 `vue create` 命令快速搭建新项目的脚手架 `demo` 是项目名称
 
-```bash
+```Bash
 E:\my-project>vue create demo
 ```
 
@@ -341,7 +341,7 @@ rules: {
 如果搭建项目时没有选用 Prettier，需要手动安装
 
 1、安装 prettier
-```bash
+```Bash
 yarn add --dev prettier eslint-config-prettier eslint-plugin-prettier
 ```
 
@@ -395,7 +395,7 @@ extends: [
 
 1、安装
 
-```bash
+```Bash
 yarn add --dev stylelint stylelint-scss stylelint-config-standard-scss stylelint-config-prettier
 ```
 
