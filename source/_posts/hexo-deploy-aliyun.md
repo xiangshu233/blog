@@ -154,8 +154,8 @@ vim ~/.ssh/authorized_keys
 之后修改 `authorized_keys`  文件权限和 `.ssh`  文件夹的权限
 
 ```Bash
-chmod 600 .ssh/authorized_keys
-chmod 700 .ssh
+chmod 600 ~/.ssh/authorized_keys
+chmod 700 ~/.ssh
 ```
 
 ## 测试 Git 连接
@@ -196,9 +196,10 @@ chown git:git -R hexo.git
 ```
 
 ![img](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@ed09e6e879efd887a7e9c0792f503264fd223dc9/2020/10/14/31f3df62fdaccb7d0bc9afac8b595b0d.png)
-
+{% note color:yellow 注意 这里必须在 git 用户下用指令创建，不能用其他用户或宝塔面板创建 %}
 使用 git-hooks
 使用 `post-receive` 钩子，当 `git` 有收发的时候就会调用这个钩子
+
 
 ```Bash
 vim ~/hexo.git/hooks/post-receive
@@ -215,13 +216,12 @@ git --work-tree=/www/wwwroot/hexo_blog --git-dir=/home/git/hexo.git checkout -f
 
 ```Bash
 cd /home/git/hexo.git/hooks
-chmod +x post-receiv
+chmod +x post-receive
 ```
 {%note color:yellow 注意：  确保 `hexo.git .ssh hexo_blog` 目录的用户组权限为 `git:git`，若不是，执行下列命令：
 ```Bash
 chown -R git.git /home/git/hexo.git/
 chown -R git.git /home/git/.ssh/
-chown -R git.git /www/wwwroot/hexo_blog/
 ```
 %}
 

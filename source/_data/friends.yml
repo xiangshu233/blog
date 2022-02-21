@@ -1,15 +1,16 @@
 group1:
-  - title: 测试
-    avatar: https://7.dusays.com/2021/01/30/9c783e50f597a.jpg
-    url: https://www.yinhanlei.com/
-    screenshot: https://7.dusays.com/2021/01/30/df2dc76fce132.png
-    description: 技术和生活的记录空间
+  - title: 優萌初華
+    avatar: https://cdn.jsdelivr.net/gh/amehime/shoka@latest/images/avatar.jpg
+    url: https://shoka.lostyu.me
+    screenshot: https://image.thum.io/get/https://shoka.lostyu.me
+    description: 琉璃的医学 & 编程笔记
 
-  - title: Justin Yang
-    avatar: https://7.dusays.com/2021/01/30/b8df98577d013.jpg
-    url: https://lifestyle1.cn/
-    screenshot: https://7.dusays.com/2021/01/30/a31fc2901f301.png
-    description: https://lifestyle1.cn/
+  - title: XAOXUU
+    avatar: https://cdn.jsdelivr.net/gh/cdn-x/xaoxuu/avatar/rect-256@2x.png
+    url: https://xaoxuu.com
+    screenshot: https://i.loli.net/2020/08/21/VuSwWZ1xAeUHEBC.jpg
+    description: ''
+
 
 group2:
   api: https://issues-api.vercel.app

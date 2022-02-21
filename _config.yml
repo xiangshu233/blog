@@ -109,7 +109,9 @@ theme: stellar
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: git@49.232.4.66:/home/git/my_blog.git    # git@ip:/服务器仓库路径
+  branch: master      # 分支
 
 
 inject:

@@ -11,12 +11,15 @@ breadcrumb: false
 header: false
 ---
 
+## 大佬
+{% friends only:group1 %}
+
+
 ## 海内存知己 天涯若比邻
-感谢人生旅途中的每一份真挚的友谊，按结识先后顺序： {% friends only:group1 %}
+感谢人生旅途中的每一份真挚的友谊：{% friends only:group2 %}
 
 
-## 来自 GitHub 的朋友
-以下友链通过 [GitHub Issue](https://github.com/xiangshu233/friends/issues/) 提交： {% friends only:group2 %}
+
 
 {% noteblock color:yellow 友链更新通知 %}
 
@@ -44,6 +47,7 @@ header: false
 为了提高图片加载速度，建议优化头像：
 1. 打开 [压缩图](https://www.yasuotu.com/) 上传自己的头像，将图片尺寸调整到 `96px` 后下载。
 2. 将压缩后的图片上传到 [去不图床](https://7bu.top/) 并使用此图片链接作为头像。
+3. 网站缩略图可以去 [thum](https://www.thum.io/) 输入自己的站点地址即可返回外链。
 
 <!-- node 第二步：添加友链并等待管理员审核 -->
 
@@ -54,7 +58,7 @@ header: false
 title: 乡树
 avatar: https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@0.2/assets/images/avatar-1.jpg
 url: https://xiangshu233.cn
-screenshot: https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@2c5d6f150e54fa23a1b3c4a9f990f12af46d464a/2022/02/17/ac056b4d9b8c2a3336774012deb5af2e.png
+screenshot: https://image.thum.io/get/https://www.xiangshu233.cn
 description: 随知修行乃当务之急，然怠惰度日至今
 {% endcodeblock %}
 
