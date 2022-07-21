@@ -1,5 +1,6 @@
 ---
 date: 2021-08-24
+updated: 2022-03-04
 title: typeScript 中的 ! ?
 categories: [typeScript]
 tags: [typeScript]
@@ -48,6 +49,30 @@ references:
   console.log('demo----->', demo({ x: 2 })); // demo-----> 2
 }
 ```
+### 成员
+```ts
+// 因为接口 B 里面 name 被定义为可空的值，但是实际情况是不为空的，那么我们就可以
+// 通过在 class 里面使用 ！，重新强调了 name 这个不为空值
+class A implemented B {
+  name!: string
+}
+
+interface B {
+  name?: string
+}
+```
+
+### 强制链式调用(断言)
+
+```ts
+// 这里 Error对象定义的stack是可选参数，如果这样写的话编译器会提示
+// 出错 TS2532: Object is possibly 'undefined'.
+new Error().stack.split('\n');
+
+// 我们确信这个字段100%出现，那么就可以添加！，强调这个字段一定存在
+new Error().stack!.split('\n');
+```
+
 
 ## ? 用法
 
@@ -62,6 +87,7 @@ references:
   // 表示当 a 有值的时候才去访问 b 属性，没有值的时候就不去访问，如果不使用 ? 则会报错
 }
 ```
+
 
 ```ts
 {
@@ -86,7 +112,7 @@ references:
 }
 ```
 
-## 示例
+### 示例
 
 ```ts
 {
@@ -122,4 +148,4 @@ references:
 
 ## 结语
 
-> 永远不要相信苦难是值得的,苦难就是苦难,苦难不会带来成功,苦难不值得追求,磨炼意志是因为苦难无法躲开
+> 永远不要相信苦难是值得的，苦难就是苦难，苦难不会带来成功，苦难不值得追求，磨炼意志是因为苦难无法躲开

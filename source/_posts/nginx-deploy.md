@@ -155,7 +155,7 @@ location /edts{
 
 静态资源代理
 
-```yml
+```nginx
 # 配置如下
 location / {
     root 'D:/Program Files/nginx-1.18.0/html/dist';   #静态资源路径

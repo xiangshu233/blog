@@ -109,6 +109,3 @@ let fileName = response.headers['content-disposition'].split(";")[1].split("file
 	fileName = decodeURI(fileName);	// 解码
 ```
 总结完毕！
-
-## 结语
->在狂热思绪下喊出的爱情宣言中，存在着爱情的实体

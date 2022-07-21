@@ -4,6 +4,12 @@ sidebar:
     wiki: '[项目](/wiki/)'
     talk: '[动态](/talk/)'
     more: '[更多](/about/)'
+  widgets:
+    # Recent update
+    recent:
+      layout: recent
+      rss:  /atom.xml # npm i hexo-generator-feed
+      limit: 5 # Count of posts
 
 # 一款基于 GitHub issues 的开源评论插件
 comments:

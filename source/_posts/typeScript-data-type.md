@@ -1,5 +1,6 @@
 ---
 date: 2021-08-11
+updated: 2022-07-19
 title: typeScript 数据类型笔记
 categories: [typeScript]
 tags: [超集, typeScript]
@@ -7,7 +8,7 @@ cover: https://tva4.sinaimg.cn/mw690/006wuklaly1gjrf2170u8j31xs0u0kiq.jpg
 ---
 
 
-## 数据类型 | 元组
+## 元组(tuple)
 
 - 概念：就是一个规定了元素数量和每个元素类型的“数组”，而每个元素的类型，可以不相同
 - 语法：
@@ -15,9 +16,16 @@ cover: https://tva4.sinaimg.cn/mw690/006wuklaly1gjrf2170u8j31xs0u0kiq.jpg
 ```typescript
 // let 元组名: [类型1, 类型2, 类型3] = [值1, 值2, 值3];
 let tup1: [string, number, boolean] = ['哈哈~~', 18, true];
+
+// 只能输入两个，超出即报错
+const tupleType: [string, number] = ['爱丽丝', 18]
+
+// error: 不能将类型“[string, number, string]”分配给类型“[string, number]”
+// 源具有 3 个元素，但目标仅允许 2 个
+const tupleType2: [string, number] = ['爱丽丝', 18, 'alice']
 ```
 
-## 数据类型 | 枚举
+## 枚举
 
 - 问题：性别标识
 
@@ -69,7 +77,7 @@ enum GunType {
 }
 ```
 
-## 数据类型 | void
+## void
 
 - 概念：void 代表没有类型，一般用在无返回值函数
 - 语法
@@ -87,7 +95,7 @@ function sayHi1(): void {
 sayHi2();
 ```
 
-## 数据类型 | 联合类型
+## 联合类型
 
 - 概念 ：表示取值可以为多种类型中的一种
 
@@ -106,7 +114,7 @@ let dName: string | null  = prompt('请输入小狗狗名字');
 console.log('hello + dName');
 ```
 
-## 数据类型 | 返回值和参数
+## 返回值和参数
 
 ```typescript
 // 函数 返回值类型
@@ -130,7 +138,7 @@ from('加拿大');
 
 - 函数必须定义 **返回值类型**，如果没有返回值， 则定义返回值类型为 **void**
 
-## 数据类型 | 可选参数
+## 可选参数
 
 - 函数 可选参数
 
@@ -150,7 +158,7 @@ from('加拿大');
 
   不传参 	函数名(实参值);
 
-## 数据类型 | 默认值
+## 默认值
 
 - 函数 默认值  			~~形参1?: 类型 = 默认值1~~ 		带默认值的参数，本身也是可选参数
 
@@ -159,16 +167,96 @@ function test(city: string = '加拿大', phone: number = 1): String {
   return 'yes'
 }
 ```
-
 - 调用
 
   ![image-20210412181303380](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@73daabe41c6f2315a159e6e9e09d252806d0d8b7/2021/04/12/4ac173037b41d6f89368591d84cac8f1.png)
+
+## as 类型断言
+
+直白的说就是我确定肯定一定知道它是个什么类型，不需要 ts 帮我检查
+
+```typescript
+// “尖括号” 语法
+let someValue: any = "this is a string";
+let strLength: number = (<string>someValue).length;
+
+// as 语法
+let someValue2: any = "this is a string";
+let strLength2: number = (someValue2 as string).length;
+```
+
+## ! 非空断言操作符
+
+ `!` 可以用于断言操作对象是非 null 和非 undefined 类型。具体而言，a! 将从 a 值域中排除 null 和 undefined
+ 我的建议是 慎用，使用 `!` 即告诉 ts 我的值绝不肯能为空，当然我们要为自己的行为负责，如果欺骗 ts 导致 NPE（Null Pointer Exception）那就不是 ts 的锅了。
+
+```typescript
+const a: number | null | undefined = undefined;
+const b: number = a; // Error 不能将类型“undefined”分配给类型“number”。ts(2322)
+console.log(b);
+
+// ok
+const c: number = a!;
+```
+
+## .? 可选链运算符
+可选链说白了就是我们编写代码时如果遇到 null 或 undefined 就可以立即停止某些表达式的运行（防御性编程）。可选链的核心是新的 `?.` 运算符，它支持以下语法：
+
+```typescript
+obj?.prop
+obj?.[expr]
+arr?.[index]
+func?.(args)
+```
+
+```typescript
+// 示例
+const val = a?.b;
+
+function tryGetArrayElement<T>(arr?: T[], index: number = 0) {
+  return arr?.[index];
+}
+
+let result = obj.customMethod?.();
+```
+
+## ?? 空值合并运算符
+当左侧操作数为 null 或 undefined 时，其返回右侧的操作数，否则返回左侧的操作数
+
+```typescript
+const foo = null ?? 'default string';
+console.log(foo); // 输出："default string"
+
+const baz = 0 ?? 42;
+console.log(baz); // 输出：0
+```
+`??` 与逻辑或 `||` 运算符不同，逻辑或 `||` 会在左操作数为 false 值时返回右侧操作数，如果你使用 || 来为某些变量设置默认的值时，你可能会遇到意料之外的行为。比如为 false 值（''、NaN 或 0）时
+```typescript
+const compProps = props.column?.editComponentProps ?? {};
+const editComponent = props.column?.editComponent ?? null;
+```
+
+`??` 不能与 `&&` 或 `||` 操作符共用
+
+```typescript
+// 不能在不使用括号的情况下混用 "||" 和 "??" 操作。ts(5076)
+const a = null || undefined ?? "foo";
+
+// ok 要使用括号表格优先级
+const a = (null || undefined) ?? 'foo';
+```
+也算是防御性编程一种吧
+
+
+
+
+
 
 ## Record
 
 Record 用于定义一个对象的键值对
 
-```ts
+```typescript
 interface PageInfo {
   title: string;
 }

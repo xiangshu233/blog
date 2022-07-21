@@ -252,4 +252,4 @@ hexo d				# 发布到远程仓库
 ![img](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@68f90aae9839926fdd8a6dd797fb2b8a5a9f5864/2020/10/14/e5b7928a6ec6e83d5f88797e175da7ae.png)
 
 # 结语
-> 「回首前尘，尽是可耻的过往 。」———— 太宰治
+> 回首前尘，尽是可耻的过往

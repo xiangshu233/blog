@@ -17,32 +17,22 @@ header: false
 
 **你患得患失太在意从前又太担心将来，有句话说的好，昨天是段历史，明天是个谜团，而今天是天赐的礼物，像珍惜礼物那样珍惜今天**
 
-
-
 {% navbar [文章](/) [便签](/notes/) [朋友](/friends/) [留言](#comments) %}
 
 {% endabout %}
 
-## 建站历程
 
 
-{% timeline %}
+## 我
+- [乡树](https://www.16personalities.com/profiles/adf14902911ea)♒️
+- 25岁废柴
+- [洁癖患者](https://b23.tv/NnaTV5)
+- 整天做梦的咸鱼
+- 强迫症晚期
+- 会做饭洗衣打扫卫生 !!欢迎富婆联系我!!
+- 二次元死宅
+- 三分钟爱好😅
 
-<!-- node 2022年1月  -->
-
-博客鸽了几个月，最近终于捡起来了，打算换个简约的主题，{% del 自己写主题是不可能的（我不会啊） %}，直到前段时间发现了[Stellar](https://xaoxuu.com/wiki/stellar/)，完美符合我的需求。特别认同作者的设计理念 “真正的简约远不止删繁就简，而是在纷繁中建立秩序” {% emoji aru 0510 height:2em %} ，用久了花哨的主题，越来越喜欢这种主题了{% emoji aru 3011 height:2em %}，应了机圈那句话 “愿你玩机半生，归来仍是默认”
-
-
-<!-- node 2021年2月 -->
-
-第二个主题：[Shoka](https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/)，同样很二次元，比[sakura](https://github.com/honjun/hexo-theme-sakura)更加精致，喜欢了很长一段时间，后来发现一些问题：动效过多、加载时间过长，但是一直懒得弄 {% emoji aru 0500 height:2em %}
-
-
-<!-- node 2019年6月 -->
-
-了解并入坑 Hexo 开始主题折腾之旅，第一个博客主题：[sakura](https://github.com/honjun/hexo-theme-sakura)，因为喜欢二次元，把所有动漫的元素都加了进去。{% del 正经文章没出多少，花里胡哨的东西倒是一堆 %} {% emoji aru 0190 height:2em %}
-
-{% endtimeline %}
 
 ## 兴趣爱好
 
@@ -77,5 +67,15 @@ header: false
 
 ## 关于本站
 
-是的，我还没想好怎么写
+- 2019年7月30日入坑
+- 2020年10月14日重建完毕上线
+- 2022年2月20日重建完毕上线
+- 年更系列 !!懒狗本我!!
+- 又叒叕换了新主题，重新激发了我水文章的乐趣，不知道能持续多久
+- 部署在腾讯云
+- 全站 https
+- 欢迎和我交换[友链](https://xiangshu233.cn/friends/)
 
+## 交流
+
+虽然平时不怎么喜欢和不熟的人说话~~主要是怕自己说些莫名其妙的东西出来~~，但在网络上还是很喜欢和人聊天的，所以欢迎来找我闲聊，另外，请不要发表无意义评论
