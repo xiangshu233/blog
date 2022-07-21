@@ -217,7 +217,7 @@ rePaintFlag 默认为 true，则点击编辑回显绘制线路的时候执行 re
 %}
 
 ## 效果图
-![](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@23a344d00588f4bde766ccc7410616e7100907ce/2020/10/13/45973bbd1c8789e797b642f7183bea97.png)
+![](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@23a344d00588f4bde766ccc7410616e7100907ce/2020/10/13/45973bbd1c8789e797b642f7183bea97.png)
 
 ## 提交后台
 后台接收字段值为字符串，父组件里点击保存按钮执行 `saveData()`
@@ -290,7 +290,7 @@ coordinate.slice(0, (coordinate.length - 1)).split(';')
 `coordinate` 分割后的数据结构
 
 
-{% image https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@0cd5b79a0a4e0cc9e753149093ddbff69a1de951/2020/10/13/61fe49f494adfcf8f6ba129aaee79f9a.png %}
+{% image https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@0cd5b79a0a4e0cc9e753149093ddbff69a1de951/2020/10/13/61fe49f494adfcf8f6ba129aaee79f9a.png %}
 
 遍历分割后的数组，利用 `数组解构` 以逗号分割 `每个元素` 复制 `x y` 并返回到 `this.allDotsXY` 数组中
 ```js
@@ -302,7 +302,7 @@ this.allDotsXY = coordinate.map((item) => {
 ```
 `this.allDotsXY` 处理好的数据结构
 
-{% image https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@4bd665b3d866b1b7ea16e3211cb5c7d05784af21/2020/10/13/bb3c9b389fa0f2f7dc664bc22dc77c2c.png %}
+{% image https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@4bd665b3d866b1b7ea16e3211cb5c7d05784af21/2020/10/13/bb3c9b389fa0f2f7dc664bc22dc77c2c.png %}
 
 最后根据 `this.allDotsX` 构造 `this.allLinesXY` 数据模型
 ```js
@@ -325,7 +325,7 @@ for (const [index, dot] of this.allDotsXY.entries()) {
 ```
 最终 `this.allLinesXY` 数据模型构造完毕，回到开始数据驱动模型，`数据存在则视图就会更新`，整个回显完全不需要关注视图层，只需要构建数据模型
 
-{% image https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@f21e0b33e416a6d206e55bc9328681676167fc0e/2020/10/13/460b9c1c7ab83357809dfa41be81b9ff.png %}
+{% image https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@f21e0b33e416a6d206e55bc9328681676167fc0e/2020/10/13/460b9c1c7ab83357809dfa41be81b9ff.png %}
 
 `showPassLine` 函数完整代码
 ```js

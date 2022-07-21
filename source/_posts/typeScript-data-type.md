@@ -29,7 +29,7 @@ const tupleType2: [string, number] = ['爱丽丝', 18, 'alice']
 
 - 问题：性别标识
 
-![image-20210412165525442](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@0522e4baf08a27929b93006d258e0b6e7aea9d96/2021/04/12/564e9b115f76a6bb19eda8c2bc6dfafe.png)
+![image-20210412165525442](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@0522e4baf08a27929b93006d258e0b6e7aea9d96/2021/04/12/564e9b115f76a6bb19eda8c2bc6dfafe.png)
 
 - 声明语法
 
@@ -105,7 +105,7 @@ sayHi2();
 
 - 接收 **prompt()** 函数的返回值
 
-<img src="https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@4150b8bd7bc0cf3125155eba466500f5bffab5f3/2021/04/12/1d1a9b90785d182f93dbd91219d6121d.png" alt="image-20210412173113138" style="zoom:200%;" />
+<img src="https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@4150b8bd7bc0cf3125155eba466500f5bffab5f3/2021/04/12/1d1a9b90785d182f93dbd91219d6121d.png" alt="image-20210412173113138" style="zoom:200%;" />
 
 - 要么是**字符串**要么是**null**，这个时候就可以用联合类型
 
@@ -134,7 +134,7 @@ from('加拿大');
 //from(); // 报错没传参
 ```
 
-![image-20210412175333783](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@db130433d034dff1b65285d734d4ca02c29cbbfc/2021/04/12/132c762e1154d7b27301691520c8cfd9.png)
+![image-20210412175333783](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@db130433d034dff1b65285d734d4ca02c29cbbfc/2021/04/12/132c762e1154d7b27301691520c8cfd9.png)
 
 - 函数必须定义 **返回值类型**，如果没有返回值， 则定义返回值类型为 **void**
 
@@ -169,7 +169,7 @@ function test(city: string = '加拿大', phone: number = 1): String {
 ```
 - 调用
 
-  ![image-20210412181303380](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@73daabe41c6f2315a159e6e9e09d252806d0d8b7/2021/04/12/4ac173037b41d6f89368591d84cac8f1.png)
+  ![image-20210412181303380](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@73daabe41c6f2315a159e6e9e09d252806d0d8b7/2021/04/12/4ac173037b41d6f89368591d84cac8f1.png)
 
 ## as 类型断言
 

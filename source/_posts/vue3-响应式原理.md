@@ -130,7 +130,7 @@ const proxyUser = new Proxy(user, handler)
 console.log('proxyUser.name: ', proxyUser.name);  // alice
 ```
 
-![](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@287733c8d7d836fb2bc1b0283de2ff77d3743ff4/2021/10/15/867d13de5cd55d631f7ce6f514d19dd4.png)
+![](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@287733c8d7d836fb2bc1b0283de2ff77d3743ff4/2021/10/15/867d13de5cd55d631f7ce6f514d19dd4.png)
 
 测试结果显示成功获取到了`proxyUser.name`属性
 
@@ -140,7 +140,7 @@ console.log('proxyUser.name: ', proxyUser.name);  // alice
 console.log('proxyUser.realName.firstName: ', proxyUser.realName.firstName); // ren
 ```
 
-![image-20211015150020974](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@94dab9752348b002beb097cc93362c7a4e0e4321/2021/10/15/dc45884e807f7391d43d234d43cbce02.png)
+![image-20211015150020974](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@94dab9752348b002beb097cc93362c7a4e0e4321/2021/10/15/dc45884e807f7391d43d234d43cbce02.png)
 
 测试结果显示成功获取到了`proxyUser.realName.firstNamename`属性，为什么执行了两遍？
 
@@ -165,7 +165,7 @@ proxyUser.name = 'xiaoming'
 console.log(proxyUser.name);	// xiaoming
 ```
 
-![image-20211015151652067](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@53bd62694f902447d30e34e71255991fcbd05602/2021/10/15/8aa21b4e2af7d080a77d416c16618b19.png)
+![image-20211015151652067](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@53bd62694f902447d30e34e71255991fcbd05602/2021/10/15/8aa21b4e2af7d080a77d416c16618b19.png)
 
 
 
@@ -178,7 +178,7 @@ proxyUser.realName.lastName = 'xiazhi'
 console.log(proxyUser.realName);  // Proxy {firstName: 'yan', lastName: 'xiazhi'}
 ```
 
-![image-20211015152145776](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@a808238505bd25de3e12d4fd7070e260bfd48f7c/2021/10/15/3ec25e1ba8a7a0e4f7712be467cd264a.png)
+![image-20211015152145776](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@a808238505bd25de3e12d4fd7070e260bfd48f7c/2021/10/15/3ec25e1ba8a7a0e4f7712be467cd264a.png)
 
 新增一个 `gender` 属性
 
@@ -189,7 +189,7 @@ console.log(proxyUser);
 
 ```
 
-![image-20211015154406651](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@85a0621bcc111a3db27ca5155c556ca089300bc5/2021/10/15/93fd4984c6ad987d65449d5dd27c98f1.png)
+![image-20211015154406651](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@85a0621bcc111a3db27ca5155c556ca089300bc5/2021/10/15/93fd4984c6ad987d65449d5dd27c98f1.png)
 
 #### 删除对象属性
 
@@ -198,7 +198,7 @@ delete proxyUser.hobby
 console.log('删除操作', proxyUser);
 ```
 
-![image-20211015154858559](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@48ac8ed4cc04c32e6abae05db64d23eb07acf3bf/2021/10/15/a7c661f99feef633bd6c36c1e3bad1e8.png)
+![image-20211015154858559](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@48ac8ed4cc04c32e6abae05db64d23eb07acf3bf/2021/10/15/a7c661f99feef633bd6c36c1e3bad1e8.png)
 
 测试结果删除成功
 

@@ -27,9 +27,9 @@ import svgLogo from '@/assets/svg/handsome.svg'
 ```Bash
 Vue Create vue-demo
 ```
-![](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@74b3db48b0cd7df9fc783bd2d4b0942e3c488252/2020/10/13/cd804bc58e0bf99106fbdde9ce319ddf.png)
+![](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@74b3db48b0cd7df9fc783bd2d4b0942e3c488252/2020/10/13/cd804bc58e0bf99106fbdde9ce319ddf.png)
 好好好，有话好好说
-![](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@4ddaaeea22658d3d1ad17ceee5d7676e40c56550/2020/10/13/52ba6cc2cfb9e0b03c08320808aa50a0.png)
+![](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@4ddaaeea22658d3d1ad17ceee5d7676e40c56550/2020/10/13/52ba6cc2cfb9e0b03c08320808aa50a0.png)
 
 ## 安装插件
 
@@ -111,7 +111,7 @@ chainWebpack: (config) => {
 ## 创建svg目录
 
 在 `src` 下新建 `icons/svg` 目录，并把需要的 `.svg` 文件放入 `svg` 文件夹内
-![](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@5b15fcc8cbdf79bbad436a5643402e01c1a1a529/2020/10/13/f5a01aeea5805fdf8c189c39c11cecdb.png)
+![](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@5b15fcc8cbdf79bbad436a5643402e01c1a1a529/2020/10/13/f5a01aeea5805fdf8c189c39c11cecdb.png)
 在 `/icons` 目录下新建 `index.js` 放入以下代码
 
 ``` js
@@ -131,7 +131,7 @@ requireAll(req)
 ``` js
 import '@/icons'
 ```
-{% image https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@7ba34ff267df2a55702f5325919d1048746c09d3/2020/10/13/976b85158272c8ebb1d5591e5ba94e64.png %}
+{% image https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@7ba34ff267df2a55702f5325919d1048746c09d3/2020/10/13/976b85158272c8ebb1d5591e5ba94e64.png %}
 
 
 ## 使用

@@ -93,7 +93,7 @@ nginx -t            # 检查nginx的配置文件
 > 2. 客户端了解代理服务器和目标服务器都是谁
 > 3. 帮助客户端突破访问权限，提高访问速度，对目标服务器隐藏客户端的IP
 
-![](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@17d0f9c57cce7dfc4c821bd5d8bcd5106b263640/2020/10/13/af2db8e252ef7897467abbcd617ec717.png)
+![](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@17d0f9c57cce7dfc4c821bd5d8bcd5106b263640/2020/10/13/af2db8e252ef7897467abbcd617ec717.png)
 ### 反向代理就是代理服务器
 
 > 场景举例：10086客服 10086 这个号码相当于是一个代理，真正提供服务的，是话务员，但是对于客户来说，他不关心到底是哪一个话务员提供的服务，他只需要记得 10086 这个号码就行了。
@@ -104,12 +104,12 @@ nginx -t            # 检查nginx的配置文件
 > 2. 客户端是不知道访问的到底是哪一台主机
 > 3. 达到负载均衡，并且可以隐藏服务器真正的 ip 地址
 
-![](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@f17eec300f32465f7ac555a6781fba111b0df7cf/2020/10/13/698d89d3c085959d6a9cce6e9514d1e4.png)
+![](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@f17eec300f32465f7ac555a6781fba111b0df7cf/2020/10/13/698d89d3c085959d6a9cce6e9514d1e4.png)
 
 
 ### Nginx 负载均衡默认三种策略
 
-![](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@87acc222d6fd40156c85a5e99fd21cf2f6ecfc04/2020/10/13/e633539d7ae0265b59f7dfd1290e133d.png)
+![](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@87acc222d6fd40156c85a5e99fd21cf2f6ecfc04/2020/10/13/e633539d7ae0265b59f7dfd1290e133d.png)
 
 > 1. 轮询：
 >
@@ -131,7 +131,7 @@ nginx -t            # 检查nginx的配置文件
 
 客户端发送请求到Nginx（或者Nginx拦截）再由Nginx帮客户端访问服务器然后服务器返回结果给Nginx,Nginx再把结果交给客户端，这就是动态资源经历的过程最少需要四次连接数
 
-![](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@1a10695de855dd2327a5249eceda9b9bbec30218/2020/10/13/8ff6f4333da61a1ca3a97c6da19dd6e2.png)
+![](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@1a10695de855dd2327a5249eceda9b9bbec30218/2020/10/13/8ff6f4333da61a1ca3a97c6da19dd6e2.png)
 
 动态资源代理
 
@@ -151,7 +151,7 @@ location /edts{
 
 假如客户端请求的是一个css/图片，客户端还是发送连接到Nginx，而Nginx不再请求服务器而是在Nginx本地直接找css/图片，如果有直接返回，只需要两个连接数
 
-![](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@186b967c4d78dcd847cb39351334fb2054617373/2020/10/13/2a741f33c298a0b7cae770f85ce55872.png)
+![](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@186b967c4d78dcd847cb39351334fb2054617373/2020/10/13/2a741f33c298a0b7cae770f85ce55872.png)
 
 静态资源代理
 

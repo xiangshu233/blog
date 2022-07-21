@@ -9,7 +9,7 @@ cover: https://tva4.sinaimg.cn/mw690/006wuklaly1gjqe9qcu59j31hc0u0qlr.jpg
 >本次场景需求是查询历史数据返回一组经纬度和相关数据在地图中使用轨迹巡航API巡航，期间的文本框每经过一个坐标其数值就会改变，文章末尾有demo文件，需要自取。
 
 ## 效果图
-![GIF](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@a55cdd251aeefe761465684e8a34fbcf2117752e/2020/11/23/ac1d2c5e8d35574b3a917d900a05cf76.png)
+![GIF](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@a55cdd251aeefe761465684e8a34fbcf2117752e/2020/11/23/ac1d2c5e8d35574b3a917d900a05cf76.png)
 
 
 ## Data
@@ -341,7 +341,7 @@ queryHisData() {
 - `this.getCursor().idx` 返回当前所处的索引位置，即要实现每经过一个坐标点就展示该点的信息数据，有了这个方法就可以用它来充当 `dataList` 的下标来达到我们的需求
 
 
-{% image https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@0eaca61d91353093d6358c7fae7a555c398f30ae/2020/11/23/c495d21a7c6bbbe1a6649435bf1876cb.png %}
+{% image https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@0eaca61d91353093d6358c7fae7a555c398f30ae/2020/11/23/c495d21a7c6bbbe1a6649435bf1876cb.png %}
 
 ```js
 drawNavgtrPath(dataList) {
@@ -427,7 +427,7 @@ drawNavgtrPath(dataList) {
 
 效果图：
 
-![GIF2](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@55ef268881e213eb7c6007ff716500df9b57c199/2020/11/23/61d1465f4a3b5b02042d7765ae143f6b.png)
+![GIF2](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@55ef268881e213eb7c6007ff716500df9b57c199/2020/11/23/61d1465f4a3b5b02042d7765ae143f6b.png)
 
 
 
@@ -443,7 +443,7 @@ computed: {
 },
 ```
 
-{% image https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@b1adaf14bfd9270b3889f8171fbf18147fca14c0/2020/11/23/2ae87310dc5e9267bae3eaaa42ff73f8.png %}
+{% image https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@b1adaf14bfd9270b3889f8171fbf18147fca14c0/2020/11/23/2ae87310dc5e9267bae3eaaa42ff73f8.png %}
 
 
 使用如下方法控制巡航器 `状态` 并绑定在按钮上
@@ -463,7 +463,7 @@ resumeNavgtr() {
 },
 ```
 
-![image-20201123134326693](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@f0ba56b3c99bf7fec7f73088fca0986a5a66e01e/2020/11/23/d837bfabe975e447a93fa44a2f41b15f.png)
+![image-20201123134326693](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@f0ba56b3c99bf7fec7f73088fca0986a5a66e01e/2020/11/23/d837bfabe975e447a93fa44a2f41b15f.png)
 
 开始之前巡航器的状态为 `stop`（停止），这里还有个变量是 `navgtrEnd` 该变量的作用是巡航 `一轮` 结束后让按钮重新显示 `开始巡航` 按钮，因为巡航器巡航完一轮后的状态为 `pause`（暂停）状态。如果 `getNaviStatus == 'stop'` 或者 `navgtrEnd==true` 显示开始按钮，那么具体怎么判断巡航器走完一轮呢？
 

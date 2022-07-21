@@ -3,7 +3,7 @@ date: 2021-01-06
 title: Js 随笔记录
 categories: [javaScript]
 tags: [Js, 笔记]
-cover: https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@c24a79e61ff7cd15b6d1ce8c1f9e4a6b256a73d0/2022/02/15/1847503944e96b962bfeb3fc7b780a22.png
+cover: https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@c24a79e61ff7cd15b6d1ce8c1f9e4a6b256a73d0/2022/02/15/1847503944e96b962bfeb3fc7b780a22.png
 ---
 
 ## 获取当前日期的前后日期
@@ -161,11 +161,11 @@ b = 20;
 console.log(a); // 10
 ```
 
-![img](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@409b7d2647895ae5385d27a6d12c1bce8cd1e36f/2020/10/21/2267397827b1e1ba7fcdc291b66bd8a6.png)
+![img](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@409b7d2647895ae5385d27a6d12c1bce8cd1e36f/2020/10/21/2267397827b1e1ba7fcdc291b66bd8a6.png)
 
 引用类型使之多个值构成的对象，也就是对象类型比如：`Object`、`Array`、`Function`、`Data`等，JS的引用数据类型是存储在`堆`中，也就是说存储的变量处的值是一个`指针（point）`，指向存储对象的内存地址。存在`堆`中的原因是：引用的值的大小会改变，所以不能放在`栈`中，否则会降低变量查询的速度
 
-![img](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@2fb8659ee73c8f52c23708473765df2103ed7d14/2020/10/21/df393656e3fc43c020f259fba9cb9924.png)
+![img](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@2fb8659ee73c8f52c23708473765df2103ed7d14/2020/10/21/df393656e3fc43c020f259fba9cb9924.png)
 
 ```js
 const obj1 = new Object();

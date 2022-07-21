@@ -11,9 +11,9 @@ breadcrumb: false
 header: false
 ---
 
-{% about avatar:https://cdn.jsdelivr.net/gh/xiangshu233/cdn@2.8/img/custom/touxiang.jpg height:80px %}
+{% about avatar:https://fastly.jsdelivr.net/gh/xiangshu233/cdn@2.8/img/custom/touxiang.jpg height:80px %}
 
-<h2>Maybe we Have a Cup of Coffee or Something</h2>
+<h3>Maybe we Have a Cup of Coffee or Something</h3>
 
 **你患得患失太在意从前又太担心将来，有句话说的好，昨天是段历史，明天是个谜团，而今天是天赐的礼物，像珍惜礼物那样珍惜今天**
 

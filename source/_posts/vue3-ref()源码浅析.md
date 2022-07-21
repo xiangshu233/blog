@@ -37,7 +37,7 @@ p_ref.value = 2		// 2
 ```
 
 打印显示：
-![image-20211102155157982](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@7caf64719b2255021d1c3fd06324783ed82c5464/2021/11/02/3a6f3f057054933aee6cf8cc6186f5e9.png)
+![image-20211102155157982](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@7caf64719b2255021d1c3fd06324783ed82c5464/2021/11/02/3a6f3f057054933aee6cf8cc6186f5e9.png)
 
 可以看到经过`ref()`加工后的数据变成了一个**RefImpl**（引用实例对象），该对象作为一个**响应式的引用**维护着它内部的值，这就是`ref（referenced）`名称的来源。它只包含一个名为`value`的`property`（属性），使用时需要加`.value`
 
@@ -73,7 +73,7 @@ export function isRef(r: any): r is Ref {
 ```
 
   >凡是一个 `ref` 对象都应当有 `__v_isRef` 属性，且为 `true` ，它用于 `createRef` 函数判断其是否为 `RefImpl`
-  ![image-20211103092252795](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@8c8045686ff7963402b966075550b72382d71f29/2021/11/03/dffff8209b8af4b91694cc6bafb19a80.png)
+  ![image-20211103092252795](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@8c8045686ff7963402b966075550b72382d71f29/2021/11/03/dffff8209b8af4b91694cc6bafb19a80.png)
 
 
 ### RefImpl 类

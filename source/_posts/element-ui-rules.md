@@ -14,7 +14,7 @@ references:
 `el-form` 表单验证如果字段过多则需要写很多重复的语句显得非常冗余，如采用封装则只需对外暴露 `vxRule()` 方法即可，大大提高了开发效率，该工具类验证规则是可以自行拓展的，满足大部分开发需求
 
 ### 封装前：
-{% noteblock child:codeblock color:red %}
+{% grid color:red %}
 ```js
 form_rules: {
   categoryId: [
@@ -45,10 +45,10 @@ form_rules: {
   ],
   // 等.....
 ```
-{% endnoteblock %}
+{% endgrid %}
 
 ### 封装后：
-{% noteblock child:codeblock color:green %}
+{% grid color:green %}
 ```js
 rules: {
   /**
@@ -70,7 +70,7 @@ rules: {
   end: vxRule(true, "Number"),
   depthA: vxRule(true, "Number"),
 ```
-{% endnoteblock %}
+{% endgrid %}
 
 
 

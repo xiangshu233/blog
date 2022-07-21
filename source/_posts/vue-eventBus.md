@@ -122,9 +122,9 @@ export default {
 ```
 ## 测试
 A组件点击发送！
-![](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@8f483cccf32f1597c09c6a1d83fc8e99527ddc38/2020/10/14/3e0de036d34cc326b3bbb83c95c98ad3.png)
+![](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@8f483cccf32f1597c09c6a1d83fc8e99527ddc38/2020/10/14/3e0de036d34cc326b3bbb83c95c98ad3.png)
 B组件收到A组件的消息
-![](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@95f238243365fc86ef6e971c4fa663989d1a5678/2020/10/14/8b5526d49b7217ebd0086d9e6667bc3c.png)
+![](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@95f238243365fc86ef6e971c4fa663989d1a5678/2020/10/14/8b5526d49b7217ebd0086d9e6667bc3c.png)
 
 ## 单次接收事件或移除所有事件监听
 如果你只想监听一次该事件。可以使用 `bus.$once(event, callback)` 事件触发一次后将移除事件。
@@ -145,11 +145,11 @@ B组件收到A组件的消息
 ```
 [bus.$on(event, callback)]{.label}
 
-![](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@e5e44b74d7ceae57ac0c1e9f0f9840d30ef9b83c/2020/10/14/dd4fb157e7352588875a1d9d3af8e986.png)
+![](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@e5e44b74d7ceae57ac0c1e9f0f9840d30ef9b83c/2020/10/14/dd4fb157e7352588875a1d9d3af8e986.png)
 
 [bus.$once(event, callback)]{.label}
 
-![](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@8b61748bc8369cdf1cc6f6016526efeb019ac882/2020/10/14/b74705f13d8ed12004d602874c13fe18.png)
+![](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@8b61748bc8369cdf1cc6f6016526efeb019ac882/2020/10/14/b74705f13d8ed12004d602874c13fe18.png)
 
 如果你想移除自定义事件监听器，你可以使用 `bus.$off(event, callback)` 来实现。该方法如果没有提供参数，则移除所有的事件监听器；如果只提供事件，则移除该事件所有的监听器；如果同时提供了事件与回调，则只移除这个回调的监听器。
 

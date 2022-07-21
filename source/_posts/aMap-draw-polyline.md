@@ -105,7 +105,7 @@ drawCircleMarker(position) {
 PS：高德提供的API太少了，希望以后推出 `addPath()`
 
 
-{% image https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@0a476179ce09a62dc52cdf3c1f33c9432f77f0bf/2020/11/11/fe66f2174863a2253bbb21eaac29def2.png %}
+{% image https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@0a476179ce09a62dc52cdf3c1f33c9432f77f0bf/2020/11/11/fe66f2174863a2253bbb21eaac29def2.png %}
 
 ```js
 drawPolyline(path) {
@@ -144,7 +144,7 @@ clearMap() {
 ```
 ## 效果图
 
-![GIF](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@300ba388c86219c561684f9a2587f8831bfc1ddd/2020/11/11/347170ba58d7eba26fce38d8ce88634e.png)
+![GIF](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@300ba388c86219c561684f9a2587f8831bfc1ddd/2020/11/11/347170ba58d7eba26fce38d8ce88634e.png)
 
 
 

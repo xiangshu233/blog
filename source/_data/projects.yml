@@ -2,7 +2,7 @@ Git:
   title: Git 实用教程
   tags: 笔记
   logo:
-    src: https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/git/icon.svg
+    src: https://fastly.jsdelivr.net/gh/cdn-x/wiki@1.0.2/git/icon.svg
     small: 96px
     large: 128px
   description: Git 是目前世界上最先进的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。
@@ -14,5 +14,5 @@ hexo.sh:
   tags: 实用脚本
   cover: true
   logo:
-    src: https://cdn.jsdelivr.net/gh/cdn-x/wiki@1.0.2/hexo.sh/screenshot.png
+    src: https://fastly.jsdelivr.net/gh/cdn-x/wiki@1.0.2/hexo.sh/screenshot.png
   description: 此脚本可以很方便执行各种 hexo 命令，开启后会一直保持会话，随时输入简短的命令去执行一系列操作，提高效率。

@@ -32,7 +32,7 @@ references:
 
 上述 HTML 对应的 DOM 节点树如下图所示
 
-![DOM Tree Visualization](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets/20220624160608.png)
+![DOM Tree Visualization](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/20220624160608.png)
 
 **每个元素都是一个节点。**
 
@@ -139,7 +139,7 @@ h(
 
 ## 计数器案例
 
-![](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets/GIF.gif)
+![](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/GIF.gif)
 
 ```html
 <template>
@@ -236,7 +236,7 @@ const root = h('button', {type:'button', onClick: handleClick, class: 'btn btn-p
 
 ## Tag 标签三种写法
 
-![](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets/20220625113159.png)
+![](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/20220625113159.png)
 
 ### template 方式
 

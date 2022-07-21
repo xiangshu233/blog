@@ -3,14 +3,14 @@ date: 2020-4-15
 title: VSCode for Vue 配置 Eslint + Prettier + Stylelint
 categories: [代码检查]
 tags: [代码检查, VSCode]
-cover: https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@364fd0a25c7c2418c14dcd396a08046e0bf949c6/2020/10/14/9175b876604a2d44a9f95ccf48d60f65.png
+cover: https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@364fd0a25c7c2418c14dcd396a08046e0bf949c6/2020/10/14/9175b876604a2d44a9f95ccf48d60f65.png
 ---
 
 ## 简介
 
 ### ESLint
 
->![](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@364fd0a25c7c2418c14dcd396a08046e0bf949c6/2020/10/14/9175b876604a2d44a9f95ccf48d60f65.png)
+>![](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@364fd0a25c7c2418c14dcd396a08046e0bf949c6/2020/10/14/9175b876604a2d44a9f95ccf48d60f65.png)
 >
 > ESLint 由 Nicholas C. Zakas (《JavaScript 高级程序设计》作者) 于2013年6月创建，它的出现因为 Zakas 想使用 JSHint 添加一条自定义的规则，但是发现 JSHint 不支持，于是自己开发了一个。
 >
@@ -38,7 +38,7 @@ cover: https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@364fd0a25c7c2418c14dcd
 
 ### Prettier
 
->![](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@bafd82783e9d1b26d46f2f8b02752ba8d9697dd5/2020/10/14/af119251c0e168a7dbf0ee3b9dbe6362.png)
+>![](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@bafd82783e9d1b26d46f2f8b02752ba8d9697dd5/2020/10/14/af119251c0e168a7dbf0ee3b9dbe6362.png)
 >
 > Prettier的中文意思是“漂亮的、机灵的”，也是一个流行的代码格式化工具的名称，它能够解析代码，使用你自己设定的规则来重新打印出格式规范的代码。
 >
@@ -71,7 +71,7 @@ cover: https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@364fd0a25c7c2418c14dcd
 
 ### Stylelint
 
->![](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@bd2918b2041f7d33c41c2efb59fb37db096b8905/2021/03/05/588ab5ecb7a5c3b7dcce3e757e544827.png)
+>![](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@bd2918b2041f7d33c41c2efb59fb37db096b8905/2021/03/05/588ab5ecb7a5c3b7dcce3e757e544827.png)
 >
 > 一款强大的，现代的css语法检查和纠错工具，它可以帮助开发者在编写样式文件时避免错误，同时它还可以强迫开发者们形成统一的开发规范。简而言之，stylelint是个css语法检查器，它由PostCSS提供。PostCSS就像Babel的css版，会把css转成ast（抽象语法树，可以理解为一个描述代码内容的层层嵌套的对象），然后用各种插件处理它，最后再转回css，可以靠它实现自动添加样式的浏览器前缀、使用未来的CSS4语法等。
 > 通过解析ast，PostCSS可以支持scss,less等css预处理语言，因此，stylelint也同样支持。
@@ -123,7 +123,7 @@ E:\my-project>vue create demo
 
 执行以上命令后出现如下选项
 
-![](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@83e10d0257de12023320f0e77ba774b79f7987df/2020/10/14/707212b6a29ca5535b072bdd016bff36.png)
+![](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@83e10d0257de12023320f0e77ba774b79f7987df/2020/10/14/707212b6a29ca5535b072bdd016bff36.png)
 
 这里是单项选择，可以按 `上/下键` 切换选项，按 `enter` 进入下一步。这两个选项分别表示：
 
@@ -134,42 +134,42 @@ E:\my-project>vue create demo
 
 按 `enter`，进入下一步：
 
-![](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@181099803504fd45843165e2f7e603f998f692db/2020/10/14/3cfb46e2fc03c8b37a70da4321930775.png)
+![](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@181099803504fd45843165e2f7e603f998f692db/2020/10/14/3cfb46e2fc03c8b37a70da4321930775.png)
 这里是多项选择，按 `上/下键` 切换选项，`空格键 `选择该选项，`enter键` 进入下一步。你可以根据项目的实际情况，选择相应的选项。
 
 
 
 按 `enter`，进入下一步：
 
-![](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@05797bac9c6656268d39b11cbd946658b4bf2ed7/2020/10/14/6f0735bdc054997e8068e5b6404e01cb.png)
+![](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@05797bac9c6656268d39b11cbd946658b4bf2ed7/2020/10/14/6f0735bdc054997e8068e5b6404e01cb.png)
 这里是询问是否使用 `router` 的 `history `模式，如果选择是，在生产环境中，服务端需要为索引回退做适当的配置。这个对我们的 demo 没有影响，同样按`enter`使用默认选项。
 
 
 
 按 `enter`，进入下一步：
 
-![](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@c6f5273103e3fa4e801b0216ef1d6006f02b37c9/2020/10/14/0dffdd418f5a3c7384833e7b0562db6e.png)
+![](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@c6f5273103e3fa4e801b0216ef1d6006f02b37c9/2020/10/14/0dffdd418f5a3c7384833e7b0562db6e.png)
 这里是选择 `CSS预处理器`，可以自行选择一种，我选择的 `Scss`。
 
 
 
 按 `enter`，进入下一步：
 
-![](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@c6f5273103e3fa4e801b0216ef1d6006f02b37c9/2020/10/14/0dffdd418f5a3c7384833e7b0562db6e.png)
+![](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@c6f5273103e3fa4e801b0216ef1d6006f02b37c9/2020/10/14/0dffdd418f5a3c7384833e7b0562db6e.png)
 这里是选择代码检查工具，选择 `ESLint + Prettier`。因为 `Prettier` 不仅可以格式化`js代码`，还可以格式化 `css` 和 `vue`模板文件中 `template` 部分的代码。
 
 
 
 按 `enter`，进入下一步：
 
-![](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@e2ae7cf41603fec9886e60a4cc79fa725053dcf9/2020/10/14/778d61150b0a86e975229a3f37370056.png)
+![](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@e2ae7cf41603fec9886e60a4cc79fa725053dcf9/2020/10/14/778d61150b0a86e975229a3f37370056.png)
 这里是选择什么时候进行代码格式化，选择 `Lint on save`。
 
 
 
 按 `enter`，进入下一步：
 
-![](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@3981f8bf5f69268364d7029225b4c78b6fe2c1b6/2020/10/14/d7ca1c15c02e3d26699119bdc083a88d.png)
+![](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@3981f8bf5f69268364d7029225b4c78b6fe2c1b6/2020/10/14/d7ca1c15c02e3d26699119bdc083a88d.png)
 这里是询问在什么地方配置 `Babel, PostCSS, ESLint` 等
 
 - `In dedicated config files` 在专门的配置文件中
@@ -181,12 +181,12 @@ E:\my-project>vue create demo
 
 按 `enter`，进入下一步：
 
-![](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@e5e23b6d43e16696ee3e45a01e1c21485696f051/2020/10/14/6b0920d0cde9269dad218a0d05cda2dd.png)
+![](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@e5e23b6d43e16696ee3e45a01e1c21485696f051/2020/10/14/6b0920d0cde9269dad218a0d05cda2dd.png)
 这里是询问：是否保存本次所选的配置，方便下次搭建项目时复用。
 
 我们直接跳过，按 `enter,` 等待项目初始化完成就可以了。
 
-![](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@91489aedf18a50da43a96aeddda157e747af11ec/2020/10/14/f5856f43bd7c4760073aed79e822c530.png)
+![](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@91489aedf18a50da43a96aeddda157e747af11ec/2020/10/14/f5856f43bd7c4760073aed79e822c530.png)
 以上是脚手架生成的 `vue` 项目框架 `vue-cli3` 以后全部使用 `yran` 来安装依赖
 
 
@@ -332,10 +332,10 @@ rules: {
 
 此时查看代码已经报错，说明我们的规则已经配置成功
 
-![](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@6b80c082c740c9195d7c84af2d9eafb4b576502e/2020/10/14/86b02782d17b23f75137d0d3c9d42083.png)
+![](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@6b80c082c740c9195d7c84af2d9eafb4b576502e/2020/10/14/86b02782d17b23f75137d0d3c9d42083.png)
 之前在创建项目的时候我们选择了 `Lint on save` 所以每次保存代码同时自动对代码进行格式化
 
-![](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@7b50a50a91469517b94e01390290ab811f23bd4d/2020/10/14/daef826ecc97dec9aa69576462d92115.png)
+![](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@7b50a50a91469517b94e01390290ab811f23bd4d/2020/10/14/daef826ecc97dec9aa69576462d92115.png)
 
 
 如果搭建项目时没有选用 Prettier，需要手动安装
@@ -374,7 +374,7 @@ yarn add --dev prettier eslint-config-prettier eslint-plugin-prettier
 
 所以更推荐的做法是安装  `@vue/eslint-config-prettier`  `eslint-plugin-prettier`，然后修改.eslintrc.js，脚手架生成的项目默认安装以上两个插件
 
-![](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@9a95d49fb66660d538a2b33b022decfc88417f71/2020/10/14/1f9c2117f58a180d92d03501bebda613.png)
+![](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@9a95d49fb66660d538a2b33b022decfc88417f71/2020/10/14/1f9c2117f58a180d92d03501bebda613.png)
 ```js
 extends: [
   // ...other extends,

@@ -21,9 +21,9 @@ ssh-keygen -t rsa
 
 然后连按三次回车出现如下界面即代表生成成功，默认生成位置在你的用户文件夹里的 `.ssh` 文件夹里
 
-![img](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@36d08c6d93c884d832493ff3c41a952cd9473b5d/2020/10/14/d0ebae7f9fadfb31df7c3b064f99f503.png)
+![img](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@36d08c6d93c884d832493ff3c41a952cd9473b5d/2020/10/14/d0ebae7f9fadfb31df7c3b064f99f503.png)
 
-![img](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@a993916f21a254da5024c7c5297a11b19dc6dc87/2020/10/14/c211105afd0d502921ebc6dcc1dbca7f.png)
+![img](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@a993916f21a254da5024c7c5297a11b19dc6dc87/2020/10/14/c211105afd0d502921ebc6dcc1dbca7f.png)
 
 我的是部署在 `github` 上时生成的密钥，这里就不再重复生成，就用以前的公钥。
 
@@ -33,7 +33,7 @@ ssh-keygen -t rsa
 
 阿里云学生机有两个配置，我买的是 `轻量应用服务器` 具体啥区别我也不知道
 
-![img](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@92a964a7462fd2e4e1b04bfc9335ae122d98415d/2020/10/14/45979cbef4af7c60508007da012ce6a4.png)
+![img](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@92a964a7462fd2e4e1b04bfc9335ae122d98415d/2020/10/14/45979cbef4af7c60508007da012ce6a4.png)
 
 {%note color:yellow 轻量应用服务器是不要添加安全组规则的，默认开启状态，ECS则需要手动添加安全组规则授权`80`端口，否则无法访问服务器 %}
 
@@ -54,13 +54,13 @@ yum install -y wget && wget -O install.sh http://download.bt.cn/install/install_
 ```
 安装完毕会提示你 `临时访问地址以及账户密码`，在浏览器地址栏输入 `http://你的ip:8888` 登录后找到 `面板设置` 里面进行自定义设置，由于涉及服务器安全这里就不放图了
 
-![img](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@70ea2196dcec567711ff580c8a8fb20f2d7ff19a/2020/10/14/79cd8118f2049c56a04d0000f39c193c.png)
+![img](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@70ea2196dcec567711ff580c8a8fb20f2d7ff19a/2020/10/14/79cd8118f2049c56a04d0000f39c193c.png)
 
 `进入面板` --> `网站`  --> `添加站点` --> `提交`
 
 如下图操作这样你的站点就创建好了
 
-![img](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@67245b4c92ccf464c5cb9cbf2cf342bfc09bfc82/2020/10/14/a7a14b77ccc8eaa1c458435ab0c4eebf.png)
+![img](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@67245b4c92ccf464c5cb9cbf2cf342bfc09bfc82/2020/10/14/a7a14b77ccc8eaa1c458435ab0c4eebf.png)
 
 ### Nginx配置
 找到宝塔 `软件商店`  --> 安装 `Nginx`，安装完毕后修改 `配置文件`
@@ -109,7 +109,7 @@ server
 ```
 访问你的 `域名或者ip` 如果出现以下界面则表示 `Nginx` 配置成功
 
-![img](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@516b4fe11ba1b6283af874bea0fca4d8f1dec6c7/2020/10/14/bfcf68c4ecaf28ad228545cf72211fe1.png)
+![img](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@516b4fe11ba1b6283af874bea0fca4d8f1dec6c7/2020/10/14/bfcf68c4ecaf28ad228545cf72211fe1.png)
 
 ## 服务器Git配置
 
@@ -165,7 +165,7 @@ ssh -v git@xx.xx.xxx.xx
 ```
 
 出现如下图则测试连接成功
-![img](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@7fc01caa2a160c029d7768b49163ffc5194070b2/2020/10/14/036334ef892784e398b96731b69134b7.png)
+![img](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@7fc01caa2a160c029d7768b49163ffc5194070b2/2020/10/14/036334ef892784e398b96731b69134b7.png)
 
 
 >可能遇到的问题
@@ -195,7 +195,7 @@ git init --bare hexo.git
 chown git:git -R hexo.git
 ```
 
-![img](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@ed09e6e879efd887a7e9c0792f503264fd223dc9/2020/10/14/31f3df62fdaccb7d0bc9afac8b595b0d.png)
+![img](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@ed09e6e879efd887a7e9c0792f503264fd223dc9/2020/10/14/31f3df62fdaccb7d0bc9afac8b595b0d.png)
 {% note color:yellow 注意 这里必须在 git 用户下用指令创建，不能用其他用户或宝塔面板创建 %}
 使用 git-hooks
 使用 `post-receive` 钩子，当 `git` 有收发的时候就会调用这个钩子
@@ -249,7 +249,7 @@ hexo d				# 发布到远程仓库
 ## 自动部署测试
 出现图下图所示即表示部署成功
 
-![img](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets@68f90aae9839926fdd8a6dd797fb2b8a5a9f5864/2020/10/14/e5b7928a6ec6e83d5f88797e175da7ae.png)
+![img](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@68f90aae9839926fdd8a6dd797fb2b8a5a9f5864/2020/10/14/e5b7928a6ec6e83d5f88797e175da7ae.png)
 
 # 结语
 > 回首前尘，尽是可耻的过往
