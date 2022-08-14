@@ -1,5 +1,5 @@
 welcome:
   layout: markdown
-  title: '欢迎你：'
+  title: 'Hi, there👋'
   content: |
-    这是一个时常emo和偶尔水点技术文章的边缘小站
+    这是一个时常 emo 和偶尔水文章的边缘小站
