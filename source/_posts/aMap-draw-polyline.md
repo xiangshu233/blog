@@ -3,7 +3,7 @@ date: 2020-11-11
 title: 高德地图 JsApi 绘制折线功能
 categories: [Vue, 高德地图JsApi]
 tags: [高德地图Api, 绘制折线, Vue]
-cover: https://tva4.sinaimg.cn/mw690/006wuklaly1gjqead7pd4j31hc0u07e9.jpg
+cover: https://tva2.sinaimg.cn/large/006wuklaly8h5apzixejtj31c00u0qb1.jpg
 ---
 > 本 DEMO 使用高德最新`JS API 2.0`版本，使用 NPM 方式使用 Loader
 

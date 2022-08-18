@@ -3,7 +3,7 @@ date: 2020-12-04
 title: 高德地图JsApi轨迹巡航
 categories: [Vue, 高德地图JsApi]
 tags: [Vue, 高德Api, 轨迹巡航]
-cover: https://tva4.sinaimg.cn/mw690/006wuklaly1gjqe9qcu59j31hc0u0qlr.jpg
+cover: https://tva2.sinaimg.cn/large/006wuklaly8h5apvxpq68j31c00u0wll.jpg
 ---
 
 >本次场景需求是查询历史数据返回一组经纬度和相关数据在地图中使用轨迹巡航API巡航，期间的文本框每经过一个坐标其数值就会改变，文章末尾有demo文件，需要自取。

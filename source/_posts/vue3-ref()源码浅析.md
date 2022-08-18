@@ -3,7 +3,7 @@ date: 2021-11-03
 title: vue3 ref() 响应式源码浅析
 categories: [Vue3]
 tags: [Vue3, ref()]
-cover: https://tva4.sinaimg.cn/mw690/006wuklaly1gjrf0iyqb5j31hc0u01h1.jpg
+cover: https://tva4.sinaimg.cn/large/006wuklaly8h5apgldretj31hc0u0akq.jpg
 ---
 
 ## 官方解释

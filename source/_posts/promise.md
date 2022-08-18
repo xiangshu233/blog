@@ -3,7 +3,7 @@ date: 2021-4-1
 title: EventLoop、Promise 笔记
 categories: [javaScript]
 tags: [es6, promise, eventLoop]
-cover: https://tva4.sinaimg.cn/mw690/006wuklaly1gjqel3qoaoj31hc0u010h.jpg
+cover: https://tva2.sinaimg.cn/large/006wuklaly8h5aptc16swj31hc0u0n4t.jpg
 references:
   - title: 带你彻底弄懂 Event Loop
     url: https://segmentfault.com/a/1190000016278115?utm_source=tag-newest
