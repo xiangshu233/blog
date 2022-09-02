@@ -266,20 +266,6 @@ console.log('arrTrans:',arrTrans(2, arr));
 // arrTrans: (4) [Array(2), Array(2), Array(2), Array(2)]
 ```
 
-## Javascript call 及 apply 应用场景及实例
-
-`call()`和`apply()`是`function`的方法，它的第一个参数是`this`，第二个参数是`function`的参数。`call`和`apply()`都是为了改变某个函数运行时的`context`即上下文而存在的，换句话说，就是为了改变函数体内部`this`的指向。
-
-`call()`需要把参数按顺序传递进去，而`apply()`则是 把参数放在数组里。
-
-例如，有一个函数`func1`定义如下：
-
-`var func1 = function(arg1, arg2) {};`
-
-就可以通过`func1.call(this, arg1, arg2);`或者`func1.apply(this, [arg1, arg2]);`来调用。其中`this`是你想指定的上下文，他可以任何一个js对象（js 中一切皆对象）。
-
-JavaScript中，某个函数的参数数量是不固定的，因此要说适用条件的话，当你的参数明确知道数量时，用`call()`，而不确定的时候，用`apply()`，然后把参数push进数组传递进去。
-
 ## 例子
 
 ### 求数组最大值
