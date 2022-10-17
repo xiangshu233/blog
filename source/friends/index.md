@@ -54,7 +54,7 @@ header: false
 
 
 {% codeblock lang:yaml %}
-title: 乡树
+title: 傲慢或香橙
 avatar: https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@0.2/assets/images/avatar-1.jpg
 url: https://xiangshu233.cn
 screenshot: https://image.thum.io/get/https://www.xiangshu233.cn

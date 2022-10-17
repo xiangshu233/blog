@@ -24,7 +24,7 @@ header: false
 
 
 ## 我
-- [乡树](https://www.16personalities.com/profiles/adf14902911ea)♒️
+- [傲慢或香橙](https://www.16personalities.com/profiles/adf14902911ea)♒️
 - 25岁废柴
 - [洁癖患者](https://b23.tv/NnaTV5)
 - 整天做梦的咸鱼
