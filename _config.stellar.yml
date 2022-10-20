@@ -39,15 +39,19 @@ article:
 # 底部icon
 footer:
   social:
+    email:
+      icon: '<img alt="点我给我发邮件" src="https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/footer-icon/email.png"/>'
+      url: mailto:xiangshu233@outlook.com
     travelling:
-      icon: '<img src="https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/travelling.png"/>'
+      icon: '<img alt="开往下一个世界" src="https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/footer-icon/travelling.png"/>'
       url: https://travellings.link
     github:
-      icon: '<img src="https://fastly.jsdelivr.net/gh/cdn-x/placeholder@1.0.3/social/08a41b181ce68.svg"/>'
+      icon: '<img alt="github" src="https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/footer-icon/github.png"/>'
       url: https://github.com/xiangshu233
     music:
-      icon: '<img src="https://fastly.jsdelivr.net/gh/cdn-x/placeholder@1.0.3/social/3845874.svg"/>'
+      icon: '<img alt="我喜欢的音乐" src="https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/footer-icon/music.png"/>'
       url: https://music.163.com/#/user/home?id=137209982
     comments:
-      icon: '<img src="https://fastly.jsdelivr.net/gh/cdn-x/placeholder@1.0.3/social/942ebbf1a4b91.svg"/>'
+      icon: '<img alt="给我留言" src="https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/footer-icon/comments.png"/>'
       url: /about/#comments
+

@@ -40,8 +40,8 @@ v-model 是本质上是一个语法糖，上面的代码其实等价于下面这
 />
 ```
 
-```ts
-<!-- child.vue -->
+```html
+// child.vue
 <script setup lang="ts">
   const props = defineProps<{
     modelValue: number;
@@ -55,8 +55,7 @@ v-model 是本质上是一个语法糖，上面的代码其实等价于下面这
     emit('update:modelValue', 18);
   };
 </script>
-```
-```html
+
 <template>
   <p>{{ props.modelValue }}</p>
   <button @click="changAge">点击按钮(changAge)</button>
@@ -77,7 +76,7 @@ vue3 移除了 model 选项，这样就无法在组件内修改默认 prop 名�
 
 在这个例子中，子组件应声明一个 `name` prop，并通过触发 `update:name` 事件更新父组件值：
 
-```ts
+```html
 <script setup lang="ts">
   const props = defineProps<{
     name: string;
@@ -91,8 +90,7 @@ vue3 移除了 model 选项，这样就无法在组件内修改默认 prop 名�
     emit('update:name', 'mark');
   };
 </script>
-```
-```html
+
 <template>
   <p>这是子组件</p>
   <button @click="changName">点击</button>
@@ -140,7 +138,7 @@ const last = ref('羲之');
 ```
 
 ```ts
-<!-- my-component.vue -->
+// my-component.vue
 <script setup lang="ts">
   const props = defineProps<{
     firstName: string;

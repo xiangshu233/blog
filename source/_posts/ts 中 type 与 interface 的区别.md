@@ -55,7 +55,7 @@ interface Person {
 ```
 
 
-![](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets/20220808174407.png)
+![](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/2022/07/20220808174407.png)
 
 
 ## 语法不同
