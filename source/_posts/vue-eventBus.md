@@ -1,8 +1,8 @@
 ---
 date: 2020-7-7
-title: Vue 非父子间传值：事件总线（$eventBus）
-categories: [Vue, 组件通信]
-tags: [事件总线, 父子通信]
+title: vue 非父子间传值：事件总线（$eventBus）
+categories: [Vue]
+tags: [事件总线, 父子通信, 组件通信]
 cover: https://tva4.sinaimg.cn/mw690/006wuklaly1gk2zi1o105j31hc0u0dl9.jpg
 ---
 

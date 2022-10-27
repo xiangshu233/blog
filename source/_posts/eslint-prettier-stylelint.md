@@ -1,8 +1,8 @@
 ---
 date: 2020-4-15
-title: VSCode for Vue 配置 Eslint + Prettier + Stylelint
-categories: [代码检查]
-tags: [代码检查, VSCode]
+title: vscode for vue 配置 eslint + prettier + stylelint
+categories: [前端工程化]
+tags: [代码检查, vscode]
 cover: https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@364fd0a25c7c2418c14dcd396a08046e0bf949c6/2020/10/14/9175b876604a2d44a9f95ccf48d60f65.png
 ---
 

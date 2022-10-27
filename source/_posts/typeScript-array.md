@@ -1,8 +1,8 @@
 ---
-title: TypeScript 中的数组类型定义
+title: typeScript 中的数组类型定义
 date: 2022-03-03
-categories: [typeScript]
-tags: [二维数组, typeScript]
+categories: [TypeScript]
+tags: [二维数组, array, typeScript]
 cover: https://tva4.sinaimg.cn/large/006wuklaly8h5apkbhc2hj31hc0u0dsr.jpg
 banner: https://tva4.sinaimg.cn/large/006wuklaly8h5apkbhc2hj31hc0u0dsr.jpg
 ---

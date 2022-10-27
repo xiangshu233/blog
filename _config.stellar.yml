@@ -31,8 +31,17 @@ article:
   # 分类颜色
   category_color:
     '实用脚本': '#DA0F47'
-    '笔记': '#03a9f4'
-    '解决方案': '#4caf50'
+    '博客': '#03a9f4'
+    '前端工程化': '#FF9900'
+    'Vue': '#42b883'
+    'Vue3': '#006e54'
+    'TypeScript': '#3c78c9'
+    'Git': '#e84d31'
+    'JavaScript': '#efd81d'
+    'UI': '#e3adb9'
+    '小程序': '#16d46b'
+    '笔记': '#4a4b9d'
+    '生活': '#cee4ae'
   # 分享
   share: [wechat, weibo, email, link]
 

@@ -1,7 +1,7 @@
 ---
 date: 2021-4-1
-title: EventLoop、Promise 笔记
-categories: [javaScript]
+title: eventLoop、promise 笔记
+categories: [JavaScript]
 tags: [es6, promise, eventLoop]
 cover: https://tva2.sinaimg.cn/large/006wuklaly8h5aptc16swj31hc0u0n4t.jpg
 references:
@@ -32,7 +32,7 @@ JS是单线程，但是一些高耗时的操作就带来了进程阻塞的问题
 
 示意图
 
-![EventLoop.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2baaf009636748c491898aafeceddb32~tplv-k3u1fbpfcp-watermark.image)
+![eventLoop.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2baaf009636748c491898aafeceddb32~tplv-k3u1fbpfcp-watermark.image)
 
 
 

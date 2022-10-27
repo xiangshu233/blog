@@ -1,8 +1,8 @@
 ---
-title: Vue h() render() 渲染函数入门
+title: vue h() render() 渲染函数入门
 date: 2022-06-25 12:00
-categories: [vue3]
-tags: [vue3, tsx, jsx, h(), render()]
+categories: [Vue3]
+tags: [tsx, jsx, h(), render()]
 cover: https://tva1.sinaimg.cn/large/006wuklaly8h5apdijvbyj318g0tm12i.jpg
 banner: https://tva1.sinaimg.cn/large/006wuklaly8h5apdijvbyj318g0tm12i.jpg
 references:

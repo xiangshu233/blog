@@ -1,8 +1,8 @@
 ---
 date: 2020-7-20
 title: 本机模拟前后端分离部署
-categories: [模拟部署]
-tags: [Nginx, 反向代理]
+categories: [笔记]
+tags: [Nginx, 反向代理, 模拟部署]
 ---
 
 ## 后端接口代码打包

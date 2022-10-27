@@ -1,8 +1,8 @@
 ---
 date: 2019-11-21
 title: el-table 中使用 switch 开关
-categories: [Vue, Element]
-tags: [vue, element]
+categories: [UI]
+tags: [vue, element, switch]
 cover: https://tva4.sinaimg.cn/mw690/006wuklaly1gjrf260zfej32dc0o0noc.jpg
 ---
 

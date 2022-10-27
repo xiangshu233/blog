@@ -2,7 +2,7 @@
 date: 2021-08-24
 updated: 2022-03-04
 title: typeScript 中的 ! ?
-categories: [typeScript]
+categories: [TypeScript]
 tags: [typeScript]
 cover: https://tva1.sinaimg.cn/large/006wuklaly8h5apbx703cj31900u0tlq.jpg
 references:
