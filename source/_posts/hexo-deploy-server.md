@@ -4,7 +4,7 @@ updated: 2022-10-23 20:25
 title: hexo 博客部署到云服务器
 categories: [博客]
 tags: [博客部署]
-cover: https://tva4.sinaimg.cn/mw690/006wuklaly1gjqeliyqzxj31hc0u0kfa.jpg
+cover: https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaFhWN0U3bHBTaWtsd0MxTGhodEtBTUxFZFJaP2U9U3VpcmFl.jpg
 ---
 
 {% note color:green 🎉🎉🎉 2022-10-23参照本文重新部署测试后，成功访问，本文仍具有参考价值。 %}

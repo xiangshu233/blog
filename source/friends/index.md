@@ -43,12 +43,14 @@ breadcrumb: true
 请添加本站到您的友链中，如果您也使用 issue 作为友链源，只需要告知您的友链源仓库即可。
 
 
-{% codeblock lang:yaml %}
-title: 傲慢或香橙
-avatar: https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@0.2/assets/images/avatar-1.jpg
-url: https://xiangshu233.cn
-screenshot: https://image.thum.io/get/https://www.xiangshu233.cn
-description: 随知修行乃当务之急，然怠惰度日至今
+{% codeblock lang:json %}
+{
+  "title": "傲慢或香橙",
+  "url": "https://xiangshu233.cn",
+  "avatar": "https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@0.2/assets/images/avatar-1.jpg",
+  "screenshot": "https://image.thum.io/get/https://www.xiangshu233.cn",
+  "description": "随知修行乃当务之急，然怠惰度日至今"
+}
 {% endcodeblock %}
 
 
