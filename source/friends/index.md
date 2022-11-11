@@ -10,20 +10,11 @@ comments: true
 breadcrumb: true
 ---
 
-## 大佬
-{% friends only:group1 %}
-
+## 开源大佬
+{% friends 开源大佬 %}
 
 ## 海内存知己 天涯若比邻
-感谢人生旅途中的每一份真挚的友谊：{% friends only:group2 %}
-
-
-
-
-{% grid 友链更新通知 color:yellow %}
-
-由于近期对友链系统进行了重做，原链接失效的小伙伴请按照下方交换友链的步骤进行填写。在新的友链系统中，您随时可以对自己的信息进行修改而无需等待博主更新。
-{% endgrid %}
+感谢人生旅途中的每一份真挚的友谊：{% friends repo:xiangshu233/blog-friends %}
 
 ## 关于友链
 
@@ -40,7 +31,7 @@ breadcrumb: true
 
 <!-- node 第一步：新建 Issue -->
 
-新建 [GitHub Issue](https://github.com/xiangshu233/friends/issues/) 按照模板格式填写并提交。
+新建 [GitHub Issue](https://github.com/xiangshu233/blog-friends/issues/) 按照模板格式填写并提交。
 
 为了提高图片加载速度，建议优化头像：
 1. 打开 [压缩图](https://www.yasuotu.com/) 上传自己的头像，将图片尺寸调整到 `96px` 后下载。

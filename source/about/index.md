@@ -2,12 +2,11 @@
 robots: noindex,nofollow
 menu_id: more
 seo_title: 关于
-sidebar: [ghuser, welcome, recent]
+sidebar: [welcome, recent]
 toc_title: 关于
 comment_id: '留言板'
 comments: true
 breadcrumb: false
-header: true
 ---
 
 {% about avatar:https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/assets/images/hello.png height:80px %}
@@ -29,7 +28,7 @@ header: true
 - 强迫症晚期
 - 焦虑症晚期
 - 会做饭洗衣打扫卫生 !!富婆请私联我!!
-- 三分钟爱好😅
+- 三分钟爱好{% emoji blobcat blobcatsipsweat %}
 
 
 ## 兴趣
@@ -91,7 +90,4 @@ Human Fall Flat	★★★★★★	2018-2021
 - 又叒叕换了新主题，重新激发了水文章的动力，不知道能持续多久
 - 部署在腾讯云
 - 全站 https
-- 欢迎和我交换[友链](https://xiangshu233.cn/friends/)
-
-## 交流
-emmm...
+- 欢迎和我交换[友链](https://xiangshu233.cn/friends/){% emoji blobcat ablobcatrainbow %}

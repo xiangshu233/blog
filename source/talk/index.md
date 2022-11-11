@@ -6,7 +6,7 @@ sidebar: [welcome, toc]
 title: 动态
 comment_id: '碎碎念'
 comments: true
-breadcrumb: true
+breadcrumb: false
 ---
 
 <!-- https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md -->

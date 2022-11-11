@@ -2,7 +2,7 @@
 date: 2021-05-13
 title: git 命令笔记
 categories: [Git]
-tags: [git, 版本控制]
+tags: [Git, 版本控制]
 cover: https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@a187fb9a519bdde5d5452e86e135049489413ec4/2022/02/15/66ff7049390b4d75e7a67af4a00f3ae7.png
 references:
   - title: 廖雪峰的官方网站 Git 教程

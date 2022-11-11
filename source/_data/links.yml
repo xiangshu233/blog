@@ -1,4 +1,4 @@
-group1:
+'开源大佬':
   - title: 優萌初華
     avatar: https://fastly.jsdelivr.net/gh/amehime/shoka@latest/images/avatar.jpg
     url: https://shoka.lostyu.me
@@ -10,8 +10,3 @@ group1:
     url: https://xaoxuu.com
     screenshot: https://i.loli.net/2020/08/21/VuSwWZ1xAeUHEBC.jpg
     description: ''
-
-
-group2:
-  api: https://issues-api.vercel.app
-  repo: xiangshu233/friends

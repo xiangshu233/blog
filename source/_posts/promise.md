@@ -1,7 +1,7 @@
 ---
 date: 2021-4-1
 title: eventLoop、promise 笔记
-categories: [JavaScript]
+categories: [JS]
 tags: [es6, promise, eventLoop]
 cover: https://tva2.sinaimg.cn/large/006wuklaly8h5aptc16swj31hc0u0n4t.jpg
 references:

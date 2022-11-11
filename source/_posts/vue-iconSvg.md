@@ -2,7 +2,7 @@
 date: 2020-10-13
 title:  在 vue 项目中使用 iconSvg
 categories: [Vue]
-tags: [vue, iconSvg]
+tags: [vue, icon-svg]
 ---
 
 以前我的项目 Icon 都是使用 [iconfont ](https://www.iconfont.cn/home/index?spm=a313x.7781069.1998910419.2) 来下载 SVG，然后在项目中使用这些 SVG

@@ -1,7 +1,7 @@
 ---
 date: 2021-10-12
 title: typeScript typeof 操作符
-categories: [TypeScript]
+categories: [TS]
 tags: [typeScript, typeof操作符]
 cover: https://tva4.sinaimg.cn/large/006wuklaly8h5apluei9oj31hc0u0dt9.jpg
 references:

@@ -2,7 +2,7 @@
 date: 2022-10-16
 title: vue3 中的 v-model
 categories: [Vue3]
-tags: [v-model]
+tags: [vue3, v-model]
 cover: https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaFhWN0U3bHBTaWtsbndLSnpRVTdCUnhVc0dyP2U9ZFFhVzl3.jpg
 cover_info:
   meta: Vue3、JavaScript
