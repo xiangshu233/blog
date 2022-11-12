@@ -1,8 +1,8 @@
 ---
 date: 2020-4-15
-title: VSCode for Vue 配置 Eslint + Prettier + Stylelint
-categories: [代码检查]
-tags: [代码检查, VSCode]
+title: vscode for vue 配置 eslint + prettier + stylelint
+categories: [前端工程化]
+tags: [代码检查, vscode]
 cover: https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@364fd0a25c7c2418c14dcd396a08046e0bf949c6/2020/10/14/9175b876604a2d44a9f95ccf48d60f65.png
 ---
 
@@ -187,7 +187,7 @@ E:\my-project>vue create demo
 我们直接跳过，按 `enter,` 等待项目初始化完成就可以了。
 
 ![](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@91489aedf18a50da43a96aeddda157e747af11ec/2020/10/14/f5856f43bd7c4760073aed79e822c530.png)
-以上是脚手架生成的 `vue` 项目框架 `vue-cli3` 以后全部使用 `yran` 来安装依赖
+以上是脚手架生成的 `vue` 项目框架 `vue-cli3` 以后全部使用 `yarn` 来安装依赖
 
 
 
@@ -255,16 +255,15 @@ extends: ["plugin:vue/essential", "eslint:recommended", "@vue/prettier"],
  },
 ```
 
-
-
 配置 `rules` 数值规则
-:::info
+
+{% note color:blue 数值规则解释：
 `off` 或 `0` - 关闭规则
 
 `warn` 或 `1` - 开启规则，使用警告级别的错误：warn (不会导致程序退出)
 
 `error` 或 `2` - 开启规则，使用错误级别的错误：error (当被触发的时候，程序会退出)
-:::
+%}
 
 ESlint 自定义规则
 
@@ -402,9 +401,11 @@ yarn add --dev stylelint stylelint-scss stylelint-config-standard-scss stylelint
 
 
 2、根目录下新增 `.stylelintrc.js` 文件 这里列出我自己的 `stylelint` 配置
-:::info
-ps: 规则千万行，学一行是一行
-:::
+{% note color:green tips
+  规则千万行，学一行是一行
+%}
+
+
 ```js
 module.exports = {
   extends: ["stylelint-config-standard-scss", "stylelint-config-prettier"],
@@ -415,11 +416,9 @@ module.exports = {
   }
 }
 ```
-:::info
-- `stylelint-config-standard-scss` 是 stylelint 推荐规则，
-- `stylelint-config-prettier` 是关闭所有不必要的或可能与 `Prettier` 冲突的规则。这让你可以使用你最喜欢的 `shareable（共享）` 配置，而不会让它的风格选择妨碍你使用Prettier。
-:::
 
+  - `stylelint-config-standard-scss` 是 stylelint 推荐规则。
+  - `stylelint-config-prettier` 是关闭所有不必要的或可能与 `Prettier` 冲突的规则。这让你可以使用你最喜欢的 `shareable（共享）` 配置，而不会让它的风格选择妨碍你使用Prettier。
 
 
 

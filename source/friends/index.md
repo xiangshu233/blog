@@ -1,30 +1,20 @@
 ---
 robots: noindex,nofollow
-sitemap: false
 menu_id: more
 seo_title	: 友链
 toc_title: 友链索引
-comment_title: 快来交换友链吧～
+comment_title: 和我交换友链
 comment_id: '朋友'
+sidebar: [welcome, recent]
 comments: true
-breadcrumb: false
-header: false
+breadcrumb: true
 ---
 
-## 大佬
-{% friends only:group1 %}
-
+## 开源大佬
+{% friends 开源大佬 %}
 
 ## 海内存知己 天涯若比邻
-感谢人生旅途中的每一份真挚的友谊：{% friends only:group2 %}
-
-
-
-
-{% grid 友链更新通知 color:yellow %}
-
-由于近期对友链系统进行了重做，原链接失效的小伙伴请按照下方交换友链的步骤进行填写。在新的友链系统中，您随时可以对自己的信息进行修改而无需等待博主更新。
-{% endgrid %}
+感谢人生旅途中的每一份真挚的友谊：{% friends repo:xiangshu233/blog-friends %}
 
 ## 关于友链
 
@@ -41,7 +31,7 @@ header: false
 
 <!-- node 第一步：新建 Issue -->
 
-新建 [GitHub Issue](https://github.com/xiangshu233/friends/issues/) 按照模板格式填写并提交。
+新建 [GitHub Issue](https://github.com/xiangshu233/blog-friends/issues/) 按照模板格式填写并提交。
 
 为了提高图片加载速度，建议优化头像：
 1. 打开 [压缩图](https://www.yasuotu.com/) 上传自己的头像，将图片尺寸调整到 `96px` 后下载。
@@ -53,12 +43,14 @@ header: false
 请添加本站到您的友链中，如果您也使用 issue 作为友链源，只需要告知您的友链源仓库即可。
 
 
-{% codeblock lang:yaml %}
-title: 乡树
-avatar: https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@0.2/assets/images/avatar-1.jpg
-url: https://xiangshu233.cn
-screenshot: https://image.thum.io/get/https://www.xiangshu233.cn
-description: 随知修行乃当务之急，然怠惰度日至今
+{% codeblock lang:json %}
+{
+  "title": "傲慢或香橙",
+  "url": "https://xiangshu233.cn",
+  "avatar": "https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@0.2/assets/images/avatar-1.jpg",
+  "screenshot": "https://image.thum.io/get/https://www.xiangshu233.cn",
+  "description": "随知修行乃当务之急，然怠惰度日至今"
+}
 {% endcodeblock %}
 
 

@@ -1,5 +1,5 @@
 {
-  "name": "hexo-site",
+  "name": "my-blog",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -12,10 +12,10 @@
     "version": "6.2.0"
   },
   "dependencies": {
-    "hexo": "^6.2.0",
+    "hexo": "^6.3.0",
     "hexo-deployer-git": "^3.0.0",
     "hexo-generator-archive": "^1.0.0",
-    "hexo-generator-category": "^1.0.0",
+    "hexo-generator-category": "^2.0.0",
     "hexo-generator-feed": "^3.0.0",
     "hexo-generator-index": "^3.0.0",
     "hexo-generator-tag": "^1.0.0",

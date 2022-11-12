@@ -1,8 +1,8 @@
 ---
-title: Vue h() render() 渲染函数入门
+title: vue h() render() 渲染函数入门
 date: 2022-06-25 12:00
-categories: [vue3]
-tags: [vue3, tsx, jsx, h(), render()]
+categories: [Vue3]
+tags: [tsx, jsx, h(), render()]
 cover: https://tva1.sinaimg.cn/large/006wuklaly8h5apdijvbyj318g0tm12i.jpg
 banner: https://tva1.sinaimg.cn/large/006wuklaly8h5apdijvbyj318g0tm12i.jpg
 references:
@@ -32,7 +32,7 @@ references:
 
 上述 HTML 对应的 DOM 节点树如下图所示
 
-![DOM Tree Visualization](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/20220624160608.png)
+![DOM Tree Visualization](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/2022/07/20220624160608.png)
 
 **每个元素都是一个节点。**
 
@@ -139,7 +139,8 @@ h(
 
 ## 计数器案例
 
-![](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/GIF.gif)
+![](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/2022/07/GIF.gif)
+
 
 ```html
 <template>
@@ -236,7 +237,7 @@ const root = h('button', {type:'button', onClick: handleClick, class: 'btn btn-p
 
 ## Tag 标签三种写法
 
-![](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/20220625113159.png)
+![](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/2022/07/20220625113159.png)
 
 ### template 方式
 

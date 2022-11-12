@@ -1,7 +1,7 @@
 ---
 date:  2020-8-13
-title: Vue 路由配置（导航守卫 + 白名单）
-categories: [Vue, Router]
+title: vue 路由配置（导航守卫 + 白名单）
+categories: [Vue]
 tags: [vue, router]
 ---
 

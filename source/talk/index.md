@@ -1,13 +1,14 @@
 ---
 robots: noindex,nofollow
-sitemap: false
 menu_id: talk
-seo_title	: 碎碎念
-sidebar: [welcome]
-title: I want to say!
+seo_title	: 动态
+sidebar: [welcome, toc]
+title: 动态
 comment_id: '碎碎念'
 comments: true
 breadcrumb: false
-header: false
 ---
 
+<!-- https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md -->
+
+{% meting "7508183172" "netease" "playlist" theme:#000" %}

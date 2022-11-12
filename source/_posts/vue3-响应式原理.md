@@ -2,7 +2,7 @@
 date: 2021-10-14
 title: vue3 响应式原理笔记
 categories: [Vue3]
-tags: [Vue3, Vue3响应式原理]
+tags: [vue3, vue响应式原理]
 cover: https://tva2.sinaimg.cn/large/006wuklaly8h5api6uklpj31c00u0wi1.jpg
 ---
 

@@ -1,8 +1,8 @@
 ---
 date:  2021-3-24
-title: 微信公众号获取用户 OpenId 及用户信息
-categories: [Vue, 公众号]
-tags: [微信公众号, Java, Vue]
+title: 微信公众号获取用户 openid 及用户信息
+categories: [小程序]
+tags: [微信公众号, java, vue]
 ---
 
 

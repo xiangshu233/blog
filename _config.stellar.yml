@@ -1,15 +1,20 @@
+######## Sidebar ########
 sidebar:
   menu:
     post: '[博客](/)'
     wiki: '[项目](/wiki/)'
     talk: '[动态](/talk/)'
     more: '[更多](/about/)'
+  # Sidebar widgets
   widgets:
-    # Recent update
-    recent:
-      layout: recent
-      rss:  /atom.xml
-      limit: 5 # Count of posts
+    index: [welcome, recent] # for home/wiki/categories/tags/archives/404 pages
+    page: [welcome, toc] # for pages using 'layout:page'
+    post: [toc, ghrepo, ghissues] # for pages using 'layout:post'
+    wiki: [toc, ghrepo, ghissues, related] # for pages using 'layout:wiki'
+
+######## Index ########
+post-index: # 近期发布 分类 标签 归档 and ...
+  '友链': /friends
 
 # 一款基于 GitHub issues 的开源评论插件
 comments:
@@ -31,23 +36,81 @@ article:
   # 分类颜色
   category_color:
     '实用脚本': '#DA0F47'
-    '笔记': '#03a9f4'
-    '解决方案': '#4caf50'
+    '博客': '#03a9f4'
+    '前端工程化': '#FF9900'
+    'Vue': '#42b883'
+    'Vue3': '#006e54'
+    'TS': '#3c78c9'
+    'Git': '#e84d31'
+    'JS': '#efd81d'
+    'UI': '#e3adb9'
+    '小程序': '#16d46b'
+    '笔记': '#4a4b9d'
+    '生活': '#cee4ae'
   # 分享
   share: [wechat, weibo, email, link]
 
 # 底部icon
 footer:
   social:
+    email:
+      icon: '<img alt="点我给我发邮件" src="https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/footer-icon/email.png"/>'
+      url: mailto:xiangshu233@outlook.com
     travelling:
-      icon: '<img src="https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/travelling.png"/>'
+      icon: '<img alt="开往下一个世界" src="https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/footer-icon/travelling.png"/>'
       url: https://travellings.link
     github:
-      icon: '<img src="https://fastly.jsdelivr.net/gh/cdn-x/placeholder@1.0.3/social/08a41b181ce68.svg"/>'
+      icon: '<img alt="github" src="https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/footer-icon/github.png"/>'
       url: https://github.com/xiangshu233
     music:
-      icon: '<img src="https://fastly.jsdelivr.net/gh/cdn-x/placeholder@1.0.3/social/3845874.svg"/>'
+      icon: '<img alt="我喜欢的音乐" src="https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/footer-icon/music.png"/>'
       url: https://music.163.com/#/user/home?id=137209982
     comments:
-      icon: '<img src="https://fastly.jsdelivr.net/gh/cdn-x/placeholder@1.0.3/social/942ebbf1a4b91.svg"/>'
+      icon: '<img alt="给我留言" src="https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/footer-icon/comments.png"/>'
       url: /about/#comments
+  content: | # 支持 Markdown 格式
+    本站由 [@xiangshu](/) 使用 [Stellar](https://github.com/xaoxuu/hexo-theme-stellar) 主题创建。本站备案信息：[鲁ICP备19044863号](https://beian.miit.gov.cn)
+    本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。
+    <span id='runtime'>
+
+style:
+  darkmode: auto # auto / always / false
+  smooth_scroll: false # true / false
+  font-size: 16px
+  font-family:
+    logo: HarmonyOS_Medium
+    body: HarmonyOS_Medium
+    code: Fira Code
+  text-align: left
+  color:
+    common:
+      theme: '#1BCDFC' # 主题色
+      accent: '#ff5722' # 强调色
+      link: '#2196f3' # 超链接颜色
+      button: '#1BCDFC' # 按钮颜色
+      hover: '#ff5722' # 按钮高亮颜色
+    light:
+      background: '#f8f8f8' # 浅色背景颜色
+      block: '#f2f2f2' # 块背景颜色
+      card: white # 卡片背景颜色
+      title: '#000' # 标题文本颜色
+      text: '#333' # 正文文本颜色
+      code: '#f33a00' # 行内代码颜色
+    dark:
+      background: '#1a1a1a' # 深色背景颜色
+      background-mobile: black # 移动端深色背景（OLED调成纯黑可以省电）
+      block: '#101010' # 块背景颜色
+      card: '#1f1f1f' # 卡片背景颜色
+      title: '#fff' # 标题文本颜色
+      text: '#eee' # 正文文本颜色
+      code: '#ff7043' # 行内代码颜色
+  animated_avatar:
+    # 头像动画
+    animate: always # auto, always
+    background: https://fastly.jsdelivr.net/gh/cdn-x/placeholder@1.0.2/avatar/round/rainbow64@3x.webp
+  codeblock:
+    scrollbar: 4px
+    highlightjs_theme: https://fastly.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/styles/atom-one-dark.min.css
+  loading:
+    loading: 正在加载
+    error: 加载失败，请稍后重试。

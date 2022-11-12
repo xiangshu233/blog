@@ -1,8 +1,8 @@
 ---
 date: 2021-10-12
 title: typeScript typeof 操作符
-categories: [typeScript]
-tags: [typeScript, typeof 操作符]
+categories: [TS]
+tags: [typescript, typeof操作符]
 cover: https://tva4.sinaimg.cn/large/006wuklaly8h5apluei9oj31hc0u0dt9.jpg
 references:
   - title: '面向 Type 编程 -- Typescript 类型和类型操作(一)'

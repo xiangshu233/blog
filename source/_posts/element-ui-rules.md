@@ -1,8 +1,8 @@
 ---
 date: 2020-10-15
 title: el-form 表单校验规则封装
-categories: [Vue, Element]
-tags: [封装, 表单校验, Vue, Element]
+categories: [UI]
+tags: [封装, 表单校验, vue, element-ui]
 cover: https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaFhWN0U3bHBTaWtsblFNRGJ4X1BpeGI3M3J4P2U9dFJ0VjRt.jpg
 references:
   - title: 'ElementUI表单校验rules封装'
@@ -14,8 +14,8 @@ references:
 `el-form` 表单验证如果字段过多则需要写很多重复的语句显得非常冗余，如采用封装则只需对外暴露 `vxRule()` 方法即可，大大提高了开发效率，该工具类验证规则是可以自行拓展的，满足大部分开发需求
 
 ### 封装前：
-{% grid color:red %}
-```js
+{% border child:codeblock color:green %}
+{% codeblock lang:js %}
 form_rules: {
   categoryId: [
     { required: true, message: '传感器类型不能为空', trigger: 'blur' }
@@ -44,12 +44,12 @@ form_rules: {
     { validator: ruleCheck.isNumberCheck, trigger: 'blur' }
   ],
   // 等.....
-```
-{% endgrid %}
+{% endcodeblock %}
+{% endborder %}
 
 ### 封装后：
-{% grid color:green %}
-```js
+{% border child:codeblock color:red %}
+{% codeblock lang:swift %}
 rules: {
   /**
    * @method vxRule()
@@ -69,8 +69,8 @@ rules: {
   start: vxRule(true, "Number"),
   end: vxRule(true, "Number"),
   depthA: vxRule(true, "Number"),
-```
-{% endgrid %}
+{% endcodeblock %}
+{% endborder %}
 
 
 

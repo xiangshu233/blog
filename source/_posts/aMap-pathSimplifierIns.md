@@ -1,8 +1,8 @@
 ---
 date: 2020-12-04
-title: 高德地图JsApi轨迹巡航
-categories: [Vue, 高德地图JsApi]
-tags: [Vue, 高德Api, 轨迹巡航]
+title: 高德地图 轨迹巡航
+categories: [Vue]
+tags: [高德地图Api, 轨迹巡航]
 cover: https://tva2.sinaimg.cn/large/006wuklaly8h5apvxpq68j31c00u0wll.jpg
 ---
 

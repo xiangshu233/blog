@@ -1,8 +1,8 @@
 ---
 title: ts 中 type 与 interface 的区别
 date: 2022-08-08 17:39
-categories: [typeScript]
-tags: [typeScript, type, interface]
+categories: [TS]
+tags: [typescript, type, interface]
 cover: https://tva1.sinaimg.cn/large/006wuklaly8h4ziailq3bj31c00u048q.jpg
 ---
 
@@ -55,7 +55,7 @@ interface Person {
 ```
 
 
-![](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets/20220808174407.png)
+![](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/2022/07/20220808174407.png)
 
 
 ## 语法不同
