@@ -2,7 +2,7 @@
 title: git 修改上次 commit 描述
 date: 2022-10-23
 categories: [Git]
-tags: [版本控制, Git]
+tags: [git]
 cover: https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaFhWN0U3bHBTaWtsbnZhUHhHWGExX1VLTTN3P2U9clB0eWtZ.jpg
 banner: https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaFhWN0U3bHBTaWtsbnZhUHhHWGExX1VLTTN3P2U9clB0eWtZ.jpg
 references:

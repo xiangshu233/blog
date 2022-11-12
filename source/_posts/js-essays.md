@@ -2,7 +2,7 @@
 date: 2021-01-06
 title: js 随笔记录
 categories: [JS]
-tags: [js, 笔记]
+tags: [笔记]
 cover: https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@c24a79e61ff7cd15b6d1ce8c1f9e4a6b256a73d0/2022/02/15/1847503944e96b962bfeb3fc7b780a22.png
 ---
 
