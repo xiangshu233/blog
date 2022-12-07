@@ -7,20 +7,17 @@ cover: https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaFhWN0U3bHBTaWtsbk
 cover_info:
   title: el-from 表单组件封装
 banner: https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaFhWN0U3bHBTaWtsbkk0QnRiWTN3LTRCbzlYP2U9dlZjVzFN.jpg
-references:
-  - title: el-form-plus 原作者
-    url: https://github.com/wangdaoo/el-form-plus
 ---
 
 ## 缘由
 公司后台管理表单页过多，且大部分都是普通 `input select` 框，重复度过高，为了避免无用劳动则对 `from` 进行封装
 
-## ElFormPlus组件
+## BasicForm组件
 
 ```js
 <template>
   <el-form
-    ref="ElFormPlus"
+    ref="BasicForm"
     class="page-form"
     :model="data"
     :rules="rules"
@@ -110,7 +107,7 @@ references:
 <script>
 
 export default {
-  name: 'ElFormPlus',
+  name: 'BasicForm',
 
   data() {
     return {
@@ -174,14 +171,14 @@ export default {
   watch: {
     data: {
       handler() {
-        this.$emit('update:refObj', this.$refs.ElFormPlus);
+        this.$emit('update:refObj', this.$refs.BasicForm);
       },
       deep: true,
     },
   },
 
   mounted() {
-    this.$emit('update:refObj', this.$refs.ElFormPlus);
+    this.$emit('update:refObj', this.$refs.BasicForm);
   },
 
   methods: {
@@ -267,15 +264,15 @@ export default {
 ## 使用
 引用 注册 `from` 组件
 ```js
-import ElFormPlus from 'cps/ElFormPlus/ElFormPlus';
+import BasicForm from '@/components/BasicForm';
 
 components: {
-  ElFormPlus,
+  BasicForm,
 },
 ```
 在模板中使用
 ```html
-<el-form-plus
+<BasicForm
   v-loading="loading"
   element-loading-text="拼命加载中..."
   element-loading-background="#FFFFFF"
@@ -307,7 +304,7 @@ formInfo: {
 - `fieldList` 字段类型、label列表
 - `rules` 表单验证规则
 
-如果`fieldList`列表里`type`类型是`select`，则`list`字段的`value`就是`selectOption`对象所对应的数组列表
+如果 `fieldList` 列表里 `type` 类型是 `select`，则 `list` 字段的 `value` 就是 `selectOption` 对象所对应的数组列表
 
 ```js
 fieldList: [
