@@ -14,7 +14,7 @@ references:
 `el-form` 表单验证如果字段过多则需要写很多重复的语句显得非常冗余，如采用封装则只需对外暴露 `vxRule()` 方法即可，大大提高了开发效率，该工具类验证规则是可以自行拓展的，满足大部分开发需求
 
 ### 封装前：
-{% border child:codeblock color:green %}
+{% ablock child:codeblock color:red %}
 {% codeblock lang:js %}
 form_rules: {
   categoryId: [
@@ -43,13 +43,13 @@ form_rules: {
     { required: true, message: 'A基点深度不能为空', trigger: 'blur' },
     { validator: ruleCheck.isNumberCheck, trigger: 'blur' }
   ],
-  // 等.....
+}
 {% endcodeblock %}
-{% endborder %}
+{% endablock  %}
 
 ### 封装后：
-{% border child:codeblock color:red %}
-{% codeblock lang:swift %}
+{% ablock child:codeblock color:green %}
+{% codeblock lang:js %}
 rules: {
   /**
    * @method vxRule()
@@ -69,8 +69,9 @@ rules: {
   start: vxRule(true, "Number"),
   end: vxRule(true, "Number"),
   depthA: vxRule(true, "Number"),
+}
 {% endcodeblock %}
-{% endborder %}
+{% endablock %}
 
 
 

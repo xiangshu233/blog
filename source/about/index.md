@@ -54,32 +54,10 @@ breadcrumb: false
 
 <!-- tab 话题 -->
 
-本人对吃瓜、娱乐圈、键政毫无兴趣
+对吃瓜、娱乐圈、键政无感
 
 {% endtabs %}
 
-
-{% tabs align:left %}
-
-如果宇宙中真有什么终极的逻辑，那就是我们终有一天会在舰桥上重逢，直到生命终结。
-
-本站是@xaoxuu的个人站，博主目前主要从事于 iOS 开发行业，活跃于开源社区，热衷于设计和打磨美妙的东西。代表作有：ProHUD、ValueX、Stellar、心率管家等，更多的作品可以去项目主页查看，希望大家喜欢～
-
-非常热爱音乐，喜欢的品类很多，尤其喜爱Hans Zimmer和Two Steps From Hell的史诗音乐，夜深人静的时候喜欢听Ludovico Einaudi的钢琴曲，能量不足的时候会听一些电音或摇滚来充电，心灰意冷的时候会听一些十年前常听的轻音乐怀旧，那时我还特别喜欢班得瑞的音乐。
-
-游戏	推荐指数	游玩时间
-Red Alert 2	★★★★	2005-2012
-World of Warcraft	★★★★☆	2006-2020
-Red Alert 3	★★★★☆	2013-2021
-Minecraft	★★★★	2013-2016
-Bad Piggies	★★★★★	2014-2017
-Terraria	★★★★☆	2014-2021
-Don‘t Starve	★★★★☆	2015-2021
-Ori and the Blind Forest	★★★★★	2018-2020
-Human Fall Flat	★★★★★★	2018-2021
-此外，也热衷于欣赏和学习这方面的知识：产品设计、摄影、天文。
-
-{% endtabs %}
 
 ## 本站
 

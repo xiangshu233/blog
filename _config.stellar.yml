@@ -5,12 +5,25 @@ sidebar:
     wiki: '[项目](/wiki/)'
     talk: '[动态](/talk/)'
     more: '[更多](/about/)'
+
   # Sidebar widgets
   widgets:
-    index: [welcome, recent] # for home/wiki/categories/tags/archives/404 pages
-    page: [welcome, toc] # for pages using 'layout:page'
-    post: [toc, ghrepo, ghissues] # for pages using 'layout:post'
-    wiki: [toc, ghrepo, ghissues, related] # for pages using 'layout:wiki'
+    #### 自动生成的页面 ####
+    # 主页
+    home: search, recent # for home
+    # 博客索引页
+    blog_index: search_blog, recent # for categories/tags/archives
+    # 文档索引页
+    wiki_index: search_docs, recent # for wiki
+    # 其它（404）
+    others: search, recent, timeline # for 404 and ...
+    #### 手动创建的页面 ####
+    # 文章内页
+    post: search_blog, toc, ghrepo, ghissues # for pages using 'layout:post'
+    # 文档内页
+    wiki: search, ghrepo, toc, ghissues, related # for pages using 'layout:wiki'
+    # 其它 layout:page 的页面
+    page: toc, search # for custom pages using 'layout:page'
 
 ######## Index ########
 post-index: # 近期发布 分类 标签 归档 and ...
@@ -76,19 +89,31 @@ footer:
 style:
   darkmode: auto # auto / always / false
   smooth_scroll: false # true / false
-  font-size: 16px
+  font-size:
+    root: 16px
+    body: .9375rem # 15px
+    code: 85% # 14px
+    codeblock: 0.8125rem # 13px
   font-family:
     logo: HarmonyOS_Medium
     body: HarmonyOS_Medium
     code: Fira Code
   text-align: left
+  border-radius:
+    card: 12px
+    block: 12px
+    bar: 6px
+    image: 6px
+  # 背景色设置
   color:
+    # 公共色配置
     common:
       theme: '#1BCDFC' # 主题色
       accent: '#ff5722' # 强调色
       link: '#2196f3' # 超链接颜色
       button: '#1BCDFC' # 按钮颜色
       hover: '#ff5722' # 按钮高亮颜色
+    # 亮色配置
     light:
       background: '#f8f8f8' # 浅色背景颜色
       block: '#f2f2f2' # 块背景颜色
@@ -96,6 +121,7 @@ style:
       title: '#000' # 标题文本颜色
       text: '#333' # 正文文本颜色
       code: '#f33a00' # 行内代码颜色
+    # 暗色配置
     dark:
       background: '#1a1a1a' # 深色背景颜色
       background-mobile: black # 移动端深色背景（OLED调成纯黑可以省电）
@@ -105,7 +131,7 @@ style:
       text: '#eee' # 正文文本颜色
       code: '#ff7043' # 行内代码颜色
   animated_avatar:
-    # 头像动画
+    # 头像旋转动画 自动/总是
     animate: always # auto, always
     background: https://fastly.jsdelivr.net/gh/cdn-x/placeholder@1.0.2/avatar/round/rainbow64@3x.webp
   codeblock:
@@ -114,3 +140,6 @@ style:
   loading:
     loading: 正在加载
     error: 加载失败，请稍后重试。
+  gradient: # https://webgradients.com/
+    start: 'linear-gradient(to right, hsl(215, 95%, 64%), hsl(195, 95%, 60%), hsl(165, 95%, 56%), hsl(165, 95%, 56%), hsl(195 95% 60%), hsl(215, 95%, 64%))'
+    search: 'linear-gradient(to right, #04F3FF, #08FFC6, #DDF730, #FFBD19, #FF1FE0, #C418FF, #04F3FF)'
