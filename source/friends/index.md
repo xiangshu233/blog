@@ -4,9 +4,7 @@ menu_id: more
 seo_title	: 友链
 toc_title: 友链索引
 comment_title: 和我交换友链
-comment_id: '朋友'
 sidebar: [welcome, recent]
-comments: true
 breadcrumb: true
 ---
 

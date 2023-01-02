@@ -4,8 +4,10 @@ menu_id: talk
 seo_title	: 动态
 sidebar: [welcome, toc]
 title: 动态
-comment_id: '碎碎念'
-comments: true
+giscus:
+  data-repo: xiangshu233/blog-comments
+  data-mapping: number
+  data-term: 10
 breadcrumb: false
 ---
 

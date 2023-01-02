@@ -4,8 +4,10 @@ menu_id: more
 seo_title: 关于
 sidebar: [welcome, recent]
 toc_title: 关于
-comment_id: '留言板'
-comments: true
+giscus:
+  data-repo: xiangshu233/blog-comments
+  data-mapping: number
+  data-term: 11
 breadcrumb: false
 ---
 
@@ -69,3 +71,7 @@ breadcrumb: false
 - 部署在腾讯云
 - 全站 https
 - 欢迎和我交换[友链](https://xiangshu233.cn/friends/){% emoji blobcat ablobcatrainbow %}
+
+## 主题版本tag
+{% timeline api:https://api.github.xaox.cc/repos/xaoxuu/hexo-theme-stellar/releases?per_page=1 %}
+{% endtimeline %}
