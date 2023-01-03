@@ -2,6 +2,7 @@
 robots: noindex,nofollow
 menu_id: talk
 seo_title	: 动态
+comment_title: 你患得患失太在意从前又太担心将来，有句话说的好，昨天是段历史，明天是个谜团，而今天是天赐的礼物，像珍惜礼物那样珍惜今天
 sidebar: [welcome, toc]
 title: 动态
 giscus:

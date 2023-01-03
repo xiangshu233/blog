@@ -2,6 +2,7 @@
 robots: noindex,nofollow
 menu_id: more
 seo_title: 关于
+comment_title: 说点什么?
 sidebar: [welcome, recent]
 toc_title: 关于
 giscus:
@@ -13,33 +14,28 @@ breadcrumb: false
 
 {% about avatar:https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/assets/images/hello.png height:80px %}
 
-<h3>Maybe we Have a Cup of Coffee or Something</h3>
-
-**你患得患失太在意从前又太担心将来，有句话说的好，昨天是段历史，明天是个谜团，而今天是天赐的礼物，像珍惜礼物那样珍惜今天**
+<h3 style="text-align: center">We’ve Never Met but Can We Have a Cup of Coffee or Something</h3>
 
 {% navbar  active:4 [文章](/) [便签](/notes/) [朋友](/friends/)  [关于](/about/) %}
 {% endabout %}
 
 
 
-## 本人
+## MY
 - [乡树](https://www.16personalities.com/profiles/adf14902911ea)♒️
 - 废柴、死宅
 - [洁癖患者](https://b23.tv/NnaTV5)
 - 整天做梦的咸鱼
 - 强迫症晚期
 - 焦虑症晚期
+- 拖延症晚期
 - 会做饭洗衣打扫卫生 !!富婆请私联我!!
 - 三分钟爱好{% emoji blobcat blobcatsipsweat %}
 
-
-## 兴趣
+## Interest
 
 {% tabs align:center %}
 
-<!-- tab 音乐 -->
-
-[We've Never Met but Can We Have a Cup of Coffee or Something](https://music.163.com/#/song?id=1398802958)
 
 <!-- tab 影视 -->
 
@@ -53,6 +49,9 @@ breadcrumb: false
 | 芬奇 Finch               | ★★★★     | 2021-12-06 |
 | 新·奥特曼               | ★★★★★★      | 2022-10-09 |
 
+<!-- tab 音乐 -->
+
+[We've Never Met but Can We Have a Cup of Coffee or Something](https://music.163.com/#/song?id=1398802958)
 
 <!-- tab 话题 -->
 
@@ -61,7 +60,7 @@ breadcrumb: false
 {% endtabs %}
 
 
-## 本站
+## Site
 
 - 2019年7月30日入坑
 - 2020年10月14日重建完毕上线
@@ -72,6 +71,6 @@ breadcrumb: false
 - 全站 https
 - 欢迎和我交换[友链](https://xiangshu233.cn/friends/){% emoji blobcat ablobcatrainbow %}
 
-## 主题版本tag
+## Latest Theme Version
 {% timeline api:https://api.github.xaox.cc/repos/xaoxuu/hexo-theme-stellar/releases?per_page=1 %}
 {% endtimeline %}
