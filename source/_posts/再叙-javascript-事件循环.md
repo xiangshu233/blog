@@ -1,7 +1,7 @@
 ---
 title: 再叙 JavaScript 事件循环
 tags: [事件循环]
-categories: [JS, 笔记]
+categories: [JS]
 poster:
   headline: 再叙 JavaScript 事件循环
 date: 2023-01-03 20:40:22
