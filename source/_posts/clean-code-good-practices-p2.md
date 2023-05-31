@@ -6,8 +6,18 @@ date: 2023-04-15 22:22:22
 cover: https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBaFhWN0U3bHBTaWtseWZlQnI0b1I2cENHOFhoP2U9b3VCaG9j.jpg
 banner: https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBaFhWN0U3bHBTaWtseWZlQnI0b1I2cENHOFhoP2U9b3VCaG9j.jpg
 ---
+## 前言
 
-欢迎回来大家🤓，我将继续 #CleanCode 系列，这是第 2 部分。
+我很喜欢作者的这个系列文章，干净的代码不仅可以增强代码的健壮性，也能带来愉悦的心情，让人喜欢上 coding👨‍💻，编写代码是一门艺术🙆‍♂️，因此我们需要考虑使用更合理的实现方式，而不是为了完成 “任务” 而写出一些无用的变量以及各种 if 嵌套和回调地狱🤮。这些会导致代码结构混乱、逻辑难以理解，最终可能会给未来接手代码的程序员带来麻烦，{% del 甚至会得到未来接手你代码程序员的亲口祝福🙏 %}。所以 Don't write "zombie code"🧟‍♂️!!
+
+我非常反感那些故意写💩山代码的“程序员”，这种不负责任的行为真的让我非常生气。{% psw 你是真该死啊。深受屎山项目迫害，已经 PTSD 了 %}。
+虽然这个系列文章作者使用了大量的 emoji 表情（有些人可能认为专业文章不应该包含这么多表情符号，{% del 还好这并不专业🥴 %}），但我认为这样的表达方式很有趣，因此我保留了它们。
+
+tips：如果我的翻译有任何错误，请在评论区告诉我，谢谢！
+
+## 开始
+
+欢迎回来大家🤓，我将继续 [#CleanCode](https://www.xiangshu233.cn/tags/代码规范/) 系列，这是第 2 部分。
 
 命名事物意味着我们如何调用我们的变量、函数和类构造函数，使它们与其适用的术语相关。
 
@@ -15,9 +25,9 @@ banner: https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBaFhWN0U3bHBTaWtse
 
 ## 为什么名字很重要
 
-一般来说，我们给任何东西起名字只是为了熟悉它，给它起一个名词会让它与我们的联系更紧密🤝🏽。然而，我们确实根据它们的属性🎀、外观🎭、位置、存在等来命名。因此这些名称包含一些意义和独特性。好的和有意义的名字可以帮助我们记住事物及其功能。我们可以在需要时轻松调用这些名称。模棱两可😌和单字母名称往往会增加学习和理解变量存在的复杂性🥺，因此我们在需要时可能无法调用它。通过使用明确的名称，我们可以使代码易于维护和实用。
+一般来说，我们给任何东西起名字只是为了熟悉它，给它起一个名词会让它与我们的联系更紧密🤝🏽。然而，我们确实根据它们的属性🎀、外观🎭、位置、存在等来命名。因此这些名称包含一些意义和独特性。好的和有意义的名字可以帮助我们记住事物及其功能。我们可以在需要时轻松调用这些名称。模棱两可😌和单字母名称往往会增加学习和理解变量存在的复杂性🥺，因此我们在需要时可能无法调用它。通过使用明确的名称，我们可以使代码更加健壮和易于维护。
 
-所以命名很重要，因为我们以后可能会依赖这些名称🤔，我们不能随便给我们的变量或数据集起 `any name`，如果这样我们在需要的时候甚至无法使用或找到它🧐。名称应该能够传达🏇🏽它们的含义和存在意义，而不需要通过整个代码来了解其功能和细节。
+所以命名很重要，因为我们以后可能会依赖这些名称🤔，我们不能随便给我们的变量或数据集起 `any name`，如果这样我们在需要的时候甚至无法使用或找到它🧐。名称应该能够表达🏇🏽它们的含义和存在意义，而不需要通过整个代码来了解其功能和细节。
 
 ```js
 // bad
@@ -31,7 +41,7 @@ if (auth) {
 
 上面的代码片段中， `pro` 代表什么，没有专有名称，我们无法猜测变量的功能。这个问题不仅存在于编码领域，而是存在于每个领域。
 
-在数据库管理中，无论是顺序还是非顺序的，我们给我们的模式、表格📋以及它们的不同变量命名，以便在需要时获取它们。如果我们没有考虑它们的含义而进行命名，那么在获取时就无法记起它们。
+在数据库管理中，无论是顺序还是非顺序的，我们给我们的模式、表格📋以及它们的不同变量命名，以便在需要时获取它们。如果我们没有考虑它们的含义而进行命名，那么在使用的时候就无法记起它们。
 
 ```js
 // good
@@ -82,7 +92,7 @@ const orders = await db
 // 良好的注释也是 CleanCode 实践中的一部分。 （我们将在另一篇博客中讨论良好的注释。）
 ```
 
-类似地，在 MySQL、MongoDB 或其他数据库管理系统中，我们使用不同的列初始化架模式和表。所有这些都需要适当的名称和适当的标识，以便它们能够证明自己的存在是有意义的👌。良好命名的变量可以让读者轻松地理解内容。
+类似地，在 MySQL、MongoDB 或其他数据库管理系统中，我们使用不同的列初始化架模式和表。所有这些都需要适当的名称和适当的标识，以便它们能够证明自己的存在是有意义的👌。良好命名的变量可以让 '读者' 轻松地理解内容。
 
 因此，好的命名以及强调相关性在代码和其他相关领域中都是很重要的，我们给变量或数据容器命名时需要考虑其含义。
 
@@ -125,7 +135,7 @@ let isLoggedIn = false;
 let isValid = false;
 ```
 
-|  What do we store?（我们存储什么？）  |  Good Names（好）  |  Bad Names （不好）  |
+|  What do we store?（我们存储什么？）  |  Good Names（好的命名）  |  Bad Names （不好的命名）  |
 |  ---------  |  ----  | -------  |
 |  一个用户对象(name, email, age)  | userData, userEmail, email, age | us, data, container |
 |  用户输入验证信息(boolean) | isUser, isLoggedIn, isAuth, isValid | user, login
@@ -168,9 +178,9 @@ updateUserData()  // etc
 | container  | cart, basket | fruits, books | box, bin |
 |  request  | req, request, reqBody | reqData, reqObj | req, obj, data |
 
-例外情况💥：在代码中，有一些特定的方法用于获取或设置类的属性值。这些方法称为 `Setter` 和 `Setter`。
-`Getter` 方法用于从类对象中检索属性的值，而 `Setter` 方法用于设置类对象中属性的值。
-但是，出于命名约定的目的，这些 `Getter` 和 `Setter` 方法的命名通常就好像它们本身就是属性一样。例如，名为 `“getUser”` 的方法实际上可能是一个检索用户信息的 `Getter` 方法，而名为 `“storeData”` 或 `“setUser”` 的方法实际上可能是一个 `Setter` 方法。
+例外情况💥：在代码中，有一些特定的方法用于获取或设置类的属性值。这些方法称为 Setter 和 Setter。
+Getter 方法用于从类对象中检索属性的值，而 Setter 方法用于设置类对象中属性的值。
+但是，出于命名约定的目的，这些 Getter 和 Setter 方法的命名通常就好像它们本身就是属性一样。例如，名为 “getUser” 的方法实际上可能是一个检索用户信息的 Getter 方法，而名为 “storeData” 或 “setUser” 的方法实际上可能是一个 Setter 方法。
 
 ### *It Does not Mean(它并不意味着)* ？🥴
 
@@ -178,10 +188,10 @@ updateUserData()  // etc
 2. 使用冗余信息，如'UserAge'，我们可以写成'age'。
 3. 使用不恰当的缩写，如 `ymdt` 代表 `yearMonthDateTime`，我们应该写成`dateWithTimeZone`。
 4. 提供错误信息，例如：
-   1. `userList = { u1:a, u2:b, ... }` 这不是一个 `List`，而是一个`Object`。因此名称应该是 `userObj` 或 `userMap`。
+   1. `userList = { u1:a, u2:b, ... }` 这不是一个 `List`，而是一个 `Object`。因此名称应该是 `userObj` 或 `userMap`。
    2. `allAccounts = accounts.filter()`，过滤后我们得到的是经过筛选的数据，而不是所有数据。所以这里的名称应该是 `filteredAccounts`。
 
-### *Choose distinctive names(选择有特色的名字)*：👻
+### *Choose distinctive names(选择有特色的名字)* ：👻
 
 有时我们会遇到这样的情况，我们得到相似的数据并且我们必须给出相似的名称。在那种情况下，我们通常会更具体地指定变量并相应地命名它们。
 
@@ -216,3 +226,7 @@ updateUserData()  // etc
 ## 原文链接：🤠
 
 {% link https://rahul4dev.hashnode.dev/why-goodnames-matter-cleancodep2 %}
+
+## 译者：👨‍💻
+
+{% link https://www.xiangshu233.cn %}
