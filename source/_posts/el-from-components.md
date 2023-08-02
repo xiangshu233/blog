@@ -3,10 +3,10 @@ date: 2020-10-15
 title: el-from 表单组件封装
 categories: [UI]
 tags: [element-ui, 组件, 表单, 封装]
-cover: https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaFhWN0U3bHBTaWtsbkk0QnRiWTN3LTRCbzlYP2U9dlZjVzFN.jpg
+cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-wygyrp.jpg
 cover_info:
   title: el-from 表单组件封装
-banner: https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaFhWN0U3bHBTaWtsbkk0QnRiWTN3LTRCbzlYP2U9dlZjVzFN.jpg
+banner: https://cdn.xiangshu233.cn/post/banner/wallhaven-wygyrp.jpg
 ---
 
 ## 缘由

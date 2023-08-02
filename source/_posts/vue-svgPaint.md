@@ -3,6 +3,8 @@ date: 2020-8-27
 title: 鼠标拾取x y坐标绘制线功能记录
 categories: [Vue]
 tags: [vue, svg, 坐标拾取绘线]
+cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-0wvvv7.png
+banner: https://cdn.xiangshu233.cn/post/banner/wallhaven-0wvvv7.png
 references:
   - title: 'JavaScript 和 SVG 实现点击连线'
     url: https://www.cnblogs.com/xiaozhuzhuandxiaomoney/p/7570765.html

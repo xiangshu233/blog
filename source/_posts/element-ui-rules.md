@@ -3,7 +3,7 @@ date: 2020-10-15
 title: el-form 表单校验规则封装
 categories: [UI]
 tags: [封装, 表单校验, vue, element-ui]
-cover: https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaFhWN0U3bHBTaWtsblFNRGJ4X1BpeGI3M3J4P2U9dFJ0VjRt.jpg
+cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-4xyprd.jpg
 references:
   - title: 'ElementUI表单校验rules封装'
     url: https://blog.csdn.net/xhom_w/article/details/103961710

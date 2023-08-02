@@ -3,7 +3,7 @@ title: naive-ui 栅格布局笔记
 date: 2022-05-13 18:27
 categories: [UI]
 tags: [naive-ui, 栅格布局]
-cover: https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaFhWN0U3bHBTaWtsbkNaWjYxY0lLczdEUGlpP2U9Yldkd0Fp.jpg
+cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-qdg88q.jpg
 cover_info:
   title: naive-ui 栅格布局笔记
 ---

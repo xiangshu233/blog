@@ -3,8 +3,8 @@ title: 代码整洁之道：为什么好的命名很重要 P2
 tags: [代码规范]
 categories: [JS]
 date: 2023-04-15 22:22:22
-cover: https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBaFhWN0U3bHBTaWtseWZlQnI0b1I2cENHOFhoP2U9b3VCaG9j.jpg
-banner: https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBaFhWN0U3bHBTaWtseWZlQnI0b1I2cENHOFhoP2U9b3VCaG9j.jpg
+cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-1k2wlv.jpg
+banner: https://cdn.xiangshu233.cn/post/banner/wallhaven-1k2wlv.jpg~
 ---
 ## 前言
 
@@ -12,8 +12,6 @@ banner: https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBaFhWN0U3bHBTaWtse
 
 我非常反感那些故意写💩山代码的“程序员”，这种不负责任的行为真的让我非常生气。{% psw 你是真该死啊。深受屎山项目迫害，已经 PTSD 了 %}。
 虽然这个系列文章作者使用了大量的 emoji 表情（有些人可能认为专业文章不应该包含这么多表情符号，{% del 还好这并不专业🥴 %}），但我认为这样的表达方式很有趣，因此我保留了它们。
-
-tips：如果我的翻译有任何错误，请在评论区告诉我，谢谢！
 
 ## 开始
 
@@ -220,8 +218,6 @@ Getter 方法用于从类对象中检索属性的值，而 Setter 方法用于�
 
 最后，正如我们已经谈了很多命名，我们也可以说，通过正确的命名和代码结构，我们将我们的表达留在代码上，这会激发其他编码人员和程序员这样编码/编写。您未来的员工和同事可以在修复错误的同时轻松理解您的代码，并欣赏您的工作，因为他们不会在理解您的代码时摸不着头脑。
 最后，正如我们已经谈了很多命名，我们也可以说，通过适当的命名和代码结构，我们将我们的表达留在代码上，这会激发其程序员这样 编码/编写。您未来的员工和同事可以在修复错误的同时轻松理解你的代码，并欣赏你的工作，因为他们不会在理解你的代码时摸不着头脑。
-
-与作家和小说家类似，通过良好和干净的代码，你可以成为不朽的人。你的代码与你的名字一起长存。
 
 ## 原文链接：🤠
 

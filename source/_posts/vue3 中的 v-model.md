@@ -3,11 +3,11 @@ date: 2022-10-16
 title: vue3 中的 v-model
 categories: [Vue3]
 tags: [vue3, v-model]
-cover: https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaFhWN0U3bHBTaWtsbndLSnpRVTdCUnhVc0dyP2U9ZFFhVzl3.jpg
+cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-lqq8ky.jpg
 cover_info:
   meta: Vue3、JavaScript
   title: Vue3 中的 v-model
-banner: https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaFhWN0U3bHBTaWtsbndLSnpRVTdCUnhVc0dyP2U9ZFFhVzl3.jpg
+banner: https://cdn.xiangshu233.cn/post/banner/wallhaven-lqq8ky.jpg
 references:
   - title: '组件事件'
     url: https://cn.vuejs.org/guide/components/events.html#usage-with-v-model

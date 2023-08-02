@@ -3,8 +3,8 @@ title: 代码整洁之道：实践指南 P1
 tags: [代码规范]
 categories: [JS]
 date: 2023-03-25 19:20:00
-cover: https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBaFhWN0U3bHBTaWtsd2N0YURBRFNXd3Zqd0RsP2U9RGlvMVkx.jpg
-banner: https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBaFhWN0U3bHBTaWtsd2N0YURBRFNXd3Zqd0RsP2U9RGlvMVkx.jpg
+cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-0wvvv6.jpg
+banner: https://cdn.xiangshu233.cn/post/banner/wallhaven-0wvvv6.jpg
 ---
 
 ## 前言
