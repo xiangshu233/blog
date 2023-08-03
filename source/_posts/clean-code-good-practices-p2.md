@@ -4,7 +4,7 @@ tags: [代码规范]
 categories: [JS]
 date: 2023-04-15 22:22:22
 cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-1k2wlv.jpg
-banner: https://cdn.xiangshu233.cn/post/banner/wallhaven-1k2wlv.jpg~
+banner: https://cdn.xiangshu233.cn/post/banner/wallhaven-1k2wlv.jpg
 ---
 ## 前言
 
