@@ -120,4 +120,20 @@ formatter(name) {
 
 ![image-20230726142234291](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/2023/8/image-20230726142234291.png)
 
+### 纯 css 动态背景
+
+[示例站点](https://codepen.io/yanxiazhi/pen/XWoWdqr)
+
+![image-20230823153601852](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/2023/8/tu-chuang-post-img/image-20230823153601852.png)
+
+[radial-gradient()](https://developer.mozilla.org/zh-CN/docs/Web/CSS/gradient/radial-gradient) CSS 函数创建一个图像，该图像由从原点辐射的两种或多种颜色之间的渐进过渡组成。
+
+```css
+/* 在容器中心的渐变，从红色开始，变成蓝色，最后变成绿色 */
+radial-gradient(circle at center, red 0, blue, green 100%)
+
+/* 设置径向渐变的形状和大小，closest-side表示渐变的尺寸将根据元素的宽度和高度中较短的那一边来确定，以确保整个渐变都能完全覆盖元素。渐变从起始颜色（淡紫色）向结束颜色（淡橙色）过渡 */
+radial-gradient(closest-side, rgba(99,102,241, 1 ), rgba(235, 105, 78, 0)),
+```
+
 后续再补充。。。
