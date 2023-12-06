@@ -1,16 +1,16 @@
 ---
 date: 2020-10-15
-title: el-from 表单组件封装
+title: el-form 表单组件封装
 categories: [UI]
 tags: [element-ui, 组件, 表单, 封装]
 cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-wygyrp.jpg
 cover_info:
-  title: el-from 表单组件封装
+  title: el-form 表单组件封装
 banner: https://cdn.xiangshu233.cn/post/banner/wallhaven-wygyrp.jpg
 ---
 
 ## 缘由
-公司后台管理表单页过多，且大部分都是普通 `input select` 框，重复度过高，为了避免无用劳动则对 `from` 进行封装
+公司后台管理表单页过多，且大部分都是普通 `input select` 框，重复度过高，为了避免无用劳动则对 `form` 进行封装
 
 ## BasicForm组件
 
@@ -262,7 +262,7 @@ export default {
 ```
 
 ## 使用
-引用 注册 `from` 组件
+引用 注册 `form` 组件
 ```js
 import BasicForm from '@/components/BasicForm';
 
@@ -313,7 +313,7 @@ fieldList: [
 ```
 
 ## 数据结构示例
->关于表单校验规则封装可以看上一篇文章: [el-from 表单校验规则封装](/element-ui-rules/)
+>关于表单校验规则封装可以看上一篇文章: [el-form 表单校验规则封装](/element-ui-rules/)
 
 
 ```js
