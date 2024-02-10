@@ -1,6 +1,6 @@
 ---
 date: 2023-12-07
-title: 美化你的 PowerShell 2024
+title: 美化你的 PowerShell
 categories: [笔记]
 tags: [PowerShell]
 cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-4d7lj4.jpg
@@ -173,7 +173,7 @@ Get-PoshThemes
 
 ![image-20231207001458467](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/2023/12/202312070014506.png)
 
-在终端中执行以下命令刚才 `PowerShell_profile.ps1` 脚本文件
+在终端中执行以下命令，打开的就是刚才的 `PowerShell_profile.ps1` 脚本文件
 
 ```shell
 notepad $PROFILE
