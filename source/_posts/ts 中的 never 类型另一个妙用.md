@@ -17,7 +17,7 @@ references:
 
 Bottom 类型是 [TypeScript 手册](https://link.juejin.cn/?target=https%3A%2F%2Fwww.typescriptlang.org%2Fdocs%2Fhandbook%2Ftypescript-in-5-minutes-func.html%23other-important-typescript-types) 对它的定义。当我们把 `never` 放一个完整[类型层次](https://link.juejin.cn/?target=https%3A%2F%2Fwww.zhenghao.io%2Fposts%2Ftype-hierarchy-tree%23the-bottom-of-the-tree)的树形结构图之后，看起来才比较有意义。
 
-![image.png](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/resume/my-project/AIgongkong/202312101846296.webp)
+![image.png](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/2023/12/202402102232677.webp)
 
 就像在数学中我们使用**零**来表示没有的数量一样，我们需要一个类型来表示类型系统中的**不可能**。
 
@@ -49,17 +49,17 @@ function log(x) {
 
 但是你这样子做，也没毛病，就是用一点也不 TS，你把这个错误的发生事件延迟到了运行时，也就意味着你在编写代码的时候，在运行之前你是收不到任何的错误提示的
 
-![image-20231210172351792](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/resume/my-project/AIgongkong/202312101723883.png)
+![image-20231210172351792](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/2023/12/202402102233456.png)
 
 可以看到上图中 TS 是不会报错的，只有当你运行了代码的时候你才发现这个错误发生了
 
-![image-20231210172648389](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/resume/my-project/AIgongkong/202312101726419.png)
+![image-20231210172648389](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/2023/12/202402102233792.png)
 
 那么我们能不能运用 TS 的能力把这个错误提前到编译时呢？答案是当然可以，这就是 TS 的主要功能之一
 
 现在我们把这个判断去掉，给 log 加上一个泛型 T，有了这个泛型参数 T 之后，我们可以对这个参数 x 进行进一步的约束，我们可以使用一个三目运算，看一下这个类型 T 是不是日期，如果说他是日期类型的话，那么这个 x 的类型就给他标注为 never 类型，就是绝不可能的类型，否则的话就是参数 T
 
-![image-20231210173603467](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/resume/my-project/AIgongkong/202312101736486.png)
+![image-20231210173603467](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/2023/12/202402102233438.png)
 
 这样我们会发现当你给他传一个 Date 的时候，他的类型约束这里就满足 never 了，这个 x 就变成一个 never 类型，而 never 类型是不能接受一个 Date 类型的
 
@@ -80,10 +80,10 @@ log(new Date()); // 类型“Date”的参数不能赋给类型“never”的参
 
 把错误提到编译时是 TS 的主要功能，得益于 TS 的类型检查，我们就可以尽早的发现这个问题，不能传递日期
 
-![image-20231210174453213](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/resume/my-project/AIgongkong/202312101744234.png)
+![image-20231210174453213](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/2023/12/202402102233953.png)
 
 我们甚至可以更近一步，把这个类型做的再通用一点，可以去除掉任何类型
 
-![image-20231210174710393](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/resume/my-project/AIgongkong/202312101747411.png)
+![image-20231210174710393](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/2023/12/202402102233918.png)
 
 这样我们就做出来一个更佳通用的类型
