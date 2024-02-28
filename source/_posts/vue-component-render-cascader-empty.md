@@ -2,10 +2,6 @@
 title: 动态组件渲染为 Cascader，所有选项为空的 Bug
 tags: [vue3, element-plus]
 categories: [笔记, Vue3]
-poster:
-  headline: 动态组件渲染为 Cascader，所有选项为空的 Bug
-  caption: 今天封装一个简易动态表单组件的时候遇到了一个的Bug分享下，避免踩坑。我使用动态组件来加载一些表单组件，对于大多数组件来说...
-
 date: 2024-02-09 17:12:15
 description:
 cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-0jv3kq.jpg
