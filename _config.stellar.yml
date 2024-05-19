@@ -53,9 +53,13 @@ open_graph:
   enable: false
   twitter_id: '' # for open_graph meta
 
-# 是否自动生成封面
+######## Article ########
 article:
+  # 是否自动生成封面
   auto_cover: false
+  # 如果没有指定 excerpt 和 description，将自动取多长的内容作为文章摘要？
+  auto_excerpt: 200
+
   # 分类颜色
   category_color:
     '实用脚本': '#DA0F47'
