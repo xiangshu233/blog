@@ -19,23 +19,21 @@ breadcrumb: false
 {% navbar  active:4 [文章](/) [便签](/notes/) [朋友](/friends/)  [关于](/about/) %}
 {% endabout %}
 
-
-
 ## MY
+
 - [乡树](https://www.16personalities.com/profiles/adf14902911ea)♒️
-- 废柴、死宅
-- [洁癖患者](https://b23.tv/NnaTV5)
-- 整天做梦的咸鱼
-- 强迫症晚期
-- 焦虑症晚期
-- 拖延症晚期
-- 会做饭洗衣打扫卫生 !!富婆请私联我!!
-- 三分钟爱好{% emoji blobcat blobcatsipsweat %}
+- 废柴、死宅、摆烂 king
+- [洁癖患者？🥴](https://b23.tv/NnaTV5)
+- 整天做梦的咸鱼 🎣
+- 强迫症晚期 🤯
+- 焦虑症晚期 💭
+- 拖延症晚期 💤
+- 会做饭洗衣打扫卫生 {% psw  富婆请私联我 🤤 %}
+- 三分钟爱好 🫡
 
 ## Interest
 
 {% tabs align:center %}
-
 
 <!-- tab 影视 -->
 
@@ -47,7 +45,7 @@ breadcrumb: false
 | 肖申克的救赎             | ★★★★    | 2015-08-17 |
 | 扎克·施奈德版正义联盟    | ★★★★    | 2021-05-03 |
 | 芬奇 Finch               | ★★★★     | 2021-12-06 |
-| 新·奥特曼               | ★★★★★★      | 2022-10-09 |
+| 新·奥特曼               | ★★★★      | 2022-10-09 |
 
 <!-- tab 音乐 -->
 
@@ -58,7 +56,6 @@ breadcrumb: false
 对吃瓜、娱乐圈、键政无感
 
 {% endtabs %}
-
 
 ## Site
 
@@ -72,5 +69,6 @@ breadcrumb: false
 - 欢迎和我交换[友链](https://xiangshu233.cn/friends/){% emoji blobcat ablobcatrainbow %}
 
 ## Latest Theme Version
+
 {% timeline api:https://api.github.xaox.cc/repos/xaoxuu/hexo-theme-stellar/releases?per_page=1 %}
 {% endtimeline %}

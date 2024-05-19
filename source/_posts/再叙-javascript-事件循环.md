@@ -2,11 +2,10 @@
 title: 再叙 JavaScript 事件循环
 tags: [事件循环]
 categories: [JS]
-poster:
-  headline: 再叙 JavaScript 事件循环
-date: 2023-01-03 20:40:22
-cover: https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaFhWN0U3bHBTaWtsd1U4c3dGX29MV1VmU2pqP2U9SG9jd3J3.jpg
-banner: https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaFhWN0U3bHBTaWtsd1U4c3dGX29MV1VmU2pqP2U9SG9jd3J3.jpg
+date: 2023-01-03
+updated: 2023-2-12
+cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-47zo9v.jpg
+banner: https://cdn.xiangshu233.cn/post/banner/wallhaven-47zo9v.jpg
 ---
 ## 一、为什么 JavaScript 是单线程
 
@@ -135,7 +134,15 @@ console.log(5); // 直接执行
 当主线程内的任务执行完毕，主线程为空时，会检查微任务的 `Event Queue`，如果有任务，就全部执行，如果没有就执行下一个宏任务
 上述过程会不断重复，这就是 `Event Loop`，比较完整的事件循环。
 
-## 五、测试题
+## 五、为什么要有微任务
+那么为什么会有微任务呢？这种设计是为了给紧急任务一个`插队`的机会，否则新入队的任务`永远被放在队尾`。具体表现在执行过程：
+当前宏任务中的 JavaScript 快执行完成时，也就在 JavaScript 引擎准备退出全局执行上下文并清空调用栈的时候，JavaScript 引擎会检查全局执行上下文中的微任务队列，然后按照顺序执行队列中的微任务。
+
+如果在执行微任务的过程中，产生了`新的微任务`，同样会将该微任务添加到微任务队列中，V8 引擎一直循环执行微任务队列中的任务，直到`队列为空才算执行结束`。也就是说在执行微任务过程中**产生的新的微任务并不会推迟到下个宏任务中执行**，而是在`当前的宏任务中继续执行`。
+
+
+
+## 六、测试题
 
 下面这个示例能很好的解答什么是事件循环，还挺绕，但是多看几遍其实也就那回事
 
@@ -251,6 +258,3 @@ console.log('script end'); // 同步
 
 {% image https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/2023/1/eventloop.png %}
 
-
-## 后话
-哎，总感觉阳后记忆力衰退了，脑子不好使了，看过的东西几天不看就忘了，郁闷

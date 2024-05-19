@@ -3,8 +3,8 @@ title: js 中的 call、apply、bind 笔记
 date: 2022-08-31 17:52
 categories: [JS]
 tags: [call, apply, bind]
-cover: https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaFhWN0U3bHBTaWtsblZ0a3NnU1p2UFpYaTZsP2U9blVuNTQ5.jpg
-banner: https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaFhWN0U3bHBTaWtsblZ0a3NnU1p2UFpYaTZsP2U9blVuNTQ5.jpg
+cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-mdwv39.jpg
+banner: https://cdn.xiangshu233.cn/post/banner/wallhaven-mdwv39.jpg
 ---
 
 ## apply call
@@ -43,7 +43,7 @@ fun.call(newColor); // blue
 第二个参数是给 `调用函数` 传递的参数（如果调用函数没有参数就不传）。
 
 
-{% note 注意： color:yellow
+{% note color:yellow 注：
 如果 `call()` 方法没有参数，或者参数为 `null` 或 `undefined`，则等同于指向全局对象。另外箭头函数无法使用 `call()` `apply()` `bind()`，因为箭头函数中的 `this` 永远指向函数外最近的那个 `this`，因此不会起作用。
 %}
 

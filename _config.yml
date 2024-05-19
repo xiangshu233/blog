@@ -115,6 +115,7 @@ deploy:
 
 aplayer:
   meting: true
+  meting_api: https://api-meting.geekswg.top/api ## 官方的 API 挂了，先用别人自建的 API
 
 inject:
   head:

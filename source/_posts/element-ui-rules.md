@@ -3,7 +3,7 @@ date: 2020-10-15
 title: el-form 表单校验规则封装
 categories: [UI]
 tags: [封装, 表单校验, vue, element-ui]
-cover: https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaFhWN0U3bHBTaWtsblFNRGJ4X1BpeGI3M3J4P2U9dFJ0VjRt.jpg
+cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-4xyprd.jpg
 references:
   - title: 'ElementUI表单校验rules封装'
     url: https://blog.csdn.net/xhom_w/article/details/103961710
@@ -57,7 +57,7 @@ rules: {
    * @param type 校验类型
    * @param trigger 触发条件
    * @param nullMsg 提示语
-   * @desc 📝详细内容见 elFromValidator.js
+   * @desc 📝详细内容见 elFormValidator.js
    * @date 2020-10-09 16:06:53
   */
   sn: vxRule(),
@@ -75,7 +75,7 @@ rules: {
 
 
 
-## elFromValidator.js
+## elFormValidator.js
 
 直接上代码，注释中都明确注释了，这里不再赘述，验证规则可自行拓展
 ```js
@@ -269,9 +269,9 @@ export function vxRule(required=true, type, trigger="blur", nullMsg="该字段�
   return [rule]
 }
 ```
-## 使用 elFromValidator.js
+## 使用 elFormValidator.js
 ```js
-import { vxRule } from '@/utils/elFromValidator';
+import { vxRule } from '@/utils/elFormValidator';
 
 export default {
   data() {
@@ -282,7 +282,7 @@ export default {
        * @param type 校验类型
        * @param trigger 触发条件
        * @param nullMsg 提示语
-       * @desc 📝详细内容见 elFromValidator.js
+       * @desc 📝详细内容见 elFormValidator.js
        * @date 2020-10-09 16:06:53
       */
       rules: {

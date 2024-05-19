@@ -3,8 +3,8 @@ title: typeScript 中的数组类型定义
 date: 2022-03-03
 categories: [TS]
 tags: [二维数组, array, typescript]
-cover: https://tva4.sinaimg.cn/large/006wuklaly8h5apkbhc2hj31hc0u0dsr.jpg
-banner: https://tva4.sinaimg.cn/large/006wuklaly8h5apkbhc2hj31hc0u0dsr.jpg
+cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-2e7rp6.jpg
+banner: https://cdn.xiangshu233.cn/post/banner/wallhaven-2e7rp6.jpg
 ---
 
 ## 声明和初始化数组
