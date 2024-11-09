@@ -43,7 +43,7 @@ breadcrumb: true
 
 {% codeblock lang:json %}
 {
-  "title": "傲慢或香橙",
+  "title": "乡树",
   "url": "https://xiangshu233.cn",
   "avatar": "https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets@0.2/assets/images/avatar-1.jpg",
   "screenshot": "https://image.thum.io/get/https://www.xiangshu233.cn",

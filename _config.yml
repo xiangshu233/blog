@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 傲慢或香橙
+title: 乡树
 avatar: 'https://fastly.jsdelivr.net/gh/xiangshu233/cdn@2.8/img/custom/touxiang.jpg'
 subtitle: '随知修行乃当务之急，然怠惰度日至今 | 回首前尘，尽是可耻的过往'
 description: ''
@@ -100,6 +100,13 @@ pagination_dir: page
 include:
 exclude:
 ignore:
+
+codepen:
+  userId: "yanxiazhi"
+  theme: "33713"
+  default_tabs: "html,css,js,result"
+  height: 600
+  width: "100%"
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
