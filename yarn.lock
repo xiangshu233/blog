@@ -174,6 +174,13 @@ atob@^2.1.2:
   resolved "https://registry.npmjs.org/atob/-/atob-2.1.2.tgz"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
+axios@^0.21.1:
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.4.tgz#c67b90dc0568e5c1cf2b0b858c43ba28e2eda575"
+  integrity sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==
+  dependencies:
+    follow-redirects "^1.14.0"
+
 babel-polyfill@^6.16.0:
   version "6.26.0"
   resolved "https://registry.npmjs.org/babel-polyfill/-/babel-polyfill-6.26.0.tgz"
@@ -845,6 +852,11 @@ finalhandler@1.1.2:
     statuses "~1.5.0"
     unpipe "~1.0.0"
 
+follow-redirects@^1.14.0:
+  version "1.15.6"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.6.tgz#7f815c0cda4249c74ff09e95ef97c23b5fd0399b"
+  integrity sha512-wWN62YITEaOpSK584EZXJafH1AGpO8RVgElfkuXbTOrPX4fIfOyEpW/CsiNd8JdYrAoOvafRTOEnvsO++qCqFA==
+
 for-in@^1.0.1, for-in@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npmjs.org/for-in/-/for-in-1.0.2.tgz"
@@ -1006,6 +1018,13 @@ has@^1.0.3:
   dependencies:
     function-bind "^1.1.1"
 
+hexo-bilibili-plus@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/hexo-bilibili-plus/-/hexo-bilibili-plus-0.1.3.tgz#9ef4e59d19f2e6be07f9e9d70dacfe69105d086e"
+  integrity sha512-JOzhrVUqRiweknnDBlaDQ+OxRN2TQCiIxux+JGbGq3TzMsIrfhoQ+iPDdxA/MFKUbhuB2qgcLXK4HP6UoVaZNw==
+  dependencies:
+    axios "^0.21.1"
+
 hexo-bunyan@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/hexo-bunyan/-/hexo-bunyan-1.0.0.tgz"
@@ -1030,6 +1049,11 @@ hexo-cli@^4.3.0:
     minimist "^1.2.5"
     resolve "^1.11.0"
     tildify "^2.0.0"
+
+hexo-codepen-v2@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/hexo-codepen-v2/-/hexo-codepen-v2-0.2.3.tgz#1c979c8580fc0bdae2f7fda83fd7dd2669854422"
+  integrity sha512-i59vSuQQBsz4n3AKNOabP+CtbCX2pSRAvfrvEFl/HO+AvroPrAp7qBX+QTTmpOI1mAMM98TisZv7NPG4QiqKKQ==
 
 hexo-deployer-git@^4.0.0:
   version "4.0.0"
@@ -1200,11 +1224,6 @@ hexo-tag-aplayer@^3.0.4:
     hexo-log "^0.2.0"
     hexo-util "^0.1.7"
     meting "^1.2.0"
-
-hexo-theme-landscape@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.npmjs.org/hexo-theme-landscape/-/hexo-theme-landscape-0.0.3.tgz"
-  integrity sha512-b0Di+TUVs4ESrNX4ULEh9uQmADpO6kr10rIJ2OGZM8suNQNFKdxn+vJUjnLfKkCPJAfVmS7/S83KCNYe4tpoNw==
 
 hexo-util@^0.1.7:
   version "0.1.7"
