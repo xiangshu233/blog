@@ -1,7 +1,7 @@
 ---
 title: 前端开发风格指南
 tags: [代码规范]
-categories: [前端工程化, JS]
+categories: [StyleGuide]
 date: 2023-03-14 20:33:45
 description:
 cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-4y8q3g.jpg
