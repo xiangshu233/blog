@@ -9,12 +9,8 @@ date: 2024-11-14 23:12:30
 
 ## Atomic CSS 的诞生背景
 
-在看这篇文章之前，推荐可以先看一下 2022 年 2 月的这篇专访：
-[The Making of Atomic CSS: An Interview With Thierry Koblentz](https://css-tricks.com/thierry-koblentz-atomic-css)
-
-在这篇里面提及了更多 Atomic CSS 出现的背景以及早期在 Yahoo! 内部的应用。
-
-Atomic CSS 的概念由 Yahoo! 工程师 Thierry Koblentz（以下简称TK）于 2013 年提出，最早见于他的经典文章 [挑战 CSS 最佳实践](https://www.smashingmagazine.com/2013/10/challenging-css-best-practices-atomic-approach/)，这篇文章为许多后来流行 CSS 库铺平了道路，当时，TK 的主管希望能在不更改 stylesheet 的情况下调整前端样式，以避免意外破坏页面。为此，Koblentz 开发了一个「utility-sheet」静态 CSS 文件，包含各种 utility class，让工程师可以灵活调整样式。
+在看这篇文章之前，推荐可以先看一下 2022 年 2 月的这篇专访：[The Making of Atomic CSS: An Interview With Thierry Koblentz](https://css-tricks.com/thierry-koblentz-atomic-css) 在这篇里面提及了更多 Atomic CSS 出现的背景以及早期在 Yahoo! 内部的应用。
+Atomic CSS 的概念由 Yahoo! 工程师 Thierry Koblentz（蒂埃里·科布伦茨 以下简称 TK）于 2013 年提出，最早见于他的经典文章 [挑战 CSS 最佳实践](https://www.smashingmagazine.com/2013/10/challenging-css-best-practices-atomic-approach/)，这篇文章为许多后来流行 CSS 库铺平了道路，当时，TK 的主管希望能在不更改 stylesheet TK 开发了一个「utility-sheet」静态 CSS 文件，包含各种 utility class，让工程师可以灵活调整样式。
 随着需求增多，Yahoo! 的工程主管提出能否全面使用 utility class 重构首页。TK 因此开发了一套名为 Stencil 的静态 CSS 系统，并设定了固定的设计规则，比如 margin 只能用特定的 class 表示，比如 `margin-left-1`、`margin-left-2`、`margin-left-3`，每个值是 4 的倍数（即 4px、8px、12px），从而强制设计遵循一致的间距规则。然而，静态系统无法满足每个团队的不同需求，因为不同设计团队会有不同的 padding、margin、字体和颜色需求。因此，TK 进一步开发了 Atomizer 工具，它能根据页面内容动态生成 CSS。
 
 Atomizer 的语法称为 ACSS，类似于现在的 Tailwind CSS，受到 Emmet 命名风格的启发。ACSS 在 Yahoo! 内部推广初期面临阻力，但实践证明，它能够有效减少代码体积，使项目跨页面保持一致性，实现「page agnostic」的特性，非常适合复杂的大型项目。
@@ -41,7 +37,18 @@ Atomizer 的语法称为 ACSS，类似于现在的 Tailwind CSS，受到 Emmet �
 
 ## Atomic CSS 到底想解决什么问题？
 
-请看 [挑战 CSS 最佳实践](https://www.smashingmagazine.com/2013/10/challenging-css-best-practices-atomic-approach/) 的内容，因为原文写得很清楚。强烈你们自己看一遍。
+请看 [挑战 CSS 最佳实践](https://www.smashingmagazine.com/2013/10/challenging-css-best-practices-atomic-approach/)
+
+Atomic CSS 主要是为了解决传统 CSS 代码中类名重复、冗长和可维护性差的问题。它提倡使用非常小而专一的样式规则（原子级别的类），每个类只负责单一的样式属性，从而避免了复杂的、庞大的 CSS 文件。通过这种方式，开发者可以组合多个原子类来构建组件，而不需要为每个新组件或页面单独编写新的 CSS 规则。
+
+Atomic CSS 解决的问题：
+ - 冗余和膨胀：通过原子类减少重复的样式定义。
+ - 上下文依赖和维护困难：原子类与上下文无关，避免了修改上下文时影响其他部分。
+ - 样式冲突：原子类避免了因复杂选择器而引发的样式冲突。
+
+适用场景：
+ - 大型项目，尤其是当团队多人协作时，能大大减少 CSS 冲突和重复定义。
+ - 快速开发原型或小型项目时，原子 CSS 让开发变得更为灵活高效。
 
 ## 跟 Inline Style 有什么不同？
 
@@ -55,7 +62,7 @@ Atomizer 的语法称为 ACSS，类似于现在的 Tailwind CSS，受到 Emmet �
 
 首先，我认为 Atomic CSS 带来了两个独特的好处：
 
-1. 降低 CSS 档案大小
+1. 降低 CSS 大小
 2. 最大程度缩减 scope，让维护变得容易
 
 第一点是显而易见的，这个应该就不用再多提了，CSS 档案大小会小很多，这一点是其他 CSS 的解决方案没办法做到的。
@@ -71,8 +78,7 @@ Atomizer 的语法称为 ACSS，类似于现在的 Tailwind CSS，受到 Emmet �
 ### TailwindCSS（先行者）
 
 最大的优势是我认为它的 DX（开发人员体验）更为突出，例如说它使用了更好看懂的 class name，文档也更加完整，很快就可以查到什么语法应该怎样写，其次 TailwindCSS 生态比较好，社区非常活跃。
-
-![image-20241114103324214](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets/2024/11/image-20241114103324214.png)
+{% image https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets/2024/11/image-20241114103324214.png %}
 
 ### WindCSS (走向衰败 在 2023 年 3 月停止了*维护*)
 
@@ -82,11 +88,11 @@ Atomizer 的语法称为 ACSS，类似于现在的 Tailwind CSS，受到 Emmet �
 
 "按需生成" 的想法引入了一种全新的思维方式。让我们先来对比下这些方案：
 
-![image-20241115015224241](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/2024/11/202411150152324.png)
+{% image https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/2024/11/202411150152324.png %}
 
 传统的方式不仅会消耗不必要的资源（生成了但未使用），甚至有时更是无法满足你的需求，因为总会有部分需求无法包含在内。
 
-![image-20241115015152581](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/2024/11/202411150151653.png)
+{% image https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/2024/11/202411150151653.png %}
 
 通过调换 "生成" 和 "扫描" 的顺序，"按需" 会为你节省浪费的计算开销和传输成本，同时可以灵活地实现预生成无法实现的动态需求。另外，这种方法可以同时在开发和生产中使用，提供了一致的开发体验，使得 HMR (Hot Module Replacement, 热更新) 更加高效。
 
@@ -104,7 +110,7 @@ Atomizer 的语法称为 ACSS，类似于现在的 Tailwind CSS，受到 Emmet �
 >
 > 最重要的是，UnoCSS 被提取为一个原子 CSS 引擎，所有功能都是可选的，这使得创建自己的规范、自己的设计系统和自己的预设变得容易——通过你想要的功能组合实现。
 
-![image-20241114114128945](https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets/2024/11/image-20241114114128945.png)
+{% image https://cdn.jsdelivr.net/gh/xiangshu233/blogAssets/2024/11/why-unocss.svg why-uno-css %}
 
 我们设想 UnoCSS 能够通过预设模拟大多数已有原子化 CSS 框架的功能。也有可能会被用作创建一些新的原子化 CSS 框架的引擎。例如：
 
@@ -119,9 +125,10 @@ export default defineConfig({
 })
 ```
 
-这样你就可以在你的项目里无缝使用任何原子化 CSS，不过 UnoCss 并没有像 Tailwindcss 那样详细的文档，正如开头所说 UnoCSS 是一个**引擎**，而非一款**框架**，你配置了什么预设就去看相关预设的文档，UnoCss 没必要再写一遍文档。所以就会出现一种奇特的画风，用着 UnoCss 查着 TailwindCss 的文档<img src="https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/2024/11/202411142054644.png" alt="[奸笑]" style="zoom: 67%;" />
+这样你就可以在你的项目里无缝使用任何原子化 CSS，不过 UnoCss 并没有像 Tailwindcss 那样详细的文档，正如开头所说 UnoCSS 是一个**引擎**，而非一款**框架**，你配置了什么预设就去看相关预设的文档，UnoCss 没必要再写一遍文档。所以就会出现一种奇特的画风，用着 UnoCss 查着 TailwindCss 的文档{% emoji blobcat ablobcatattentionreverse %}
 
-![image-20241114205434408](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/2024/11/202411142054453.png)
+{% image https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/2024/11/202411142054453.png %}
+
 
 ## UnoCSS 预设
 
@@ -153,16 +160,17 @@ export default defineConfig({
 .ms-2 { margin-inline-start: 0.5rem; }
 .mt-10px { margin-top: 10px; }
 ```
-
-![GIF 2024-11-14 22-21-44](https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/2024/11/202411142222605.gif)
-
+{% image https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/2024/11/202411142222605.gif 使用 UnoCSS 插件 hover 原子样式可以看到 CSS 源 这非常有用 %}
 
 
 ### 纯 CSS 图标
 
 关于实现原理推荐阅读：[纯 CSS 图标](https://antfu.me/posts/icons-in-pure-css)
 
+{% note color:blue INFO
 你可以单独使用此预设作为现有 UI 框架的补充，以获得纯 CSS 图标！
+%}
+
 
 从最初的 `<img>` 到 雪碧图 再到 `iconfont`，以及各种 `<IconSvg>` 组件，无一例外它们都需要先把资源文件放到本地 `assets/xxx` 目录下，虽然后来的 font 库，可以做到不使用本地图片了，但是可定制性差，数量少。而纯 CSS 图标使用方式就简单多了，你只需要到 [Iconify](https://icon-sets.iconify.design/) （超过 **200,000** 个开源矢量图标）站点，找到任意 icon 点击 > 选择 UnoCss > copy！然后粘贴到你的项目中即可完成图标的引入。
 
@@ -234,7 +242,7 @@ export default defineConfig({
 })
 ```
 
-[属性化模式](https://unocss-cn.pages.dev/presets/attributify) 继承自 WindCSS，这是我最喜欢的模式之一，想象有这样一个使用 Tailwind CSS 实用程序的按钮。当列表变得更长时，阅读和维护变得非常困难。
+[属性化模式](https://unocss-cn.pages.dev/presets/attributify) 继承自 WindCSS，这是我最喜欢的模式之一，想象一下有这样一个使用 Tailwind CSS 实用程序的按钮。当列表变得更长时，阅读和维护变得非常困难。
 
 #### Attributify 模式
 
@@ -315,16 +323,17 @@ export default defineConfig({
 <!-- after -->
 <div m-2 rounded text-teal-400 />
 ```
+{% note color:yellow
+ 注意 如果属性模式的名称与元素或组件的属性发生冲突，你可以添加 `un-` 前缀以指定为 UnoCSS 的 attributify 模
 
-#### 注意：
-
-如果属性模式的名称与元素或组件的属性发生冲突，你可以添加 `un-` 前缀以指定为 UnoCSS 的 attributify 模式。
-
-```html
-<a text="red">This conflicts with links' `text` prop</a>
-<!-- to -->
-<a un-text="red">Text color to red</a>
+  ```html
+  <a text="red">This conflicts with links' `text` prop</a>
+  <!-- to -->
+  <a un-text="red">Text color to red</a>
 ```
+%}
+
+
 
 ### 快捷方式
 
@@ -450,7 +459,7 @@ export default defineConfig({
 
 `@screen` 还支持 `lt`、`at` 变体，响应式用的比较少这里不再赘述，可自行看 [媒体查询指令 screen](https://unocss-cn.pages.dev/transformers/directives#screen)
 
-## 一些技巧
+## 一些实用技巧
 
 ### 任意值
 
@@ -512,7 +521,7 @@ Tailwind 有一些非常有用且易于使用的动画实用程序类。例如�
 
 ### 简单的渐变
 
-您可以使用[渐变色标](https://tailwindcss.com/docs/gradient-color-stops#middle-color)创建复杂的渐变。为此，我们可以使用 `bg-gradient-to-` class 并将其与 `t` （上）、 `r` （右）、 `b` （下）和 `l` （左）组合。我们还可以用`tr` （右上角）、 `bl` （左下角）等来表示角点。
+你可以使用[渐变色标](https://tailwindcss.com/docs/gradient-color-stops#middle-color)创建复杂的渐变。为此，我们可以使用 `bg-gradient-to-` class 并将其与 `t` （上）、 `r` （右）、 `b` （下）和 `l` （左）组合。我们还可以用`tr` （右上角）、 `bl` （左下角）等来表示角点。
 
 然后我们可以组合： `from` 、 `to` 和 `via`来制作一些令人惊叹的渐变。
 
