@@ -4,7 +4,7 @@
 
 # Site
 title: 乡树
-avatar: 'https://fastly.jsdelivr.net/gh/xiangshu233/cdn@2.8/img/custom/touxiang.jpg'
+avatar: 'https://fastly.jsdelivr.net/gh/xiangshu233/blogAssets/assets/images/avatar-1.jpg'
 subtitle: '随知修行乃当务之急，然怠惰度日至今 | 回首前尘，尽是可耻的过往'
 description: ''
 keywords:
@@ -17,7 +17,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://xiangshu233.cn
+url: https://xiangshu233.cn
 permalink: :title/
 permalink_defaults:
 pretty_urls:
@@ -115,10 +115,10 @@ theme: stellar
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
-deploy:
-  type: git
-  repo: git@49.232.4.66:/home/git/hexo.git    # git@ip:/服务器仓库路径
-  branch: master      # 分支
+# deploy:
+#   type: git
+#   repo: git@49.232.4.66:/home/git/hexo.git    # git@ip:/服务器仓库路径
+#   branch: master      # 分支
 
 aplayer:
   meting: true
