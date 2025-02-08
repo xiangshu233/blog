@@ -122,7 +122,7 @@ theme: stellar
 
 aplayer:
   meting: true
-  meting_api: https://api.injahow.cn/meting ## 官方的 API 挂了，先用别人自建的 API
+  meting_api: https://api.injahow.cn/meting/ ## 官方的 API 挂了，先用别人自建的 API
 
 inject:
   head:
