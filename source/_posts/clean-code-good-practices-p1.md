@@ -3,8 +3,7 @@ title: 代码整洁之道：实践指南 P1
 tags: [代码规范]
 categories: [StyleGuide]
 date: 2023-03-25 19:20:00
-cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-0wvvv6.jpg
-banner: https://cdn.xiangshu233.cn/post/banner/wallhaven-0wvvv6.jpg
+cover: https://03c068f.webp.li/i/2025/02/08/wg1ic-8d.jpg
 ---
 
 ## 前言

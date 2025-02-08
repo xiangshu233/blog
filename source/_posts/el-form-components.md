@@ -3,10 +3,6 @@ date: 2020-10-15
 title: el-form 表单组件封装
 categories: [UI]
 tags: [element-ui, 组件, 表单, 封装]
-cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-wygyrp.jpg
-cover_info:
-  title: el-form 表单组件封装
-banner: https://cdn.xiangshu233.cn/post/banner/wallhaven-wygyrp.jpg
 ---
 
 ## 缘由

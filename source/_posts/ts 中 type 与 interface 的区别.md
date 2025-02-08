@@ -3,8 +3,8 @@ title: ts 中 type 与 interface 的区别
 date: 2022-08-08 17:39
 categories: [TS]
 tags: [typescript, type, interface]
-cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-we628p.jpg
-banner: https://cdn.xiangshu233.cn/post/banner/wallhaven-we628p.jpg
+cover: https://03c068f.webp.li/i/2025/02/08/wg1ic-s9.jpg
+banner: https://03c068f.webp.li/i/2025/02/08/wg1ic-s9.jpg
 ---
 
 ## 类型别名 type

@@ -2,9 +2,8 @@
 title: 团队开发-代码风格指南
 tags: [代码风格指南, 团队开发]
 categories: [StyleGuide]
-cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-d6repg.jpg
-banner: https://cdn.xiangshu233.cn/post/banner/wallhaven-d6repg.jpg
 date: 2024-7-15 23:40:47
+cover: https://03c068f.webp.li/i/2025/02/08/wfzz7-zr.jpg
 ---
 
 ##  .vue 文件行数规范

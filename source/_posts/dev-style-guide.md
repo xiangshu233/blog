@@ -4,8 +4,7 @@ tags: [代码规范]
 categories: [StyleGuide]
 date: 2023-03-14 20:33:45
 description:
-cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-4y8q3g.jpg
-banner: https://cdn.xiangshu233.cn/post/banner/wallhaven-4y8q3g.jpg
+cover: https://03c068f.webp.li/i/2025/02/08/wg1ic-ec.jpg
 ---
 
 ## 前言

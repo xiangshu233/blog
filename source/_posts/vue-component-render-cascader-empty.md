@@ -4,8 +4,7 @@ tags: [vue3, element-plus]
 categories: [笔记, Vue3]
 date: 2024-02-09 17:12:15
 description:
-cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-0jv3kq.jpg
-banner: https://cdn.xiangshu233.cn/post/banner/wallhaven-0jv3kq.jpg
+cover: https://03c068f.webp.li/i/2025/02/08/vlw84-p3.jpg
 ---
 
 今天封装一个简易动态表单组件的时候遇到了一个的 Bug 分享下，避免踩坑。我使用动态组件来加载一些表单组件，对于大多数组件来说，插槽（slot）是不必要的，但有些控件则需要。比如 `el-select` ，需要 `slot` 来挂载选项

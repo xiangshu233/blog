@@ -1,10 +1,8 @@
 ---
-title: 使用 `@starting-style` 现代 CSS 设置文档起始样式
+title: 使用 `@starting-style` 现代 CSS 设置 DOM 起始样式
 tags: ['@starting-style']
 categories: [CSS]
 date: 2024-06-05 22:59:10
-cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-47zo9v.jpg
-banner: https://cdn.xiangshu233.cn/post/banner/wallhaven-47zo9v.jpg
 ---
 
 ## Mdn

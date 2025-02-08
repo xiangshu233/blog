@@ -3,8 +3,8 @@ title: js 中的 call、apply、bind 笔记
 date: 2022-08-31 17:52
 categories: [JS]
 tags: [call, apply, bind]
-cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-mdwv39.jpg
-banner: https://cdn.xiangshu233.cn/post/banner/wallhaven-mdwv39.jpg
+cover: https://03c068f.webp.li/i/2025/02/08/wg0cy-rz.jpg
+banner: https://03c068f.webp.li/i/2025/02/08/wg0cy-rz.jpg
 ---
 
 ## apply call

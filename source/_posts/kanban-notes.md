@@ -4,8 +4,7 @@ tags: [JS, 看板, 大屏]
 categories: [笔记]
 date: 2023-07-25 19:12:31
 description:
-cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-x1o6qo.jpg
-banner: https://cdn.xiangshu233.cn/post/banner/wallhaven-x1o6qo.jpg
+cover: https://03c068f.webp.li/i/2025/02/08/wg1ic-h1.jpg
 ---
 
 ## Grid 网格布局

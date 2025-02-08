@@ -4,7 +4,7 @@ updated: 2022-10-23 20:25
 title: hexo 博客部署到云服务器
 categories: [博客]
 tags: [博客部署]
-cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-gjp17e.jpg
+cover: https://03c068f.webp.li/i/2025/02/08/wfzif-1b.jpg
 ---
 
 {% note color:green 🎉🎉🎉 2022-10-23参照本文重新部署测试后，成功访问，本文仍具有参考价值。 %}

@@ -2,8 +2,7 @@
 title: 浅谈 Atomic CSS
 tags: [原子化 CSS, UnoCSS, Windi CSS, Tailwind CSS]
 categories: [CSS]
-cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-wedgy6.jpg
-banner: https://cdn.xiangshu233.cn/post/banner/wallhaven-wedgy6.jpg
+cover: https://03c068f.webp.li/i/2025/02/07/18ygwl-gf.png
 date: 2024-11-14 23:12:30
 ---
 

@@ -4,7 +4,6 @@ tags: [JS, Vue]
 categories: [笔记]
 date: 2023-08-25 14:00:14
 description:
-cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-0qe6zr.jpg
 ---
 
 ## 在线Demo

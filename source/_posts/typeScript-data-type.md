@@ -4,7 +4,6 @@ updated: 2022-07-19
 title: typeScript 数据类型笔记
 categories: [TS]
 tags: [超集, typescript]
-cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-dgq57l.jpg
 ---
 
 

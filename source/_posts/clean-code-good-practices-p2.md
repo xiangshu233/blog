@@ -3,8 +3,7 @@ title: 代码整洁之道：为什么好的命名很重要 P2
 tags: [代码规范]
 categories: [StyleGuide]
 date: 2023-04-15 22:22:22
-cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-1k2wlv.jpg
-banner: https://cdn.xiangshu233.cn/post/banner/wallhaven-1k2wlv.jpg
+cover: https://03c068f.webp.li/i/2025/02/08/wg1ic-4w.png
 ---
 ## 前言
 
