@@ -3,7 +3,7 @@ date: 2023-11-23
 title: TypeScript 中的 never 类型另一个妙用
 categories: [笔记]
 tags: [TypeScript]
-cover: https://cdn.xiangshu233.cn/post/banner/IMG_3865.jpg
+cover: https://03c068f.webp.li/i/2025/02/08/wg1ic-wg.jpg
 references:
   - title: 'TypeScript中的never应用场景【渡一教育】'
     url: https://www.bilibili.com/video/BV1kw411N7GN/?spm_id_from=333.337.search-card.all.click&vd_source=324bd11f94c36a5b45ef0ae878feea05

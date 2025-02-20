@@ -3,7 +3,7 @@ date: 2023-12-07
 title: 美化你的 PowerShell
 categories: [笔记]
 tags: [PowerShell]
-cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-4d7lj4.jpg
+cover: https://03c068f.webp.li/i/2025/02/08/wg1ic-j3.jpg
 references:
   - title: 'Oh My Posh 文档'
     url: https://ohmyposh.dev/docs/installation/windows

@@ -4,8 +4,7 @@ tags: [Hannibal]
 categories: [生活]
 date: 2024-05-19 16:51:15
 description:
-cover: https://cdn.xiangshu233.cn/post/banner/hannibal.jpg
-banner: https://cdn.xiangshu233.cn/post/banner/hannibal.jpg
+cover: https://03c068f.webp.li/i/2025/02/08/vt9t3-4x.jpg
 ---
 
 晚宴开始前，大家请注意：这里没有... 素食[者]
@@ -58,14 +57,5 @@ Before we begin, you must all be warned: nothing here... is vegetarian.
 这部剧里拔叔教会了我们一定要注重礼貌教养...因为没有教养的都被拔叔做了{% emoji blobcat blobcatfearful %}
 </p>
 
-放几张剧照，不愧丹麦最性感的男人。
-
-
-{% image https://cdn.xiangshu233.cn/post/banner/hannibal-1.jpg 西装拔叔 download:https://cdn.xiangshu233.cn/post/banner/hannibal-1.jpg %}
-
-{% image https://cdn.xiangshu233.cn/post/banner/hannibal-2.jpg 拔叔一笑 生死难料 download:https://cdn.xiangshu233.cn/post/banner/hannibal-2.jpg %}
-
-
-
-[拔叔其他 4K 剧照]([123123](https://alphacoders.com/hannibal-wallpapers))
+[拔叔 4K 剧照]([123123](https://alphacoders.com/hannibal-wallpapers))
 

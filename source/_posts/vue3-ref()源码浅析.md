@@ -3,11 +3,11 @@ date: 2021-11-03
 title: vue3 ref() 响应式源码浅析
 categories: [Vue3]
 tags: [vue3, ref]
-cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-4y33ll.jpg
+cover: https://03c068f.webp.li/i/2025/02/08/x4saf-cy.jpg
 ---
 
 ## 官方解释
-> `ref` 接收一个内部值并返回一个响应式且可变的ref对象。`ref` 对象具有指向内部值的单个property `.value`
+> `ref` 接收一个内部值并返回一个响应式且可变的 ref 对象。`ref` 对象具有指向内部值的单个property `.value`
 > 如果将对象分配为 ref 值，则通过 [reactive](https://v3.cn.vuejs.org/api/basic-reactivity.html#reactive) 函数使该对象具有高度的响应式。
 
 语法：`const xxx = ref(initValue)`

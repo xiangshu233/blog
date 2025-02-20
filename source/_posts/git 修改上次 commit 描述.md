@@ -3,8 +3,8 @@ title: git 修改上次 commit 描述
 date: 2022-10-23
 categories: [Git]
 tags: [git]
-cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-k7dl9d.jpg
-banner: https://cdn.xiangshu233.cn/post/banner/wallhaven-k7dl9d.jpg
+cover: https://03c068f.webp.li/i/2025/02/08/wg1ic-sr.jpg
+banner: https://03c068f.webp.li/i/2025/02/08/wg1ic-sr.jpg
 references:
   - title: '修改旧提交'
     url: https://stackoverflow.com/questions/17338792/amending-old-commit

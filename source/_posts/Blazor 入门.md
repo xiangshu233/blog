@@ -3,7 +3,6 @@ date: 2023-10-19
 title: Blazor 入门笔记
 categories: [笔记]
 tags: [C#, Blazor]
-cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-0wz8yr.jpg
 references:
   - title: 'Blazor 文档'
     url: https://learn.microsoft.com/zh-cn/aspnet/core/blazor/?view=aspnetcore-7.0&WT.mc_id=dotnet-35129-website

@@ -3,7 +3,6 @@ date: 2020-12-04
 title: 高德地图 轨迹巡航
 categories: [Vue]
 tags: [高德地图Api, 轨迹巡航]
-cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-nr7x6w.jpg
 ---
 
 >本次场景需求是查询历史数据返回一组经纬度和相关数据在地图中使用轨迹巡航API巡航，期间的文本框每经过一个坐标其数值就会改变，文章末尾有demo文件，需要自取。

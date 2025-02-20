@@ -3,8 +3,8 @@ date: 2021-10-12
 title: typeScript typeof 操作符
 categories: [TS]
 tags: [typescript, typeof操作符]
-cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-xl3g8z.jpg
-banner: https://cdn.xiangshu233.cn/post/banner/wallhaven-xl3g8z.jpg
+cover: https://03c068f.webp.li/i/2025/02/08/x4sb0-lf.jpg
+banner: https://03c068f.webp.li/i/2025/02/08/x4sb0-lf.jpg
 references:
   - title: '面向 Type 编程 -- Typescript 类型和类型操作(一)'
     url: https://zhuanlan.zhihu.com/p/311150643

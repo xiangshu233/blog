@@ -3,9 +3,6 @@ title: naive-ui 栅格布局笔记
 date: 2022-05-13 18:27
 categories: [UI]
 tags: [naive-ui, 栅格布局]
-cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-qdg88q.jpg
-cover_info:
-  title: naive-ui 栅格布局笔记
 ---
 
 

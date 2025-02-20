@@ -3,7 +3,6 @@ date: 2020-11-11
 title: 高德地图 绘制折线功能
 categories: [Vue]
 tags: [高德地图Api, 绘制折线]
-cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-xlwqg3.jpg
 ---
 > 本 DEMO 使用高德最新`JS API 2.0`版本，使用 NPM 方式使用 Loader
 

@@ -3,8 +3,6 @@ date: 2019-11-21
 title: el-table 中使用 switch 开关
 categories: [UI]
 tags: [vue, element-ui, switch]
-cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-mpzz78.jpg
-banner: https://cdn.xiangshu233.cn/post/banner/wallhaven-mpzz78.jpg
 ---
 
 ## 需求说明

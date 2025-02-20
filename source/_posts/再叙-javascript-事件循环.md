@@ -4,8 +4,7 @@ tags: [事件循环]
 categories: [JS]
 date: 2023-01-03
 updated: 2023-2-12
-cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-47zo9v.jpg
-banner: https://cdn.xiangshu233.cn/post/banner/wallhaven-47zo9v.jpg
+cover: https://03c068f.webp.li/i/2025/02/08/wg1ic-fj.jpg
 ---
 ## 一、为什么 JavaScript 是单线程
 

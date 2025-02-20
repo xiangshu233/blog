@@ -3,8 +3,6 @@ title: vue h() render() 渲染函数入门
 date: 2022-06-25 12:00
 categories: [Vue3]
 tags: [tsx, jsx, h(), render()]
-cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-4l28z2.jpg
-banner: https://cdn.xiangshu233.cn/post/banner/wallhaven-4l28z2.jpg
 references:
   - title: 'V3 渲染函数'
     url: https://v3.cn.vuejs.org/guide/render-function.html#%E6%B8%B2%E6%9F%93%E5%87%BD%E6%95%B0

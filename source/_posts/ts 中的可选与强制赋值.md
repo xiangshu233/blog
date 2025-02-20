@@ -4,7 +4,7 @@ updated: 2022-03-04
 title: typeScript 中的 ! ?
 categories: [TS]
 tags: [typescript]
-cover: https://cdn.xiangshu233.cn/post/banner/wallhaven-3komxd.jpg
+cover: https://03c068f.webp.li/i/2025/02/08/wfzdv-p6.jpg
 references:
   - title: 'ts 官方文档'
     url: https://www.tslang.cn/docs/handbook/interfaces.html
