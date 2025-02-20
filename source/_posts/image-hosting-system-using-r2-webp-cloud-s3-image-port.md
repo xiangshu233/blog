@@ -201,11 +201,11 @@ Cloudflare R2 Storage 的免费计划包含每月 10 GB 的存储空间、每月
 
 现在让我们看下这些字段都是什么意思
 
-- `Endpoint`: Cloudflare  API S3 客户端使用管辖权地特定的终结点
+- `Endpoint`: Cloudflare API S3 客户端使用管辖权地特定的终结点
 - `Bucket Name`: 你刚才创建的存储桶名字
-- `Region`: 这是存储桶的区域一点要填写 `auto`
-- `Access Key ID`: Cloudflare  API 访问密钥 ID
-- `Secret Access Key`: Cloudflare  API 机密访问密钥
+- `Region`: 这是存储桶的区域一定要填写 `auto`，不然可能无法展示图片
+- `Access Key ID`: Cloudflare API 访问密钥 ID
+- `Secret Access Key`: Cloudflare API 机密访问密钥
 - `Public URL`: 你刚才配置的自定义域名
 
 按照上面的字段配置后点击测试 **测试连接** 出现三个绿点表示配置成功
@@ -234,9 +234,9 @@ Cloudflare R2 Storage 的免费计划包含每月 10 GB 的存储空间、每月
 
 ![36_2x_shots_so.png](https://03c068f.webp.li/i/2025/02/20/1f492y-tg.webp)
 
-- 为了优化国内访问，我们「Proxy Region」选择的是美西「Hillsboro, OR」区域，Cloudflare R2 创建的存储桶也是美西区域
-- 「Proxy Name」填写一个自定义名称即可
-- 「Proxy Origin URL」，比较重要，需要填写上文我们配置好的 R2 自定义域名，如我填写的是 `https://r2-test.xiangshu233.cn`，如果没配置自定义域名则填写 R2 提供的 `xxx.r2.dev` 格式的域名
+- 为了优化国内访问，我们 **Proxy Region** 选择的是美西 **Hillsboro,OR ** 区域，Cloudflare R2 创建的存储桶也是美西区域
+-  **Proxy Name** 填写一个自定义名称即可
+-  **Proxy Origin URL** ，比较重要，需要填写上文我们配置好的 R2 自定义域名，如我填写的是 `https://r2-test.xiangshu233.cn`，如果没配置自定义域名则填写 R2 提供的 `xxx.r2.dev` 格式的域名
 
 ![543_2x_shots_so.png](https://03c068f.webp.li/i/2025/02/20/1f9qi3-le.webp)
 
