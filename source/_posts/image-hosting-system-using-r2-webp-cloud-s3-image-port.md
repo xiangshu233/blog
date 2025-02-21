@@ -234,7 +234,7 @@ Cloudflare R2 Storage 的免费计划包含每月 10 GB 的存储空间、每月
 
 ![36_2x_shots_so.png](https://03c068f.webp.li/i/2025/02/20/1f492y-tg.webp)
 
-- 为了优化国内访问，我们 **Proxy Region** 选择的是美西 **Hillsboro,OR ** 区域，Cloudflare R2 创建的存储桶也是美西区域
+- 为了优化国内访问，我们 **Proxy Region** 选择的是美西 **Hillsboro,OR** 区域，Cloudflare R2 创建的存储桶也是美西区域
 -  **Proxy Name** 填写一个自定义名称即可
 -  **Proxy Origin URL** ，比较重要，需要填写上文我们配置好的 R2 自定义域名，如我填写的是 `https://r2-test.xiangshu233.cn`，如果没配置自定义域名则填写 R2 提供的 `xxx.r2.dev` 格式的域名
 
@@ -302,7 +302,7 @@ Cloudflare R2 Storage 的免费计划包含每月 10 GB 的存储空间、每月
 另外整个图床系统完全参考 **pseudoyu** 作者的文章：[从零开始搭建你的免费图床系统（Cloudflare R2 + WebP Cloud + PicGo）](https://www.pseudoyu.com/zh/2024/06/30/free_image_hosting_system_using_r2_webp_cloud_and_picgo/)来的，再次感谢。
 
 
-PS: 上面的代理和存储桶都是测试用的，在本文写完后我会**删除**所以不要填我的一些秘钥或者地址（填了也没用）。<img src="https://cdn.xiangshu233.cn/i/2025/02/21/2vbwt-rb.gif" alt="https://03c068f.webp.li/i/2025/02/21/2vbwt-rb.gif" style="zoom: 50%;" />
+PS: 上面的代理和存储桶都是测试用的，在本文写完后我会**删除**，所以不要填我的一些秘钥或者地址（填了也没用）。<img src="https://cdn.xiangshu233.cn/i/2025/02/21/2vbwt-rb.gif" alt="https://03c068f.webp.li/i/2025/02/21/2vbwt-rb.gif" style="zoom: 50%;" />
 
 
 
