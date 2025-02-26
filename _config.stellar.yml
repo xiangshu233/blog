@@ -103,8 +103,8 @@ footer:
     <span id='runtime'>
 
 style:
-  darkmode: auto # auto / always / false
-  smooth_scroll: false # true / false
+  darkmode: always # always / always / false
+  smooth_scroll: true # true / false
   font-size:
     root: 16px
     body: .9375rem # 15px
